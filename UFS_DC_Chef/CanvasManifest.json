@@ -38,12 +38,12 @@
       "enablecomponentscopeoldbehavior": false,
       "enablecopilotanswercontrol": false,
       "enablecopilotcontrol": true,
-      "enabledataverseoffline": false,
+      "enabledataverseoffline": true,
       "enableeditcacherefreshfrequency": false,
       "enableexcelonlinebusinessv2connector": true,
       "enableexperimentaldataverseoffline": true,
       "enableideaspanel": true,
-      "enablelargefilesindataverseoffline": false,
+      "enablelargefilesindataverseoffline": true,
       "enablelegacybarcodescanner": false,
       "enableonstart": true,
       "enableonstartnavigate": false,
@@ -151,6 +151,7 @@
     "Menu Matrix_Edit Screen",
     "Menu Matrix Screen",
     "Route Planning Screen",
-    "In Call Screen"
+    "In Call Screen",
+    "Route_Planning_Screen"
   ]
 }

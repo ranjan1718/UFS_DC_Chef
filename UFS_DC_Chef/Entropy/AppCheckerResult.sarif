@@ -37640,6 +37640,1386 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_ArrowWeek_4.Icon3_13.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_ArrowWeek_4.Icon3_13.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_ArrowWeek_4.Icon3_13"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_ArrowWeek_4.Icon3_13.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_ArrowWeek_4.Icon3_13.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_ArrowWeek_4.Icon3_13"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_ArrowWeek_4.Icon6_14.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_ArrowWeek_4.Icon6_14.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_ArrowWeek_4.Icon6_14"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_ArrowWeek_4.Icon6_14.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_ArrowWeek_4.Icon6_14.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_ArrowWeek_4.Icon6_14"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_Arrow_2.Icon3_14.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_Arrow_2.Icon3_14.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_Arrow_2.Icon3_14"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_Arrow_2.Icon3_14.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_Arrow_2.Icon3_14.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_Arrow_2.Icon3_14"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_Arrow_2.Icon6_15.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_Arrow_2.Icon6_15.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_Arrow_2.Icon6_15"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_Arrow_2.Icon6_15.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_Arrow_2.Icon6_15.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_Arrow_2.Icon6_15"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_MonthWeek_4.Week_Gallery_6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_MonthWeek_4.Week_Gallery_6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_MonthWeek_4.Week_Gallery_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_MonthWeek_4.Week_Gallery_6.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_MonthWeek_4.Week_Gallery_6.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_MonthWeek_4.Week_Gallery_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_MonthCalender_2.Gallery7_6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_MonthCalender_2.Gallery7_6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_MonthCalender_2.Gallery7_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_MonthCalender_2.Gallery7_6.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_MonthCalender_2.Gallery7_6.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_MonthCalender_2.Gallery7_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_MonthCalender_2.Gallery7_6.Gallery1_5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_MonthCalender_2.Gallery7_6.Gallery1_5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_MonthCalender_2.Gallery7_6.Gallery1_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_MonthCalender_2.Gallery7_6.Gallery1_5.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_MonthCalender_2.Gallery7_6.Gallery1_5.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_MonthCalender_2.Gallery7_6.Gallery1_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_MonthCalender_2.Gallery7_6.Day_2.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_MonthCalender_2.Gallery7_6.Day_2.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_MonthCalender_2.Gallery7_6.Day_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 18
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_MonthCalender_2.Gallery7_6.Day_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_MonthCalender_2.Gallery7_6.Day_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Cont_MonthCalender_2.Gallery7_6.Day_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Con_MonthGalleryDetails_4.'Records-Container_4'.AllMonthyIncall_7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Con_MonthGalleryDetails_4.'Records-Container_4'.AllMonthyIncall_7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Con_MonthGalleryDetails_4.'Records-Container_4'.AllMonthyIncall_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Con_MonthGalleryDetails_4.'Records-Container_4'.AllMonthyIncall_7.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Con_MonthGalleryDetails_4.'Records-Container_4'.AllMonthyIncall_7.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Month_2.Con_MonthGalleryDetails_4.'Records-Container_4'.AllMonthyIncall_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_ArrowWeek_5.Icon3_15.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_ArrowWeek_5.Icon3_15.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_ArrowWeek_5.Icon3_15"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_ArrowWeek_5.Icon3_15.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_ArrowWeek_5.Icon3_15.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_ArrowWeek_5.Icon3_15"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_ArrowWeek_5.Icon6_16.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_ArrowWeek_5.Icon6_16.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_ArrowWeek_5.Icon6_16"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_ArrowWeek_5.Icon6_16.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_ArrowWeek_5.Icon6_16.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_ArrowWeek_5.Icon6_16"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_MonthWeek_5.Week_Gallery_7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_MonthWeek_5.Week_Gallery_7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_MonthWeek_5.Week_Gallery_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_MonthWeek_5.Week_Gallery_7.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_MonthWeek_5.Week_Gallery_7.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_MonthWeek_5.Week_Gallery_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_WeekCalender_2.Gallery7_7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_WeekCalender_2.Gallery7_7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_WeekCalender_2.Gallery7_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_WeekCalender_2.Gallery7_7.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_WeekCalender_2.Gallery7_7.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_WeekCalender_2.Gallery7_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_WeekCalender_2.Gallery7_7.Container15_7.Gallery4_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_WeekCalender_2.Gallery7_7.Container15_7.Gallery4_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_WeekCalender_2.Gallery7_7.Container15_7.Gallery4_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_WeekCalender_2.Gallery7_7.Container15_7.Gallery4_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_WeekCalender_2.Gallery7_7.Container15_7.Gallery4_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Week_2.Cont_WeekCalender_2.Gallery7_7.Container15_7.Gallery4_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_DayCalenderHeader_2.Icon3_16.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_DayCalenderHeader_2.Icon3_16.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_DayCalenderHeader_2.Icon3_16"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_DayCalenderHeader_2.Icon3_16.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_DayCalenderHeader_2.Icon3_16.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_DayCalenderHeader_2.Icon3_16"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_DayCalenderHeader_2.Icon6_17.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_DayCalenderHeader_2.Icon6_17.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_DayCalenderHeader_2.Icon6_17"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_DayCalenderHeader_2.Icon6_17.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_DayCalenderHeader_2.Icon6_17.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_DayCalenderHeader_2.Icon6_17"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Con_dayGalleryDetails_2.Heading_Container_6.Container9_5.Icon10_5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Con_dayGalleryDetails_2.Heading_Container_6.Container9_5.Icon10_5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Con_dayGalleryDetails_2.Heading_Container_6.Container9_5.Icon10_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Con_dayGalleryDetails_2.Heading_Container_6.Container9_5.Icon10_5.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Con_dayGalleryDetails_2.Heading_Container_6.Container9_5.Icon10_5.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Con_dayGalleryDetails_2.Heading_Container_6.Container9_5.Icon10_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Con_dayGalleryDetails_2.Records_Container_6.AllDayIncall_5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Con_dayGalleryDetails_2.Records_Container_6.AllDayIncall_5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Con_dayGalleryDetails_2.Records_Container_6.AllDayIncall_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Con_dayGalleryDetails_2.Records_Container_6.AllDayIncall_5.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Con_dayGalleryDetails_2.Records_Container_6.AllDayIncall_5.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Con_dayGalleryDetails_2.Records_Container_6.AllDayIncall_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.'Con_Special Event_3'.Heading_Container_7.Container9_7.Icon10_6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.'Con_Special Event_3'.Heading_Container_7.Container9_7.Icon10_6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.'Con_Special Event_3'.Heading_Container_7.Container9_7.Icon10_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.'Con_Special Event_3'.Heading_Container_7.Container9_7.Icon10_6.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.'Con_Special Event_3'.Heading_Container_7.Container9_7.Icon10_6.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.'Con_Special Event_3'.Heading_Container_7.Container9_7.Icon10_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.'Con_Special Event_3'.Records_Container_7.AllDayIncall_6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.'Con_Special Event_3'.Records_Container_7.AllDayIncall_6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.'Con_Special Event_3'.Records_Container_7.AllDayIncall_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.'Con_Special Event_3'.Records_Container_7.AllDayIncall_6.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.'Con_Special Event_3'.Records_Container_7.AllDayIncall_6.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.'Con_Special Event_3'.Records_Container_7.AllDayIncall_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_Reminder_2.Con_MonthGalleryDetails_5.'Records-Container_5'.AllMonthyIncall_8.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_Reminder_2.Con_MonthGalleryDetails_5.'Records-Container_5'.AllMonthyIncall_8.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_Reminder_2.Con_MonthGalleryDetails_5.'Records-Container_5'.AllMonthyIncall_8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_Reminder_2.Con_MonthGalleryDetails_5.'Records-Container_5'.AllMonthyIncall_8.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_Reminder_2.Con_MonthGalleryDetails_5.'Records-Container_5'.AllMonthyIncall_8.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_Reminder_2.Con_MonthGalleryDetails_5.'Records-Container_5'.AllMonthyIncall_8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_Reminder_2.Con_MonthGalleryDetails_5.Cont_SKURecord_2.AllMonthyIncall_9.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_Reminder_2.Con_MonthGalleryDetails_5.Cont_SKURecord_2.AllMonthyIncall_9.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_Reminder_2.Con_MonthGalleryDetails_5.Cont_SKURecord_2.AllMonthyIncall_9"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_Reminder_2.Con_MonthGalleryDetails_5.Cont_SKURecord_2.AllMonthyIncall_9.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_Reminder_2.Con_MonthGalleryDetails_5.Cont_SKURecord_2.AllMonthyIncall_9.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_Reminder_2.Con_MonthGalleryDetails_5.Cont_SKURecord_2.AllMonthyIncall_9"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_Reminder_2.Con_MonthGalleryDetails_5.Cont_SKURecord_2.AllMonthyIncall_9.Container9_26.Container7_175.Icon15_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_Reminder_2.Con_MonthGalleryDetails_5.Cont_SKURecord_2.AllMonthyIncall_9.Container9_26.Container7_175.Icon15_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_Reminder_2.Con_MonthGalleryDetails_5.Cont_SKURecord_2.AllMonthyIncall_9.Container9_26.Container7_175.Icon15_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_Reminder_2.Con_MonthGalleryDetails_5.Cont_SKURecord_2.AllMonthyIncall_9.Container9_26.Container7_175.Icon15_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_Reminder_2.Con_MonthGalleryDetails_5.Cont_SKURecord_2.AllMonthyIncall_9.Container9_26.Container7_175.Icon15_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.ScreenContainer2.MainSectionContainer2.MainContainer_2.Body_Container_Route_2.Con_Route_2.Cont_RouteDetail_2.Cont_Day_2.Cont_Reminder_2.Con_MonthGalleryDetails_5.Cont_SKURecord_2.AllMonthyIncall_9.Container9_26.Container7_175.Icon15_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App._C_AllColors"
                 }
               ],
@@ -39188,6 +40568,125 @@
           },
           "ruleId": "app-UnusedVariables",
           "ruleIndex": 21
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-ScreenHasManyControls",
+          "ruleIndex": 26
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.ResetDropdown"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.ResetDropdown",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "ResetDropdown",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 21
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.Distributors"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Distributors",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Distributors",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-NotOfflineEnabledTable",
+          "ruleIndex": 27
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.Concepts"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Concepts",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Concepts",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-NotOfflineEnabledTable",
+          "ruleIndex": 27
         }
       ],
       "tool": {
@@ -39630,6 +41129,23 @@
                 "level": "Medium",
                 "primaryCategory": "performance",
                 "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"EditCustomerScreen\" is 331, which exceeds the maximum threshold recommended (300)."
+              }
+            },
+            {
+              "id": "app-NotOfflineEnabledTable",
+              "messageStrings": {
+                "issue": {
+                  "text": "Table is not configured for mobile offline support."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "In the 'Advanced options' section for your table's Properties, set 'Enable for offline' to be on."
+                ],
+                "level": "Medium",
+                "primaryCategory": "offline",
+                "whyFix": null
               }
             }
           ],
