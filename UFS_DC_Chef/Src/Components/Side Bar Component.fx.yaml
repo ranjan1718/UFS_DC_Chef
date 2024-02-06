@@ -1,0 +1,226 @@
+"'Side Bar Component' As CanvasComponent":
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =1400
+    Width: =220
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Container2_8 As groupContainer.horizontalAutoLayoutContainer:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(204, 72, 0, 1)
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =42
+        LayoutMode: =LayoutMode.Auto
+        PaddingLeft: =10
+        PaddingTop: =40
+        Visible: =false
+        Width: =Parent.Width
+        ZIndex: =1
+
+        "'Button - Customer_1' As button":
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(204, 72, 0, 1)
+            FillPortions: =1
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.Height/8
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+            Size: =15
+            Text: ="Customer"
+            Width: =Parent.Width*.85
+            ZIndex: =1
+
+        "'Button - Menu Matrix_1' As button":
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(204, 72, 0, 1)
+            FillPortions: =1
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.Height/8
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+            Size: =15
+            Text: ="Manu Matrix"
+            Width: =Parent.Width*.85
+            ZIndex: =2
+
+        "'Button - Route Planning_1' As button":
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(204, 72, 0, 1)
+            FillPortions: =1
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.Height/8
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+            Size: =15
+            Text: ="Route Planning"
+            Width: =Parent.Width*.85
+            ZIndex: =3
+
+        "'Button - Analytics_1' As button":
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(204, 72, 0, 1)
+            FillPortions: =1
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.Height/8
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+            Size: =15
+            Text: ="Analytics"
+            Width: =Parent.Width*.85
+            ZIndex: =4
+
+        "'Button - In call_1' As button":
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(204, 72, 0, 1)
+            FillPortions: =1
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.Height/8
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+            Size: =15
+            Text: ="In-Call"
+            Width: =Parent.Width*.85
+            ZIndex: =5
+
+        "'Button - Rich Media_1' As button":
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(204, 72, 0, 1)
+            FillPortions: =1
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.Height/8
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+            Size: =15
+            Text: ="Rich Media"
+            Width: =Parent.Width*.85
+            ZIndex: =6
+
+        "'Button - cart_1' As button":
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(204, 72, 0, 1)
+            FillPortions: =1
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.Height/8
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+            Size: =15
+            Text: ="Cart"
+            Width: =Parent.Width*.85
+            ZIndex: =7
+
+        "'Button - Send Email_1' As button":
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(204, 72, 0, 1)
+            FillPortions: =1
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.Height/8
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+            Size: =15
+            Text: ="Send Email"
+            Width: =Parent.Width*.85
+            ZIndex: =8
+
+    Container17 As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.ExtraBold
+        Fill: =RGBA(127, 69, 38, 1)
+        Height: =Parent.Height-10
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =10
+        PaddingLeft: =5
+        PaddingRight: =5
+        PaddingTop: =10
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width-10
+        X: =5
+        Y: =5
+        ZIndex: =2
+
+        Gallery6 As gallery.variableTemplateHeightGallery:
+            AlignInContainer: =AlignInContainer.Center
+            BorderColor: =RGBA(131, 24, 75, 1)
+            DelayItemLoading: =true
+            Items: =["Customer & Contact ","Menu Matrix","Route Planning","Analytics","In Call","Rich Media","Cart","Send Email"]
+            Layout: =Layout.Vertical
+            LayoutMinHeight: =0
+            LayoutMinWidth: =0
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplateSize: =280
+            Width: =Parent.Width
+            ZIndex: =1
+
+            "'Button - Customer_2' As button":
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =0
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(0, 0, 0, 0)
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Bold, FontWeight.Normal)
+                Height: =(Parent.Height)/8-7
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+                PaddingLeft: =20
+                PaddingRight: =10
+                Size: =12
+                Text: =ThisItem.Value
+                Width: =Parent.TemplateWidth
+                ZIndex: =1
+
+            "'Button - Customer_3' As button":
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =0
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =((Parent.Height)/8-7)/2
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+                Size: =12
+                Text: =
+                Visible: =ThisItem.IsSelected
+                Width: =7
+                X: =5
+                Y: =('Button - Customer_2'.Height-Self.Height)/2
+                ZIndex: =2
+

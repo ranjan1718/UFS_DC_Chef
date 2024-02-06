@@ -1,0 +1,888 @@
+"'Loading Screen' As screen":
+    Fill: =RGBA(255,255,255,1)
+    LoadingSpinner: =LoadingSpinner.Data
+    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
+    OnVisible: |-
+        =Set(_V_LoadingMSG, "Loading...");
+        
+        //Select(btn_onload)
+
+    Container3 As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutJustifyContent: =LayoutJustifyContent.Center
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Spinner1 As Spinner:
+            AlignInContainer: =AlignInContainer.Center
+            BasePaletteColor: =RGBA(53, 61, 63, 1)
+            DisplayMode: =DisplayMode.Edit
+            FontColor: =
+            Height: =123
+            Label: =_V_LoadingMSG
+            LayoutMinHeight: =200
+            LayoutMinWidth: =200
+            SpinnerSize: ='Spinner.SpinnerSize'.Huge
+            Width: =264
+            X: =572
+            Y: =280
+            ZIndex: =1
+
+    ButtonCanvas3 As Button:
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =86
+        Text: ="OnLoad"
+        Visible: =false
+        Width: =174
+        X: =630
+        Y: =316
+        ZIndex: =2
+
+    Customer_List_Container_2 As groupContainer.horizontalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        PaddingTop: =5
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Visible: =false
+        Width: =Parent.Width*1.5/10
+        ZIndex: =3
+
+        SearchBar_Container_2 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =Parent.Height/15
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =0
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =Parent.Width
+            ZIndex: =1
+
+            Component1_4 As Component1:
+                Height: =Parent.Height/1
+                HintText: ="Search"
+                LayoutMinHeight: =640
+                LayoutMinWidth: =0
+                Width: =Parent.Width-10
+
+        Container2_15 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            Height: =Parent.Height*14/15
+            LayoutMinHeight: =100
+            LayoutMinWidth: =0
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =10
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =Parent.Width
+            ZIndex: =2
+
+            Customers_Gallery_2 As gallery.variableTemplateHeightGallery:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                DelayItemLoading: =true
+                Items: =Filter(_C_Customers, Component1_4.TypedText in Name || Component1_4.TypedText in 'Mother Group (ulchef_mothergroupslt)')
+                Layout: =Layout.Vertical
+                LayoutMinHeight: =0
+                LayoutMinWidth: =0
+                LoadingSpinner: =LoadingSpinner.Data
+                OnSelect: |-
+                    =Set(
+                        _V_SelectedCustomer, ThisItem
+                    );
+                    
+                    //ClearCollect(_V_SelectedCustomer,ThisItem);
+                TemplatePadding: =8
+                TemplateSize: =280
+                ZIndex: =1
+
+                Template_Container_2 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.Semilight
+                    Fill: =RGBA(255, 90, 0, 1)
+                    Height: =Customer_Name_2.Height+'Customer Name_2'.Height+1
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingBottom: =4
+                    PaddingTop: =4
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Width: =Parent.TemplateWidth-6
+                    X: =3
+                    ZIndex: =1
+
+                    "'Customer Name_2' As label":
+                        BorderColor: =RGBA(131, 24, 75, 1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =19
+                        OnSelect: =
+                        Size: =10
+                        Text: =ThisItem.Name
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                    Customer_Name_2 As label:
+                        BorderColor: =RGBA(131, 24, 75, 1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =
+                        PaddingTop: =0
+                        Size: =10
+                        Text: =ThisItem.ulchef_mothergroupslt
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =Parent.Width
+                        ZIndex: =2
+
+        "'Add_Customer Container_1' As groupContainer.horizontalAutoLayoutContainer":
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =Parent.Height/15
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =0
+            LayoutMinWidth: =0
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =Parent.Width
+            ZIndex: =3
+
+    btn_SaveData As Button:
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =57
+        OnSelect: |-
+            =Set(_V_LoadingMSG, "Loading All data...");
+            Concurrent(
+                    ClearCollect(
+                        _C_Customers,
+                        AddColumns(AddColumns(Customers, "createofflineRequired", false), "updateofflineRequired", false)
+                    ),
+                    ClearCollect(
+                        _C_Contacts,
+                        AddColumns(AddColumns(AddColumns(Contacts_1, "createofflineRequired", false), "updateofflineRequired", false), "removeofflineRequired", false)
+                    ),
+                    ClearCollect(
+                        _C_Concepts,
+                        AddColumns(AddColumns(AddColumns(Concepts, "createofflineRequired", false), "updateofflineRequired", false), "removeofflineRequired", false)
+                    )
+                );
+                //Clear(_C_AllContacts_Customers_2);
+                
+                Select(btn_ClearData);
+                
+                SaveData(_C_Concepts, "_Offline_Concept");
+                SaveData(_C_Contacts, "_Offline_Contact");
+                SaveData(_C_Customers, "_Offline_Customer");
+            
+                //SaveData(_C_AllContacts_Customers_2, "_Offline_AllContacts_Customers_1")
+        Text: ="Savedata"
+        Visible: =false
+        Width: =134
+        X: =268
+        Y: =155
+        ZIndex: =4
+
+    btn_LoadData As Button:
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =57
+        OnSelect: |+
+            =/*Clear(_C_AllContacts_Customers_2);
+            LoadData(_C_AllContacts_Customers_2, "_Offline_AllContacts_Customers_1", true);
+            Concurrent(
+                Clear(_C_Customers);
+                Collect(_C_Customers, First(_C_AllContacts_Customers_2).Customers),
+            
+                Clear(_C_Contacts);
+                Collect(_C_Contacts, First(_C_AllContacts_Customers_2).Contacts),
+            
+                Clear(_C_Concepts);
+                Collect(_C_Concepts, First(_C_AllContacts_Customers_2).Concepts)
+            )*/
+            
+            Clear(_C_Concepts);
+            Clear(_C_Contacts);
+            Clear(_C_Customers);
+            
+            LoadData(_C_Concepts, "_Offline_Concept", true);
+            LoadData(_C_Contacts, "_Offline_Contact", true);
+            LoadData(_C_Customers, "_Offline_Customer", true);
+            
+        Text: ="Load Data"
+        Visible: =false
+        Width: =134
+        X: =420
+        Y: =155
+        ZIndex: =5
+
+    btn_ClearData As Button:
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =57
+        OnSelect: |
+            =ClearData("_Offline_AllContacts_Customers_1");
+        Text: ="Clear Data"
+        Visible: =false
+        Width: =134
+        X: =572
+        Y: =155
+        ZIndex: =6
+
+    TextCanvas1 As Text:
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontStrikethrough: =false
+        FontUnderline: =false
+        Height: =40
+        Text: =IfError(CountRows(_C_Concepts), "Error",CountRows(_C_Concepts))
+        Visible: =true
+        Width: =152
+        X: =268
+        Y: =24
+        ZIndex: =7
+
+    btn_online_onload As Button:
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =57
+        OnSelect: |
+            =
+            
+            
+            If(
+                /*IsBlankOrError(_C_AllContacts_Customers_2),
+                ClearCollect(_C_AllContacts_Customers_2, Table());
+                Select(btn_SaveData),*/
+                CountRows(_C_Concepts)=0 && CountRows(_C_Contacts)=0 && CountRows(_C_Customers)=0,
+                Select(btn_SaveData),
+                
+                //Create offline data
+                Set(_V_LoadingMSG, "Creating offline data...");
+                Concurrent(
+                    
+                        ForAll(
+                            Filter(_C_Concepts, createofflineRequired),
+                            Patch(
+                                Concepts,
+                                Defaults(Concepts),
+                                DropColumns(ThisRecord, "createofflineRequired", "updateofflineRequired", "removeofflineRequired")
+                            )
+                        )
+                    ,
+                    
+                        ForAll(
+                            Filter(_C_Contacts, createofflineRequired),
+                            Patch(
+                                Contacts_1,
+                                Defaults(Contacts_1),
+                                DropColumns(ThisRecord, "createofflineRequired", "updateofflineRequired", "removeofflineRequired")
+                            )
+                        )
+                    ,
+                    
+                        ForAll(
+                            Filter(_C_Customers, createofflineRequired),
+                            Patch(
+                                Customers,
+                                Defaults(Customers),
+                                DropColumns(ThisRecord, "createofflineRequired", "updateofflineRequired")
+                            )
+                        )
+                    
+                );
+                
+                //Update offline data
+                Set(_V_LoadingMSG, "Updating offline data...");
+                Concurrent(
+                    
+                        ForAll(
+                            Filter(_C_Concepts, createofflineRequired),
+                            Patch(
+                                Concepts,
+                                {Concept: ThisRecord.Concept},
+                                DropColumns(ThisRecord, "createofflineRequired", "updateofflineRequired", "removeofflineRequired")
+                            )
+                        )
+                    ,
+                    
+                        ForAll(
+                            Filter(_C_Contacts, createofflineRequired),
+                            Patch(
+                                Contacts_1,
+                                {Contact: ThisRecord.Contact},
+                                DropColumns(ThisRecord, "createofflineRequired", "updateofflineRequired", "removeofflineRequired")
+                            )
+                        )
+                    ,
+                    
+                        ForAll(
+                            Filter(_C_Customers, createofflineRequired),
+                            Patch(
+                                Customers,
+                                {Customer: ThisRecord.Customer},
+                                DropColumns(ThisRecord, "createofflineRequired", "updateofflineRequired")
+                            )
+                        )
+                    
+                );
+                //remove offline data
+                Set(_V_LoadingMSG, "Removing offline data...");
+                Concurrent(
+                    
+                        ForAll(
+                            Filter(_C_Concepts, createofflineRequired),
+                            RemoveIf(Concepts, Concept=ThisRecord.Concept)
+                        )
+                    ,
+                    
+                        ForAll(
+                            Filter(_C_Contacts, createofflineRequired),
+                            RemoveIf(Contacts_1, Contact=ThisRecord.Contact)
+                        )
+                    
+                )
+                ;
+                Select(btn_SaveData)
+        Text: ="Online Load"
+        Visible: =false
+        Width: =134
+        X: =268
+        Y: =245
+        ZIndex: =8
+
+    btn_offline_onload As Button:
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =57
+        OnSelect: |
+            =Select(btn_LoadData);
+        Text: ="Offline Load"
+        Visible: =false
+        Width: =134
+        X: =420
+        Y: =245
+        ZIndex: =9
+
+    btn_onload As Button:
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =57
+        OnSelect: |
+            =IfError(
+            If(
+                Connection.Connected,
+                Select(btn_online_onload),
+                Select(btn_offline_onload)
+            );
+            ,
+            "",
+            Navigate('Home Page')
+            )
+        Text: ="Onload"
+        Visible: =false
+        Width: =134
+        X: =572
+        Y: =245
+        ZIndex: =10
+
+    "DatePickerCanvas1 As 'Date picker'":
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        FontColor: =
+        Height: =32
+        Visible: =false
+        Width: =320
+        X: =40
+        Y: =40
+        ZIndex: =11
+
+    "TextInputCanvas1 As 'Text input'":
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        FontColor: =
+        Height: =32
+        Visible: =false
+        Width: =320
+        X: =40
+        Y: =92
+        ZIndex: =12
+
+    ComboboxCanvas1 As Combobox.pcfdataset:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Items: =["Item 1", "Item 2", "Item 3"]
+        Visible: =false
+        Width: =320
+        X: =40
+        Y: =142
+        ZIndex: =13
+
+    CheckboxCanvas1 As Checkbox:
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        FontColor: =
+        Height: =32
+        OnCheck: =false
+        OnUncheck: =false
+        Visible: =false
+        Width: =160
+        X: =407
+        Y: =40
+        ZIndex: =14
+
+    "Progress1 As 'Progress Bar'":
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        Height: =45
+        Visible: =false
+        Width: =450
+        X: =572
+        Y: =33
+        ZIndex: =15
+
+    BadgeCanvas1 As Badge:
+        Appearance: ='BadgeCanvas.Appearance'.Filled
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        FontColor: =
+        Height: =32
+        Visible: =false
+        Width: =32
+        X: =420
+        Y: =97
+        ZIndex: =16
+
+    Timer1 As timer:
+        AutoPause: =false
+        AutoStart: =true
+        BorderColor: =RGBA(106, 122, 127, 1)
+        Color: =RGBA(106, 122, 127, 1)
+        Duration: =6000
+        Fill: =RGBA(255, 255, 255, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+        OnTimerEnd: |-
+            =//Set(_V_LoadingMSG, "Loading...");
+            //Select(btn_onload)
+            
+            If(
+                Connection.Connected,
+                If(
+                    CountRows(_C_Concepts)=0 && CountRows(_C_Contacts)=0 && CountRows(_C_Customers)=0,
+                    Set(
+                        _V_LoadingMSG,
+                        "Loading All data..."
+                    );
+                    Concurrent(
+                        ClearCollect(
+                            _C_Customers,
+                            AddColumns(
+                                AddColumns(
+                                    Customers,
+                                    "createofflineRequired",
+                                    false
+                                ),
+                                "updateofflineRequired",
+                                false
+                            )
+                        ),
+                        ClearCollect(
+                            _C_Contacts,
+                            AddColumns(
+                                AddColumns(
+                                    AddColumns(
+                                        Contacts_1,
+                                        "createofflineRequired",
+                                        false
+                                    ),
+                                    "updateofflineRequired",
+                                    false
+                                ),
+                                "removeofflineRequired",
+                                false
+                            )
+                        ),
+                        ClearCollect(
+                            _C_Concepts,
+                            AddColumns(
+                                AddColumns( 
+                                    AddColumns(
+                                        Concepts,
+                                        "createofflineRequired",
+                                        false
+                                    ),
+                                    "updateofflineRequired",
+                                    false
+                                ),
+                                "removeofflineRequired",
+                                false
+                            )
+                        ) 
+                    );
+                    
+                    ClearData("_Offline_Concept");
+                    ClearData("_Offline_Contact");
+                    ClearData("_Offline_Customer");
+            
+                    SaveData(_C_Concepts, "_Offline_Concept");
+                    SaveData(_C_Contacts, "_Offline_Contact");
+                    SaveData(_C_Customers, "_Offline_Customer");
+                    //Notify("True");
+                    ,
+                    Set(_V_LoadingMSG, "Creating offline data...");
+                    Concurrent(
+                        If( CountRows(Filter(_C_Concepts, createofflineRequired))>0,
+                            ForAll(
+                                Filter(_C_Concepts, createofflineRequired),
+                                Patch(
+                                    Concepts,
+                                    Defaults(Concepts),
+                                    DropColumns(ThisRecord, "createofflineRequired", "updateofflineRequired", "removeofflineRequired")
+                                )
+                            )
+                        )
+                        ,
+                        If( CountRows(Filter(_C_Contacts, createofflineRequired))>0,
+                            ForAll(
+                                Filter(_C_Contacts, createofflineRequired),
+                                Patch(
+                                    Contacts_1,
+                                    Defaults(Contacts_1),
+                                    DropColumns(ThisRecord, "createofflineRequired", "updateofflineRequired", "removeofflineRequired")
+                                )
+                            )
+                        )
+                        ,
+                        If( CountRows(Filter(_C_Customers, createofflineRequired))>0,
+                            ForAll(
+                                Filter(_C_Customers, createofflineRequired),
+                                Patch(
+                                    Customers,
+                                    Defaults(Customers),
+                                    DropColumns(ThisRecord, "createofflineRequired", "updateofflineRequired")
+                                )
+                            )
+                        )
+                    );
+                    
+                    //Update offline data
+                    Set(_V_LoadingMSG, "Updating offline data...");
+                    Concurrent(
+                        If( CountRows(Filter(_C_Concepts, updateofflineRequired))>0,
+                            ForAll(
+                                Filter(_C_Concepts, updateofflineRequired),
+                                Patch(
+                                    Concepts,
+                                    {Concept: ThisRecord.Concept},
+                                    DropColumns(ThisRecord, "createofflineRequired", "updateofflineRequired", "removeofflineRequired")
+                                )
+                            )
+                        )
+                        ,
+                        If( CountRows(Filter(_C_Contacts, updateofflineRequired))>0,
+                            ForAll(
+                                Filter(_C_Contacts, updateofflineRequired),
+                                Patch(
+                                    Contacts_1,
+                                    {Contact: ThisRecord.Contact},
+                                    DropColumns(ThisRecord, "createofflineRequired", "updateofflineRequired", "removeofflineRequired")
+                                )
+                            )
+                        )
+                        ,
+                        If( CountRows(Filter(_C_Customers, updateofflineRequired))>0,
+                            ForAll(
+                                Filter(_C_Customers, updateofflineRequired),
+                                Patch(
+                                    Customers,
+                                    {Customer: ThisRecord.Customer},
+                                    DropColumns(ThisRecord, "createofflineRequired", "updateofflineRequired")
+                                )
+                            )
+                        )
+                        
+                    );
+                    //remove offline data
+                    Set(_V_LoadingMSG, "Removing offline data...");
+                    Concurrent(
+                        If( CountRows(Filter(_C_Concepts, removeofflineRequired))>0,
+                            ForAll(
+                                Filter(_C_Concepts, removeofflineRequired),
+                                RemoveIf(Concepts, Concept=ThisRecord.Concept)
+                            )
+                        )
+                        ,
+                        If( CountRows(Filter(_C_Contacts, removeofflineRequired))>0,
+                            ForAll(
+                                Filter(_C_Contacts, removeofflineRequired),
+                                RemoveIf(Contacts_1, Contact=ThisRecord.Contact)
+                            )
+                        )
+                    );
+                    Refresh(Customers);
+                    Refresh(Contacts_1);
+                    Refresh(Concepts);
+            
+                    Set(
+                        _V_LoadingMSG,
+                        "Loading All data..."
+                    );
+                    Concurrent(
+                        ClearCollect(
+                            _C_Customers,
+                            AddColumns(
+                                AddColumns(
+                                    Customers,
+                                    "createofflineRequired",
+                                    false
+                                ),
+                                "updateofflineRequired",
+                                false
+                            )
+                        ),
+                        ClearCollect(
+                            _C_Contacts,
+                            AddColumns(
+                                AddColumns(
+                                    AddColumns(
+                                        Contacts_1,
+                                        "createofflineRequired",
+                                        false
+                                    ),
+                                    "updateofflineRequired",
+                                    false
+                                ),
+                                "removeofflineRequired",
+                                false
+                            )
+                        ),
+                        ClearCollect(
+                            _C_Concepts,
+                            AddColumns(
+                                AddColumns( 
+                                    AddColumns(
+                                        Concepts,
+                                        "createofflineRequired",
+                                        false
+                                    ),
+                                    "updateofflineRequired",
+                                    false
+                                ),
+                                "removeofflineRequired",
+                                false
+                            )
+                        ) 
+                    );
+                    ClearData("_Offline_Concept");
+                    ClearData("_Offline_Contact");
+                    ClearData("_Offline_Customer");
+            
+                    SaveData(_C_Concepts, "_Offline_Concept");
+                    SaveData(_C_Contacts, "_Offline_Contact");
+                    SaveData(_C_Customers, "_Offline_Customer");
+                ),
+                Clear(_C_Concepts);
+                Clear(_C_Contacts);
+                Clear(_C_Customers);
+            
+                LoadData(_C_Concepts, "_Offline_Concept", true);
+                LoadData(_C_Contacts, "_Offline_Contact", true);
+                LoadData(_C_Customers, "_Offline_Customer", true);
+            );
+            Navigate('Home Page')
+        Text: |-
+            =Text(Time(0, 0, Self.Value/1000), /*"hh:mm:*/ "ss ") & "sec"
+            //Self.Value/1000 & " sec"
+        Width: =85
+        X: =22
+        Y: =24
+        ZIndex: =17
+
+    btn_onload_1 As Button:
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =57
+        OnSelect: =Navigate('Home Page')
+        Text: ="Navigate"
+        Visible: =false
+        Width: =134
+        X: =268
+        Y: =330
+        ZIndex: =18
+
+    btn_SaveData_1 As Button:
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =57
+        OnSelect: |-
+            =Set(
+                _V_LoadingMSG,
+                "Loading All data..."
+            );
+            Concurrent(
+                ClearCollect(
+                    _C_Customers,
+                    AddColumns(
+                        AddColumns(
+                            Customers,
+                            "createofflineRequired",
+                            false
+                        ),
+                        "updateofflineRequired",
+                        false
+                    )
+                ),
+                ClearCollect(
+                    _C_Contacts,
+                    AddColumns(
+                        AddColumns(
+                            AddColumns(
+                                Contacts_1,
+                                "createofflineRequired",
+                                false
+                            ),
+                            "updateofflineRequired",
+                            false
+                        ),
+                        "removeofflineRequired",
+                        false
+                    )
+                ),
+                ClearCollect(
+                    _C_Concepts,
+                    AddColumns(
+                        AddColumns( 
+                            AddColumns(
+                                Concepts,
+                                "createofflineRequired",
+                                false
+                            ),
+                            "updateofflineRequired",
+                            false
+                        ),
+                        "removeofflineRequired",
+                        false
+                    )
+                ) 
+            );
+            
+            SaveData(_C_Concepts, "_Offline_Concept");
+            SaveData(_C_Contacts, "_Offline_Contact");
+            SaveData(_C_Customers, "_Offline_Customer");
+        Text: ="Savedata"
+        Visible: =false
+        Width: =134
+        X: =730
+        Y: =158
+        ZIndex: =19
+
+    TextCanvas1_1 As Text:
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontStrikethrough: =false
+        FontUnderline: =false
+        Height: =40
+        Text: =IfError(CountRows(_C_Contacts), "Error",CountRows(_C_Contacts))
+        Visible: =true
+        Width: =152
+        X: =324
+        Y: =24
+        ZIndex: =20
+
+    TextCanvas1_2 As Text:
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontStrikethrough: =false
+        FontUnderline: =false
+        Height: =40
+        Text: =IfError(CountRows(_C_Customers), "Error",CountRows(_C_Customers))
+        Visible: =true
+        Width: =152
+        X: =402
+        Y: =24
+        ZIndex: =21
+

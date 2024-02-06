@@ -1,0 +1,101 @@
+"'Main Header_Route_3' As CanvasComponent":
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =100
+    Items: |-
+        ={
+            icon: Icon.Home,
+            navigate: App.ActiveScreen
+        }
+    Navigate: =App.ActiveScreen
+    Width: =1366
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Container1_8 As groupContainer.verticalAutoLayoutContainer:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DropShadow: =DropShadow.ExtraBold
+        Fill: =RGBA(127, 69, 38, 1)
+        Height: =Parent.Height-10
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutGap: =1
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        RadiusBottomLeft: =8
+        RadiusBottomRight: =8
+        RadiusTopLeft: =8
+        RadiusTopRight: =8
+        Width: =Parent.Width-10
+        X: =5
+        Y: =5
+        ZIndex: =1
+
+        Image1_5 As image:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =Parent.Height
+            Image: ='UFS LOGO'
+            ImagePosition: =ImagePosition.Stretch
+            Width: =Parent.Width*1.5/15
+            ZIndex: =1
+
+        Icon4_6 As icon.BackArrow:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =Parent.Height/1
+            Icon: ='Main Header_Route_3'.Items.icon
+            OnSelect: |
+                =Navigate('Main Header_Route_3'.Items.navigate)
+            PaddingBottom: =16
+            PaddingLeft: =5
+            PaddingRight: =3
+            PaddingTop: =16
+            Width: =40
+            ZIndex: =2
+
+        Label1_19 As label:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FillPortions: =1
+            FontWeight: =FontWeight.Bold
+            Height: =Parent.Height
+            PaddingLeft: =0
+            Size: =17
+            Text: ="Route Planning"
+            Width: =Parent.Width/1.55
+            ZIndex: =3
+
+        Label3_11 As label:
+            Align: =Align.Right
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.Height
+            Size: =10
+            Text: ="Welcome" & Char(10) & User().FullName
+            Width: =Parent.Width/7
+            ZIndex: =4
+
+        Image4_15 As image:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =3
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =Parent.Height/1.5
+            Image: =User().Image
+            ImagePosition: =ImagePosition.Stretch
+            RadiusBottomLeft: =100
+            RadiusBottomRight: =100
+            RadiusTopLeft: =100
+            RadiusTopRight: =100
+            Width: =Self.Height
+            ZIndex: =5
+

@@ -1,0 +1,121 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_contact_forms",
+      "Namespace": "Contacts (Forms)",
+      "Values": {
+        "account contact card": "29de27bc-a257-4f29-99cf-bab4a84e688f",
+        "Contact": "1fed44d1-ae68-4a41-bd2b-f13acac4acfa",
+        "contact card": "707fc57b-c5e6-471b-a180-e37ed28a38e2",
+        "Contact Card form": "bc0f68dd-a4b1-4a8f-bed3-c8f5db2f89cf",
+        "Contact Quick Create": "661157fe-2fc9-4eaa-835f-5bfa2f7b64f7",
+        "Contact Quick Form": "bdb0ae1c-32fa-4374-b637-8dafe107bc44",
+        "Contact Reference Panel": "d880c3cf-80e2-42f3-82f9-24d040d09f17",
+        "Information": "894cc46a-b0cb-4ab0-8bf6-200544e46a2d",
+        "Invite Web Form": "d6190b35-9474-4098-9698-33f6627eb3bf",
+        "Live Persona Card Form": "449faa0e-f471-48ec-87d0-4719909546d2",
+        "Portal Contact (Enhanced)": "c1c97961-2d42-4103-abf8-2fe2bdf38224",
+        "Profile Web Form (Enhanced)": "bddc0100-0dbe-4562-aafe-31d08c8ab506",
+        "Profile Web Form (Enhanced) - Japanese": "01124dd8-9bff-4cc0-bb33-ea9d943c3f9f",
+        "Recent Cases and Entitlements": "f3b707fb-3b5f-45f9-9c6b-5e573bb5d19e",
+        "Social Profiles": "7bb87dfd-ec3e-4ed9-8e3e-5725d3067295",
+        "Update Contact": "26843818-6508-4afe-9342-5fae2ebf15ca"
+      }
+    },
+    {
+      "Kind": "default.cds_ulchef_customer_forms",
+      "Namespace": "Customers (Forms)",
+      "Values": {
+        "Information": "7046c723-8423-4de8-99aa-c53e03de1b7e"
+      }
+    },
+    {
+      "Kind": "default.cds_ulchef_distributor_forms",
+      "Namespace": "Distributors (Forms)",
+      "Values": {
+        "Information": "072ac21f-25de-4b99-b86e-68feaa80626d"
+      }
+    },
+    {
+      "Kind": "default.cds_ulchef_mothergroup_forms",
+      "Namespace": "Mother Groups (Forms)",
+      "Values": {
+        "Information": "a47887b9-cccf-47e4-86b5-f938b6bef610"
+      }
+    },
+    {
+      "Kind": "default.cds_ulchef_concept_forms",
+      "Namespace": "Concepts (Forms)",
+      "Values": {
+        "Information": "ae1e5932-c937-4ce5-9826-de908106849d"
+      }
+    },
+    {
+      "Kind": "default.cds_ulchef_contact_forms",
+      "Namespace": "Contacts_1 (Forms)",
+      "Values": {
+        "Information": "96871954-fa60-4d10-9d1d-d2efc8fb8948"
+      }
+    },
+    {
+      "Kind": "default.cds_ulchef_menu_forms",
+      "Namespace": "Menus (Forms)",
+      "Values": {
+        "Information": "90937396-f39c-469e-b448-d1725304320d"
+      }
+    },
+    {
+      "Kind": "default.cds_ulchef_skuincall_forms",
+      "Namespace": "Related SKUS (Forms)",
+      "Values": {
+        "Information": "7106c794-12d1-4b07-a2fa-e9f5d44209f0"
+      }
+    },
+    {
+      "Kind": "default.cds_ulchef_incall_forms",
+      "Namespace": "InCalls (Forms)",
+      "Values": {
+        "Information": "02e74eaf-b201-4700-988d-d289b8d05681"
+      }
+    },
+    {
+      "Kind": "default.cds_ulchef_specialevent_forms",
+      "Namespace": "Special Events (Forms)",
+      "Values": {
+        "Information": "2844ab80-b177-4993-aa26-b854c2062361"
+      }
+    },
+    {
+      "Kind": "default.cds_ulchef_dish_forms",
+      "Namespace": "Dishes (Forms)",
+      "Values": {
+        "Information": "f81abea7-7ca3-4cfb-8e76-907e8872c636"
+      }
+    },
+    {
+      "Kind": "default.cds_systemuser_forms",
+      "Namespace": "Users (Forms)",
+      "Values": {
+        "Application User": "d26924ef-4d80-46f7-ab1d-e6ae80a54ce8",
+        "Information": "094fb08a-77bb-49e0-b7ea-8dbddfd01294",
+        "User": "c2cd9e55-d4b4-4b55-9951-16ead79643e5",
+        "User form – Business": "c2413504-7eb2-4c59-a087-95d819866114",
+        "User Hierarchy Tile Form": "c68d6c09-d7a7-4959-8d0f-44b8cff9b452"
+      }
+    },
+    {
+      "Kind": "default.cds_ulchef_relateddish_forms",
+      "Namespace": "Related Dishes (Forms)",
+      "Values": {
+        "Information": "e5c9c5ad-8620-412e-b7cc-9b02ebd36e1d"
+      }
+    },
+    {
+      "Kind": "default.cds_ulchef_sku_forms",
+      "Namespace": "SKUS (Forms)",
+      "Values": {
+        "Information": "923e8391-69fd-4ba6-b570-fb4d97372cff"
+      }
+    }
+  ]
+}

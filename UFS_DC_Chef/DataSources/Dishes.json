@@ -1,0 +1,168 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ulchef_dishs",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ulchef_dish",
+    "MaxGetRowsCount": 2000,
+    "Name": "Dishes",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "ulchef_Customer": "Customer",
+      "ulchef_details": "Details",
+      "ulchef_dish_AsyncOperations": "System Jobs",
+      "ulchef_dish_BulkDeleteFailures": "Bulk Delete Failures",
+      "ulchef_dish_DuplicateBaseRecord": "Duplicate Records (ulchef_dish_DuplicateBaseRecord)",
+      "ulchef_dish_DuplicateMatchingRecord": "Duplicate Records (ulchef_dish_DuplicateMatchingRecord)",
+      "ulchef_dish_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "ulchef_dish_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ulchef_dish_ProcessSession": "Process Sessions",
+      "ulchef_dish_SyncErrors": "Sync Errors",
+      "ulchef_dishcategory": "Dish Category",
+      "ulchef_dishid": "Dish",
+      "ulchef_dishphoto1": "Dish Photo 1",
+      "ulchef_dishphoto1id": "ulchef_DishPhoto1Id",
+      "ulchef_dishphoto2": "Dish Photo 2",
+      "ulchef_dishphoto2id": "ulchef_DishPhoto2Id",
+      "ulchef_dishphoto3": "Dish Photo 3",
+      "ulchef_dishphoto3id": "ulchef_DishPhoto3Id",
+      "ulchef_dishremarks": "Dish Remarks",
+      "ulchef_launchdate": "Launch Date",
+      "ulchef_maindishphoto": "Main Dish Photo",
+      "ulchef_maindishphotoid": "ulchef_MainDishPhotoId",
+      "ulchef_Menu": "Menu",
+      "ulchef_name": "Name",
+      "ulchef_penetration": "Penetration %",
+      "ulchef_sku_Dish_ulchef_dish": "SKUS",
+      "ulchef_skuincall_Dish_ulchef_dish": "Related SKUS",
+      "ulchef_transactionsperday": "Transactions per day",
+      "ulchef_typeofdish": "Type of Dish",
+      "ulchef_ufspotentialskus": "UFS Potential SKUs",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Dishes",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Dishes (Views)",
+    "Name": "_ulchef_dish_views",
+    "RelatedEntityName": "Dishes",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "18f3eee2-b238-43b5-8f17-9c57957998f1": "Active Dishes",
+      "47a76867-efac-4f1a-83a0-5f0eba80055a": "Inactive Dishes",
+      "5c0a58df-29b5-4ccb-8fa9-689798759e15": "Dish Lookup View",
+      "986e8f24-07c9-4c5a-8772-6ade12a90ca9": "Dish Associated View",
+      "a4bb4f69-4c00-4849-9343-de0f3b32b07b": "Dish Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (Dishes)",
+    "Name": "ulchef_dish_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Dishes"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Dishes",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Dishes)",
+    "Name": "ulchef_dish_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Dishes"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Dishes",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Dish Category (Dishes)",
+    "Name": "ulchef_dish_ulchef_dishcategory",
+    "OptionSetInfoNameMapping": {
+      "444670000": "Appetizer",
+      "444670001": "Main Dish",
+      "444670002": "Salad",
+      "444670003": "Soups",
+      "444670004": "Dessert",
+      "444670005": "Drinks",
+      "444670006": "Party Plates"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ulchef_dishcategory",
+        "OptionSetReferenceEntityName": "Dishes"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "ulchef_dishcategory",
+    "RelatedEntityName": "Dishes",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Type of Dish Choices",
+    "Name": "ulchef_typeofdishchoices",
+    "OptionSetInfoNameMapping": {
+      "444670000": "Core Dish",
+      "444670001": "Newly Launched Dish",
+      "444670002": "LTO",
+      "444670003": "Regular Dish"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ulchef_typeofdish",
+        "OptionSetReferenceEntityName": "Dishes"
+      },
+      "OptionSetReferenceItem1": {
+        "OptionSetReferenceColumnName": "ulchef_typeofdish",
+        "OptionSetReferenceEntityName": "Related Dishes"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "ulchef_typeofdish",
+    "RelatedEntityName": "Dishes",
+    "Type": "OptionSetInfo"
+  }
+]

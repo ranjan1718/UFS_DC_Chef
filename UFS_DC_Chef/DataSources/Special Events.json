@@ -1,0 +1,128 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ulchef_specialevents",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ulchef_specialevent",
+    "MaxGetRowsCount": 2000,
+    "Name": "Special Events",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "ulchef_date": "EventDate",
+      "ulchef_eventimage": "EventImage",
+      "ulchef_eventimageid": "ulchef_EventImageId",
+      "ulchef_eventtype": "EventType",
+      "ulchef_name": "Name",
+      "ulchef_remarks": "Remarks",
+      "ulchef_specialevent_AsyncOperations": "System Jobs",
+      "ulchef_specialevent_BulkDeleteFailures": "Bulk Delete Failures",
+      "ulchef_specialevent_DuplicateBaseRecord": "Duplicate Records (ulchef_specialevent_DuplicateBaseRecord)",
+      "ulchef_specialevent_DuplicateMatchingRecord": "Duplicate Records (ulchef_specialevent_DuplicateMatchingRecord)",
+      "ulchef_specialevent_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "ulchef_specialevent_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ulchef_specialevent_ProcessSession": "Process Sessions",
+      "ulchef_specialevent_SyncErrors": "Sync Errors",
+      "ulchef_specialeventid": "Special Event",
+      "ulchef_specialeventname": "EventName",
+      "ulchef_username": "UserName",
+      "ulchef_Usetr": "Usetr",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Special Events",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Special Events (Views)",
+    "Name": "_ulchef_specialevent_views",
+    "RelatedEntityName": "Special Events",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "25a8d6fe-b51c-48e3-ac4a-64feee1d509b": "Special Event Advanced Find View",
+      "965be5f5-ad6a-41b6-9388-4faad235e4a5": "Special Event Lookup View",
+      "a0697b61-a1c9-4c3c-9dcf-be398e48dca6": "Special Event Associated View",
+      "b98c05d0-a0d8-49e7-9f7a-fa77460f6d2b": "Inactive Special Events",
+      "fdb2abd2-4aa3-457c-96ea-25fec9402081": "Active Special Events"
+    }
+  },
+  {
+    "DisplayName": "Special_EventName",
+    "Name": "ulchef_special_eventname",
+    "OptionSetInfoNameMapping": {
+      "444670000": "Training",
+      "444670001": "Meeting",
+      "444670002": "Admin",
+      "444670003": "Vacation",
+      "444670004": "Sick Leave"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ulchef_specialeventname",
+        "OptionSetReferenceEntityName": "Special Events"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "ulchef_specialeventname",
+    "RelatedEntityName": "Special Events",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Special Events)",
+    "Name": "ulchef_specialevent_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Special Events"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Special Events",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Special Events)",
+    "Name": "ulchef_specialevent_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Special Events"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Special Events",
+    "Type": "OptionSetInfo"
+  }
+]

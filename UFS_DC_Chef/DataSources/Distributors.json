@@ -1,0 +1,98 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ulchef_distributors",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ulchef_distributor",
+    "MaxGetRowsCount": 2000,
+    "Name": "Distributors",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "ulchef_customer_Distributor_ulchef_distributor": "Customers",
+      "ulchef_distributor_AsyncOperations": "System Jobs",
+      "ulchef_distributor_BulkDeleteFailures": "Bulk Delete Failures",
+      "ulchef_distributor_DuplicateBaseRecord": "Duplicate Records (ulchef_distributor_DuplicateBaseRecord)",
+      "ulchef_distributor_DuplicateMatchingRecord": "Duplicate Records (ulchef_distributor_DuplicateMatchingRecord)",
+      "ulchef_distributor_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "ulchef_distributor_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ulchef_distributor_ProcessSession": "Process Sessions",
+      "ulchef_distributor_SyncErrors": "Sync Errors",
+      "ulchef_distributorid": "Distributor",
+      "ulchef_name": "Name",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Distributors",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Distributors (Views)",
+    "Name": "_ulchef_distributor_views",
+    "RelatedEntityName": "Distributors",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "456ef6e1-94dd-4f10-8205-a391d276fc46": "Active Distributors",
+      "5d7096b6-a9ae-4038-a56e-51e14deca5ad": "Inactive Distributors",
+      "5ec3e065-8754-487d-aafb-a6f8aeb4118e": "Distributor Advanced Find View",
+      "6c8b696c-aac7-499f-a7d8-e770246ce817": "Distributor Associated View",
+      "86526c40-9719-4888-9f58-d65c84e89580": "Distributor Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (Distributors)",
+    "Name": "ulchef_distributor_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Distributors"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Distributors",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Distributors)",
+    "Name": "ulchef_distributor_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Distributors"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Distributors",
+    "Type": "OptionSetInfo"
+  }
+]

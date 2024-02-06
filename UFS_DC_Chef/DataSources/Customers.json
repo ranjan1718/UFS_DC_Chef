@@ -1,0 +1,208 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ulchef_customers",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ulchef_customer",
+    "MaxGetRowsCount": 2000,
+    "Name": "Customers",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "ulchef_approval": "Approval",
+      "ulchef_area": "Area",
+      "ulchef_armstrongcode": "Armstrong Code",
+      "ulchef_averagemonthlysales": "Average Monthly Sales",
+      "ulchef_callobjective_Customer_ulchef_customer": "Call Objectives",
+      "ulchef_cart_Customer_ulchef_customer": "Carts",
+      "ulchef_city": "City",
+      "ulchef_concept_Customer_ulchef_customer": "Concepts (ulchef_concept_Customer_ulchef_customer)",
+      "ulchef_Concepts": "Concepts (ulchef_Concepts)",
+      "ulchef_contact_Customer_ulchef_customer": "Contacts",
+      "ulchef_customer_AsyncOperations": "System Jobs",
+      "ulchef_customer_BulkDeleteFailures": "Bulk Delete Failures",
+      "ulchef_customer_DuplicateBaseRecord": "Duplicate Records (ulchef_customer_DuplicateBaseRecord)",
+      "ulchef_customer_DuplicateMatchingRecord": "Duplicate Records (ulchef_customer_DuplicateMatchingRecord)",
+      "ulchef_customer_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "ulchef_customer_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ulchef_customer_ProcessSession": "Process Sessions",
+      "ulchef_customer_SyncErrors": "Sync Errors",
+      "ulchef_customercode": "Customer Code",
+      "ulchef_customerid": "Customer",
+      "ulchef_dcchefteritory": "DC Chef Teritory",
+      "ulchef_delivery": "Delivery",
+      "ulchef_dish_Customer_ulchef_customer": "Dishes",
+      "ulchef_Distributor": "Distributor",
+      "ulchef_incall_Customer_ulchef_customer": "InCalls",
+      "ulchef_invoiceto": "Invoice To",
+      "ulchef_leaddress": "LE Address",
+      "ulchef_lecity": "LE City",
+      "ulchef_manuimage1": "Manu Image 1",
+      "ulchef_manuimage1id": "ulchef_ManuImage1Id",
+      "ulchef_manuimage2": "Manu Image 2",
+      "ulchef_manuimage2id": "ulchef_ManuImage2Id",
+      "ulchef_manuimage3": "Manu Image 3",
+      "ulchef_manuimage3id": "ulchef_ManuImage3Id",
+      "ulchef_manuimage4": "Manu Image 4",
+      "ulchef_manuimage4id": "ulchef_ManuImage4Id",
+      "ulchef_manuimage5": "Manu Image 5",
+      "ulchef_manuimage5id": "ulchef_ManuImage5Id",
+      "ulchef_Menu": "Menu",
+      "ulchef_MotherGroup": "Mother Group (ulchef_MotherGroup)",
+      "ulchef_mothergroupslt": "Mother Group (ulchef_mothergroupslt)",
+      "ulchef_name": "Name",
+      "ulchef_ofchairs": "# of Chairs",
+      "ulchef_oftables": "# of Tables",
+      "ulchef_oftakeawayfoodperday": "# of takeaway food per day",
+      "ulchef_operatinghours": "Operating Hours",
+      "ulchef_ordering": "Ordering",
+      "ulchef_penetration": "Penetration %",
+      "ulchef_potentialoppty": "Potential Oppty",
+      "ulchef_PrimaryContact": "Primary Contact",
+      "ulchef_profileimage": "Profile Image",
+      "ulchef_profileimageid": "ulchef_ProfileImageId",
+      "ulchef_relateddish_Customer_ulchef_customer": "Related Dishes",
+      "ulchef_seatingcapacity": "Seating Capacity",
+      "ulchef_skuincall_Customer_ulchef_customer": "Related SKUS",
+      "ulchef_taginactivereason": "Tag Inactive Reason",
+      "ulchef_totalnumberofdishes": "Total Number of Dishes",
+      "ulchef_totalnumberofpotentialskus": "Total number of Potential SKUs",
+      "ulchef_typeofengagement": "Type of Engagement",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Customers",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Customers (Views)",
+    "Name": "_ulchef_customer_views",
+    "RelatedEntityName": "Customers",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1b391a0c-4bd6-47e7-91d9-c5dc73e1bc6b": "Inactive Customers",
+      "3fb76447-91d7-472b-9985-d5e2bfd81201": "Customer Lookup View",
+      "8bf1e822-6275-42e7-aed6-2b06b3c67d0e": "Customer Advanced Find View",
+      "d322ae30-3c08-48d5-80d1-c7de261b41e1": "Active Customers",
+      "ee230ab2-a023-4de1-b4a8-0b7219b54cb0": "Customer Associated View"
+    }
+  },
+  {
+    "DisplayName": "Status (Customers)",
+    "Name": "ulchef_customer_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Customers"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Customers",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Customers)",
+    "Name": "ulchef_customer_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Customers"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Customers",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "DC Chef Teritory (Customers)",
+    "Name": "ulchef_customer_ulchef_dcchefteritory",
+    "OptionSetInfoNameMapping": {
+      "444670000": "Choice 1",
+      "444670001": "Choice 2",
+      "444670002": "Choice 3"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ulchef_dcchefteritory",
+        "OptionSetReferenceEntityName": "Customers"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "ulchef_dcchefteritory",
+    "RelatedEntityName": "Customers",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Customer Approval",
+    "Name": "ulchef_customerapproval",
+    "OptionSetInfoNameMapping": {
+      "444670000": "Head Office",
+      "444670001": "Branch",
+      "444670002": "Commission"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ulchef_approval",
+        "OptionSetReferenceEntityName": "Customers"
+      },
+      "OptionSetReferenceItem1": {
+        "OptionSetReferenceColumnName": "ulchef_area",
+        "OptionSetReferenceEntityName": "Customers"
+      },
+      "OptionSetReferenceItem2": {
+        "OptionSetReferenceColumnName": "ulchef_delivery",
+        "OptionSetReferenceEntityName": "Customers"
+      },
+      "OptionSetReferenceItem3": {
+        "OptionSetReferenceColumnName": "ulchef_invoiceto",
+        "OptionSetReferenceEntityName": "Customers"
+      },
+      "OptionSetReferenceItem4": {
+        "OptionSetReferenceColumnName": "ulchef_ordering",
+        "OptionSetReferenceEntityName": "Customers"
+      },
+      "OptionSetReferenceItem5": {
+        "OptionSetReferenceColumnName": "ulchef_typeofengagement",
+        "OptionSetReferenceEntityName": "Customers"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "ulchef_approval",
+    "RelatedEntityName": "Customers",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,158 @@
+App As appinfo:
+    BackEnabled: =false
+    Formulas: =
+    OnStart: |-
+        =ClearCollect(
+            colTabs,
+            {
+                ID: 1,
+                Name: "All Dishes"
+            },
+            {
+                ID: 2,
+                Name: "SKU Penetration per Dish"
+            }
+        );
+        Set(
+            varSKUTabSelected,
+            2
+        );
+        // Reset All gbl_Variables
+        /*Concurrent(
+            
+            Set(
+                _V_SelectedContact,
+                Blank()
+            ),
+            Set(
+                _V_PrimaryContact,
+                Blank()
+            )
+        );*/
+        
+        Set(
+            _C_AllColors,
+            {
+                MainHeaders: RGBA(
+                    0,
+                    0,
+                    0,
+                    0
+                ),
+                SubHeaders: RGBA(
+                    0,
+                    0,
+                    0,
+                    0
+                ),
+                BodyLight: Color.White,
+                BodyDark: ColorFade(
+                    Color.DarkGray,
+                    -20%
+                ),
+                GalleryBody: ColorFade(
+                    Color.DarkGray,
+                    -20%
+                ),
+                FontLight: Color.White,
+                FontDark: ColorFade(
+                    Color.DarkGray,
+                    -20%
+                )
+            }
+        );
+        If(
+            Connection.Connected,
+            Concurrent(
+                ClearCollect(
+                    _C_Customers,
+                    Customers
+                ),
+                ClearCollect(
+                    _C_Contacts,
+                    Contacts_1
+                ),
+                ClearCollect(
+                    _C_Dishes,
+                    Dishes
+                ),
+                ClearCollect(
+                    
+                    _C_RSKUs,
+                    Table()
+                );
+                ForAll(
+                    'Related SKUS', Collect(_C_RSKUs, AddColumns(ThisRecord, "ID", Last(_C_RSKUs).ID+1))
+                ),
+                ClearCollect(
+                    _C_RDishes,
+                    'Related Dishes'
+                ),
+                ClearCollect(
+                    _C_Menus,
+                    Menus
+                ),
+                ClearCollect(
+                    _C_SKUs,
+                    SKUS
+                ),
+                ClearCollect(
+                    _C_Concepts,
+                    Concepts
+                )
+            );
+            ClearCollect(
+                _C_AllContacts_Customers,
+                {
+                    Contacts: _C_Contacts,
+                    Customers: _C_Customers,
+                    Concepts: _C_Concepts
+                    //Menus:_C_Menus,
+                    //SKUs:_C_SKUs,
+                    //Related Dishes:_C_RDishes
+        
+                }
+            );
+            ClearCollect(
+                _C_AllMenuMatrix,
+                Table()
+            );
+            ClearCollect(
+                _C_All_Incalls,
+                InCalls
+            );
+            ClearCollect(
+                _C_All_Special_Events,
+                'Special Events'
+            );
+        
+             ClearCollect(
+                _C_All_Related_Dishes,
+                'Related Dishes'
+            );
+            ClearCollect(
+                _C_All_Related_SKUS,
+                'Related SKUS'
+            );
+            ClearCollect(_C_All_User,Users);
+            ClearCollect(
+                _C_AllRoutePlanning,
+                Table()
+            );
+            
+        );
+        
+        
+        //Set(RunLoadingData, false)
+    StartScreen: |-
+        =//'All Basic Functionality Screen'
+        'Loading Screen'
+    Theme: =PowerAppsTheme
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+

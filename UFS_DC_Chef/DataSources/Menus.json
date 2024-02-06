@@ -1,0 +1,105 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ulchef_menus",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ulchef_menu",
+    "MaxGetRowsCount": 2000,
+    "Name": "Menus",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "ulchef_customer_Menu_ulchef_menu": "Customers",
+      "ulchef_dish_Menu_ulchef_menu": "Dishes",
+      "ulchef_menu_AsyncOperations": "System Jobs",
+      "ulchef_menu_BulkDeleteFailures": "Bulk Delete Failures",
+      "ulchef_menu_DuplicateBaseRecord": "Duplicate Records (ulchef_menu_DuplicateBaseRecord)",
+      "ulchef_menu_DuplicateMatchingRecord": "Duplicate Records (ulchef_menu_DuplicateMatchingRecord)",
+      "ulchef_menu_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "ulchef_menu_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ulchef_menu_ProcessSession": "Process Sessions",
+      "ulchef_menu_SyncErrors": "Sync Errors",
+      "ulchef_menuid": "Menu",
+      "ulchef_menuphoto": "Menu Photo",
+      "ulchef_menuphotoid": "ulchef_MenuPhotoId",
+      "ulchef_name": "Name",
+      "ulchef_penetration": "Penetration %",
+      "ulchef_potentialoppty": "Potential Oppty",
+      "ulchef_totalnumberofdishes": "Total Number of Dishes",
+      "ulchef_totalnumberofpotentialskus": "Total number of potential SKUs",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Menus",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Menus (Views)",
+    "Name": "_ulchef_menu_views",
+    "RelatedEntityName": "Menus",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "37869522-7ce2-4c49-9aee-d028d0fc9619": "Inactive Menus",
+      "4ca1e785-481e-4998-ab74-fc79be223a88": "Menu Advanced Find View",
+      "95f52d18-542d-4f72-a445-0a3f28a84201": "Menu Associated View",
+      "9c5ec181-d035-4ad4-995d-3fd6bd706827": "Active Menus",
+      "fae6a4d6-03e1-4b76-925f-879ca5642597": "Menu Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (Menus)",
+    "Name": "ulchef_menu_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Menus"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Menus",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Menus)",
+    "Name": "ulchef_menu_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Menus"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Menus",
+    "Type": "OptionSetInfo"
+  }
+]

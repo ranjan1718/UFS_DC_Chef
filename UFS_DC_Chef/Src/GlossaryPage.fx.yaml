@@ -1,0 +1,95 @@
+GlossaryPage As screen:
+    Fill: =RGBA(255,255,255,1)
+    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
+
+    PdfViewer3_1 As pdfViewer:
+        Document: =Glossary.Selected.DataURI
+        Height: =627
+        Width: =1283
+        X: =60
+        Y: =112
+        ZIndex: =1
+
+    RectQuickActionBar2_5 As rectangle:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Fill: =RGBA(211, 66, 9, 1)
+        Height: =86
+        Width: =Parent.Width
+        ZIndex: =2
+
+    Logo As image:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =86
+        Image: ='UFS LOGO'
+        Width: =179
+        ZIndex: =3
+
+    GlossaryLabel As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =62
+        Size: =18
+        Text: ="UFS Glossary"
+        Width: =1142
+        X: =201
+        Y: =12
+        ZIndex: =4
+
+    Icon13_4 As icon.Home:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =44
+        Icon: =Icon.Home
+        OnSelect: =Navigate('Home Page')
+        Width: =44
+        X: =1299
+        Y: =21
+        ZIndex: =5
+
+    UserNameLabel_8 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =44
+        Size: =13
+        Text: =User().FullName
+        Width: =288
+        X: =920
+        Y: =32
+        ZIndex: =6
+
+    UserPhoto_4 As image:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        Height: =70
+        Image: =User().Image
+        RadiusBottomLeft: =55
+        RadiusBottomRight: =55
+        RadiusTopLeft: =55
+        RadiusTopRight: =55
+        Width: =70
+        X: =1221
+        Y: =6
+        ZIndex: =7
+
+    UserNameLabel_9 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =44
+        Size: =13
+        Text: ="Welcome"
+        Width: =288
+        X: =920
+        Y: =12
+        ZIndex: =8
+

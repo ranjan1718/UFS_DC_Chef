@@ -1,0 +1,168 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ulchef_skuincalls",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ulchef_skuincall",
+    "MaxGetRowsCount": 2000,
+    "Name": "Related SKUS",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "ulchef_caseprice": "Case Price (ulchef_caseprice)",
+      "ulchef_casepricenew": "Case Price (ulchef_casepricenew)",
+      "ulchef_Customer": "Customer",
+      "ulchef_date": "Date",
+      "ulchef_Dish": "Dish (ulchef_Dish)",
+      "ulchef_dishtxt": "Dish (ulchef_dishtxt)",
+      "ulchef_feedback": "Feedback",
+      "ulchef_feedbackofdish": "Feedback of Dish",
+      "ulchef_feedbackofsku": "Feedback of SKU",
+      "ulchef_gdishday": "G/dish/day",
+      "ulchef_id": "Id",
+      "ulchef_InCall": "InCall",
+      "ulchef_incall_RelatedSKU_ulchef_skuincall": "InCalls",
+      "ulchef_ispenetrated": "IsPenetrated",
+      "ulchef_name": "Name",
+      "ulchef_ndid": "2ndID",
+      "ulchef_packsize": "Pack Size",
+      "ulchef_photo": "Photo",
+      "ulchef_photoid": "ulchef_PhotoId",
+      "ulchef_pieceprice": "Piece Price (ulchef_pieceprice)",
+      "ulchef_piecepricenew": "Piece Price (ulchef_piecepricenew)",
+      "ulchef_potentialopportunitypergm": "Potential Opportunity per gm",
+      "ulchef_RelatedDish": "Related Dish",
+      "ulchef_remarks": "Remarks",
+      "ulchef_SKU": "SKU",
+      "ulchef_skuincall_AsyncOperations": "System Jobs",
+      "ulchef_skuincall_BulkDeleteFailures": "Bulk Delete Failures",
+      "ulchef_skuincall_DuplicateBaseRecord": "Duplicate Records (ulchef_skuincall_DuplicateBaseRecord)",
+      "ulchef_skuincall_DuplicateMatchingRecord": "Duplicate Records (ulchef_skuincall_DuplicateMatchingRecord)",
+      "ulchef_skuincall_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "ulchef_skuincall_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ulchef_skuincall_ProcessSession": "Process Sessions",
+      "ulchef_skuincall_SyncErrors": "Sync Errors",
+      "ulchef_skuincallid": "SKU-InCall",
+      "ulchef_totalpotentialopportunity": "Total Potential Opportunity ",
+      "ulchef_type": "Type",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Related SKUS",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Related SKUS (Views)",
+    "Name": "_ulchef_skuincall_views",
+    "RelatedEntityName": "Related SKUS",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0654a1e6-0d93-46c7-930f-71011d9a5651": "Active SKU-InCalls",
+      "393ead9f-46f6-4a1f-949b-57b77081a8df": "SKU-InCall Associated View",
+      "6155cb33-5377-4c5b-a911-42e3e03454e9": "SKU-InCall Advanced Find View",
+      "764edc94-25a1-45f3-979d-7dff8eec5348": "Inactive SKU-InCalls",
+      "ff9d00ce-48fb-495a-a342-72bbad922f74": "SKU-InCall Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (Related SKUS)",
+    "Name": "ulchef_skuincall_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Related SKUS"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Related SKUS",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Related SKUS)",
+    "Name": "ulchef_skuincall_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Related SKUS"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Related SKUS",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "IsPenetrated (Related SKUS)",
+    "Name": "ulchef_skuincall_ulchef_ispenetrated",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ulchef_ispenetrated",
+        "OptionSetReferenceEntityName": "Related SKUS"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ulchef_ispenetrated",
+    "RelatedEntityName": "Related SKUS",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Type_SKU",
+    "Name": "ulchef_type_sku",
+    "OptionSetInfoNameMapping": {
+      "444670000": "Dry",
+      "444670001": "Wet",
+      "444670002": "Cooking Demo/Ideation"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ulchef_type",
+        "OptionSetReferenceEntityName": "Related SKUS"
+      },
+      "OptionSetReferenceItem1": {
+        "OptionSetReferenceColumnName": "ulchef_type",
+        "OptionSetReferenceEntityName": "SKUS"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "ulchef_type",
+    "RelatedEntityName": "Related SKUS",
+    "Type": "OptionSetInfo"
+  }
+]

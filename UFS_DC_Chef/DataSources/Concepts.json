@@ -1,0 +1,101 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ulchef_concepts",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ulchef_concept",
+    "MaxGetRowsCount": 2000,
+    "Name": "Concepts",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "ulchef_concept_AsyncOperations": "System Jobs",
+      "ulchef_concept_BulkDeleteFailures": "Bulk Delete Failures",
+      "ulchef_concept_DuplicateBaseRecord": "Duplicate Records (ulchef_concept_DuplicateBaseRecord)",
+      "ulchef_concept_DuplicateMatchingRecord": "Duplicate Records (ulchef_concept_DuplicateMatchingRecord)",
+      "ulchef_concept_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "ulchef_concept_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ulchef_concept_ProcessSession": "Process Sessions",
+      "ulchef_concept_SyncErrors": "Sync Errors",
+      "ulchef_conceptid": "Concept",
+      "ulchef_Customer": "Customer",
+      "ulchef_customer_Concepts_ulchef_concept": "Customers",
+      "ulchef_name": "Name of Concept Resto",
+      "ulchef_ofdoors": "# of Doors",
+      "ulchef_remarks": "Remarks",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Concepts",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Concepts (Views)",
+    "Name": "_ulchef_concept_views",
+    "RelatedEntityName": "Concepts",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "3d47ba62-083b-45a3-a065-b1e5b74b3aa7": "Inactive Concepts",
+      "561a9846-6bc0-4bea-81d9-4bb5d3134051": "Concept Associated View",
+      "68237ae5-0819-4b8c-a393-bcd6d84c3796": "Active Concepts",
+      "95a845f2-2e4c-4e65-b770-7bdb365b0571": "Concept Advanced Find View",
+      "a6cc79d3-42a3-4e1c-9267-6e842550c677": "Concept Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (Concepts)",
+    "Name": "ulchef_concept_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Concepts"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Concepts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Concepts)",
+    "Name": "ulchef_concept_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Concepts"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Concepts",
+    "Type": "OptionSetInfo"
+  }
+]

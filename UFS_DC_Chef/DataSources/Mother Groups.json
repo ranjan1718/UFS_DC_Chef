@@ -1,0 +1,98 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ulchef_mothergroups",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ulchef_mothergroup",
+    "MaxGetRowsCount": 2000,
+    "Name": "Mother Groups",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "ulchef_customer_MotherGroup_ulchef_mothergroup": "Customers",
+      "ulchef_mothergroup_AsyncOperations": "System Jobs",
+      "ulchef_mothergroup_BulkDeleteFailures": "Bulk Delete Failures",
+      "ulchef_mothergroup_DuplicateBaseRecord": "Duplicate Records (ulchef_mothergroup_DuplicateBaseRecord)",
+      "ulchef_mothergroup_DuplicateMatchingRecord": "Duplicate Records (ulchef_mothergroup_DuplicateMatchingRecord)",
+      "ulchef_mothergroup_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "ulchef_mothergroup_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ulchef_mothergroup_ProcessSession": "Process Sessions",
+      "ulchef_mothergroup_SyncErrors": "Sync Errors",
+      "ulchef_mothergroupid": "Mother Group",
+      "ulchef_name": "Name",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Mother Groups",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Mother Groups (Views)",
+    "Name": "_ulchef_mothergroup_views",
+    "RelatedEntityName": "Mother Groups",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "04f5697b-ba73-4ef7-afaf-79e87c952ade": "Mother Group Advanced Find View",
+      "05ea2de1-7af4-47ec-9dfa-1b244eb0d0f8": "Mother Group Associated View",
+      "4c425bcf-df52-48bb-a6ae-32f85089fd00": "Mother Group Lookup View",
+      "ceaed73c-ddbd-498b-a959-e5c290c67078": "Active Mother Groups",
+      "f345022e-1983-40ae-86f5-691b94b6f2d1": "Inactive Mother Groups"
+    }
+  },
+  {
+    "DisplayName": "Status (Mother Groups)",
+    "Name": "ulchef_mothergroup_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Mother Groups"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Mother Groups",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Mother Groups)",
+    "Name": "ulchef_mothergroup_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Mother Groups"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Mother Groups",
+    "Type": "OptionSetInfo"
+  }
+]

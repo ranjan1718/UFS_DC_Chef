@@ -1,0 +1,163 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ulchef_incalls",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ulchef_incall",
+    "MaxGetRowsCount": 2000,
+    "Name": "InCalls",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "ulchef_attachments": "Attachments",
+      "ulchef_callassessment": "Call Assessment",
+      "ulchef_calldate": "Call Date",
+      "ulchef_calldateandtime": "Call Date and  Time",
+      "ulchef_callobjective": "Call Objective",
+      "ulchef_callobjective_InCall_ulchef_incall": "Call Objectives",
+      "ulchef_callstatus": "Call Status",
+      "ulchef_calltime": "Call Time",
+      "ulchef_calltype": "Call Type",
+      "ulchef_Customer": "Customer",
+      "ulchef_followupactiondsr": "Key Action (CDE/DSR)",
+      "ulchef_followupcustomer": "Minutes of Meeting",
+      "ulchef_incall_AsyncOperations": "System Jobs",
+      "ulchef_incall_BulkDeleteFailures": "Bulk Delete Failures",
+      "ulchef_incall_DuplicateBaseRecord": "Duplicate Records (ulchef_incall_DuplicateBaseRecord)",
+      "ulchef_incall_DuplicateMatchingRecord": "Duplicate Records (ulchef_incall_DuplicateMatchingRecord)",
+      "ulchef_incall_FileAttachments": "FileAttachments",
+      "ulchef_incall_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "ulchef_incall_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ulchef_incall_ProcessSession": "Process Sessions",
+      "ulchef_incall_SyncErrors": "Sync Errors",
+      "ulchef_incallid": "InCall",
+      "ulchef_incallindexnum": "InCallIndexNum",
+      "ulchef_name": "Name",
+      "ulchef_othertoolstobring": "Other Tools to Bring",
+      "ulchef_RelatedDish_ulchef_InCall_ulchef_I": "Related Dishes",
+      "ulchef_RelatedSKU": "Related SKU",
+      "ulchef_samplingclusterperdish": "Sampling(Cluster per dish)",
+      "ulchef_scheduledcalldate": "Scheduled Call Date",
+      "ulchef_scheduledcalltimenew": "Scheduled Call Time",
+      "ulchef_sku_InCall_ulchef_incall": "SKUS",
+      "ulchef_skuincall_InCall_ulchef_incall": "Related SKUS",
+      "ulchef_User": "User",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "InCalls",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "InCalls (Views)",
+    "Name": "_ulchef_incall_views",
+    "RelatedEntityName": "InCalls",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "011bb34d-e88c-481b-9e9d-7124277136fc": "InCall Advanced Find View",
+      "307788ca-ab8a-4be9-b5d3-5f3b439349a9": "InCall Lookup View",
+      "a4ba33f1-94c1-408b-9f90-5fb7a108f5a8": "Inactive InCalls",
+      "aff49b51-5cd2-4db8-b7b8-0d3266bea186": "Active InCalls",
+      "b5ede295-15c9-4db2-a139-8c4c85d1ffef": "InCall Associated View"
+    }
+  },
+  {
+    "DisplayName": "Call_Status_InCall",
+    "Name": "ulchef_call_status_incall",
+    "OptionSetInfoNameMapping": {
+      "444670000": "Scheduled",
+      "444670001": "On Going",
+      "444670002": "Completed",
+      "444670003": "Missed",
+      "444670004": "New"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ulchef_callstatus",
+        "OptionSetReferenceEntityName": "InCalls"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "ulchef_callstatus",
+    "RelatedEntityName": "InCalls",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "CallType_Incall",
+    "Name": "ulchef_calltype_incall",
+    "OptionSetInfoNameMapping": {
+      "444670000": "Phone Call",
+      "444670001": "Face to Face"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ulchef_calltype",
+        "OptionSetReferenceEntityName": "InCalls"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "ulchef_calltype",
+    "RelatedEntityName": "InCalls",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (InCalls)",
+    "Name": "ulchef_incall_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "InCalls"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "InCalls",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (InCalls)",
+    "Name": "ulchef_incall_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "InCalls"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "InCalls",
+    "Type": "OptionSetInfo"
+  }
+]

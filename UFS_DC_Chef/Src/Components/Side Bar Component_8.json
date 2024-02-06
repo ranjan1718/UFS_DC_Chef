@@ -1,0 +1,27 @@
+{
+  "ComponentAllowCustomization": true,
+  "ComponentChangedSinceFileImport": true,
+  "ComponentManifest": {
+    "AllowAccessToGlobals": false,
+    "AllowCustomization": true,
+    "Description": "",
+    "Name": "Side Bar Component_8",
+    "TemplateGuid": "3123c81471eb474e90bf0a312fc0bc71"
+  },
+  "ComponentType": "CanvasComponent",
+  "CustomGroupControlTemplateName": "",
+  "CustomProperties": [],
+  "FirstParty": true,
+  "Id": "http://microsoft.com/appmagic/Component",
+  "IsComponentLocked": false,
+  "IsComponentTemplate": true,
+  "IsCustomGroupControlTemplate": false,
+  "IsPcfControl": false,
+  "IsPremiumPcfControl": false,
+  "IsWidgetTemplate": false,
+  "LastModifiedTimestamp": "638428071082500940",
+  "Name": "3123c81471eb474e90bf0a312fc0bc71",
+  "OverridableProperties": {},
+  "TemplateOriginalName": "0d57134a3dee4d0da181c34a35570c22",
+  "Version": "1.0"
+}

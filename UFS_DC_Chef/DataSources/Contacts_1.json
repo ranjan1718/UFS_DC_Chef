@@ -1,0 +1,178 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ulchef_contacts",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ulchef_contact",
+    "MaxGetRowsCount": 2000,
+    "Name": "Contacts_1",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "ulchef_contact_AsyncOperations": "System Jobs",
+      "ulchef_contact_BulkDeleteFailures": "Bulk Delete Failures",
+      "ulchef_contact_DuplicateBaseRecord": "Duplicate Records (ulchef_contact_DuplicateBaseRecord)",
+      "ulchef_contact_DuplicateMatchingRecord": "Duplicate Records (ulchef_contact_DuplicateMatchingRecord)",
+      "ulchef_contact_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "ulchef_contact_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ulchef_contact_ProcessSession": "Process Sessions",
+      "ulchef_contact_SyncErrors": "Sync Errors",
+      "ulchef_contactid": "Contact",
+      "ulchef_contactphoto": "Contact Photo",
+      "ulchef_contactphotoid": "ulchef_contactphotoId",
+      "ulchef_Customer": "Customer",
+      "ulchef_customer_PrimaryContact_ulchef_contact": "Customers",
+      "ulchef_decisionlevel": "Decision Level",
+      "ulchef_email": "Email",
+      "ulchef_facebook": "Facebook",
+      "ulchef_ig": "IG",
+      "ulchef_image": "Image",
+      "ulchef_imageid": "ulchef_ImageId",
+      "ulchef_isprimarycontact": "IsPrimaryContact",
+      "ulchef_levelofinfluence": "Level of Influence",
+      "ulchef_linkedin": "Linked In",
+      "ulchef_mobilenumber": "Mobile Number",
+      "ulchef_name": "Name",
+      "ulchef_phone": "Phone",
+      "ulchef_position": "Position",
+      "ulchef_remarks": "Remarks",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Contacts_1",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Contacts_1 (Views)",
+    "Name": "_ulchef_contact_views",
+    "RelatedEntityName": "Contacts_1",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "4d7a793e-72a5-445a-95e7-e10a74fc4c7b": "Contact Associated View",
+      "88fb2dd7-49a9-40bd-aac0-c0964b2011ec": "Contact Lookup View",
+      "a1965ddb-c4be-4c1d-b267-3029f497d6be": "Active Contacts",
+      "b2d64c5e-2e14-4cf6-9cc4-c4f2c6b0ff10": "Contact Advanced Find View",
+      "bb4db96c-1b2c-4940-a6fb-6e11102626c3": "Inactive Contacts"
+    }
+  },
+  {
+    "DisplayName": "Status (Contacts_1)",
+    "Name": "ulchef_contact_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Contacts_1"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Contacts_1",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Contacts_1)",
+    "Name": "ulchef_contact_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Contacts_1"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Contacts_1",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "IsPrimaryContact (Contacts_1)",
+    "Name": "ulchef_contact_ulchef_isprimarycontact",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ulchef_isprimarycontact",
+        "OptionSetReferenceEntityName": "Contacts_1"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ulchef_isprimarycontact",
+    "RelatedEntityName": "Contacts_1",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Decision Level Choices",
+    "Name": "ulchef_decisionlevelchoices",
+    "OptionSetInfoNameMapping": {
+      "444670000": "Key Decision Maker",
+      "444670001": "Supporter",
+      "444670002": "Champion",
+      "444670003": "Blocker",
+      "444670004": "User"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ulchef_decisionlevel",
+        "OptionSetReferenceEntityName": "Contacts_1"
+      }
+    },
+    "OptionSetTypeKey": "MultiSelectPicklistType",
+    "RelatedColumnInvariantName": "ulchef_decisionlevel",
+    "RelatedEntityName": "Contacts_1",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Level of Influence",
+    "Name": "ulchef_levelofinfluence",
+    "OptionSetInfoNameMapping": {
+      "444670000": "High",
+      "444670001": "Medium",
+      "444670002": "Low"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ulchef_levelofinfluence",
+        "OptionSetReferenceEntityName": "Contacts_1"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "ulchef_levelofinfluence",
+    "RelatedEntityName": "Contacts_1",
+    "Type": "OptionSetInfo"
+  }
+]

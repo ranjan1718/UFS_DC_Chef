@@ -1,0 +1,143 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ulchef_relateddishs",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ulchef_relateddish",
+    "MaxGetRowsCount": 2000,
+    "Name": "Related Dishes",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "ulchef_Customer": "Customer",
+      "ulchef_details": "Details",
+      "ulchef_dishcategory": "Dish Category",
+      "ulchef_dishphoto1": "Dish Photo 1",
+      "ulchef_dishphoto1id": "ulchef_DishPhoto1Id",
+      "ulchef_dishphoto2": "Dish Photo 2",
+      "ulchef_dishphoto2id": "ulchef_DishPhoto2Id",
+      "ulchef_dishphoto3": "Dish Photo 3",
+      "ulchef_dishphoto3id": "ulchef_DishPhoto3Id",
+      "ulchef_dishremarks": "Dish Remarks",
+      "ulchef_InCall": "InCall",
+      "ulchef_launchdate": "Launch Date",
+      "ulchef_maindishphoto": "Main Dish Photo",
+      "ulchef_maindishphotoid": "ulchef_MainDishPhotoId",
+      "ulchef_name": "Dish Name",
+      "ulchef_penetration": "Penetration %",
+      "ulchef_potentialoppertunity": "Potential Oppertunity",
+      "ulchef_relateddish_AsyncOperations": "System Jobs",
+      "ulchef_relateddish_BulkDeleteFailures": "Bulk Delete Failures",
+      "ulchef_relateddish_DuplicateBaseRecord": "Duplicate Records (ulchef_relateddish_DuplicateBaseRecord)",
+      "ulchef_relateddish_DuplicateMatchingRecord": "Duplicate Records (ulchef_relateddish_DuplicateMatchingRecord)",
+      "ulchef_relateddish_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "ulchef_relateddish_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ulchef_relateddish_ProcessSession": "Process Sessions",
+      "ulchef_relateddish_SyncErrors": "Sync Errors",
+      "ulchef_relateddishid": "Related Dish",
+      "ulchef_SKUInCall_ulchef_RelatedDish_ulche": "Related SKUS",
+      "ulchef_totalpotentialopportunity": "Total Potential Opportunity",
+      "ulchef_transactionsperday": "Transactions per Day",
+      "ulchef_typeofdish": "Type of Dish",
+      "ulchef_ufspotentialskus": "UFS Potential SKUs",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Related Dishes",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Related Dishes (Views)",
+    "Name": "_ulchef_relateddish_views",
+    "RelatedEntityName": "Related Dishes",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "282a5807-81f2-495f-9eaf-6d998f58e275": "Active Related Dishes",
+      "2d9a73d9-72d8-41e0-976b-45fe370d6ce5": "Related Dish Associated View",
+      "9cd9f49d-4401-4da1-b86c-2b903d8f8d57": "Related Dish Lookup View",
+      "c4552ef0-ca12-409b-8cea-fda787a6a597": "Inactive Related Dishes",
+      "d63bd81c-d18b-4a7f-a68d-8b9bb5e12ffe": "Related Dish Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (Related Dishes)",
+    "Name": "ulchef_relateddish_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Related Dishes"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Related Dishes",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Related Dishes)",
+    "Name": "ulchef_relateddish_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Related Dishes"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Related Dishes",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Dish Category (Related Dishes)",
+    "Name": "ulchef_relateddish_ulchef_dishcategory",
+    "OptionSetInfoNameMapping": {
+      "444670000": "Appetizer",
+      "444670001": "Main Dish",
+      "444670002": "Salad",
+      "444670003": "Soups",
+      "444670004": "Dessert",
+      "444670005": "Drinks",
+      "444670006": "Party Plates"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ulchef_dishcategory",
+        "OptionSetReferenceEntityName": "Related Dishes"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "ulchef_dishcategory",
+    "RelatedEntityName": "Related Dishes",
+    "Type": "OptionSetInfo"
+  }
+]

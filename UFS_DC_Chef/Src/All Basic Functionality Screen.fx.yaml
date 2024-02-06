@@ -1,0 +1,7 @@
+"'All Basic Functionality Screen' As screen":
+    Fill: =RGBA(255,255,255,1)
+    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
+    OnVisible: |-
+        =Set(_V_LoadingMSG, "Loading...");
+        Select(btn_onload)
+

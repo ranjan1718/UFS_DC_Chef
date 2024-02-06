@@ -1,0 +1,132 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ulchef_skus",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ulchef_sku",
+    "MaxGetRowsCount": 2000,
+    "Name": "SKUS",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "ulchef_caseprice": "Case Price",
+      "ulchef_date": "Date",
+      "ulchef_Dish": "Dish",
+      "ulchef_feedback": "Feedback",
+      "ulchef_gdishday": "G/dish/day",
+      "ulchef_InCall": "InCall",
+      "ulchef_ispenetrated": "IsPenetrated",
+      "ulchef_name": "Name",
+      "ulchef_packsize": "Pack Size",
+      "ulchef_photo": "Photo",
+      "ulchef_photoid": "ulchef_PhotoId",
+      "ulchef_pieceprice": "Piece Price",
+      "ulchef_potentialopportunitypergm": "Potential Opportunity per gm",
+      "ulchef_remarks": "Remarks",
+      "ulchef_sku_AsyncOperations": "System Jobs",
+      "ulchef_sku_BulkDeleteFailures": "Bulk Delete Failures",
+      "ulchef_sku_DuplicateBaseRecord": "Duplicate Records (ulchef_sku_DuplicateBaseRecord)",
+      "ulchef_sku_DuplicateMatchingRecord": "Duplicate Records (ulchef_sku_DuplicateMatchingRecord)",
+      "ulchef_sku_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "ulchef_sku_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ulchef_sku_ProcessSession": "Process Sessions",
+      "ulchef_sku_SyncErrors": "Sync Errors",
+      "ulchef_skuid": "SKU",
+      "ulchef_skuincall_SKU_ulchef_sku": "Related SKUS",
+      "ulchef_type": "Type",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "SKUS",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "SKUS (Views)",
+    "Name": "_ulchef_sku_views",
+    "RelatedEntityName": "SKUS",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "080dd618-9f1a-4a4a-8e22-becf37d22a7e": "Inactive SKUS",
+      "72390539-bc25-4bf7-972c-ced2a4c0b745": "SKU Advanced Find View",
+      "eeae0363-f3c0-413d-9954-68f73af5ecc7": "SKU Associated View",
+      "f33c9df1-93af-4455-8749-34e1b13f2ae9": "Active SKUS",
+      "f80400fe-6df4-413d-b022-494648a2761c": "SKU Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (SKUS)",
+    "Name": "ulchef_sku_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "SKUS"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "SKUS",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (SKUS)",
+    "Name": "ulchef_sku_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "SKUS"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "SKUS",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "IsPenetrated (SKUS)",
+    "Name": "ulchef_sku_ulchef_ispenetrated",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ulchef_ispenetrated",
+        "OptionSetReferenceEntityName": "SKUS"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ulchef_ispenetrated",
+    "RelatedEntityName": "SKUS",
+    "Type": "OptionSetInfo"
+  }
+]

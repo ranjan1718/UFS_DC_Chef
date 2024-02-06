@@ -1,0 +1,369 @@
+"'Home Page' As screen":
+    BackgroundImage: =
+    Fill: =RGBA(255,255,255,1)
+    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
+
+    "Glossary As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
+        BorderColor: =RGBA(255, 255, 255, 1)
+        DelayItemLoading: =true
+        Height: =72
+        Items: =PDFLibrary
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: =
+        ShowNavigation: =true
+        TemplatePadding: =0
+        TemplateSize: =72
+        Width: =363
+        X: =53
+        Y: =681
+        ZIndex: =1
+
+        Image2 As image:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =60
+            Image: |-
+                =If(
+                    // checks the file extension
+                    EndsWith(ThisItem.'File name with extension', "pdf"),
+                
+                    // pdf icon
+                "data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%202048%202048%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20d%3D%27M1920%201664h-128v384H128v-384H0V640h128V0h1243l421%20421v219h128v1024zM1408%20384h165l-165-165v165zM256%20640h1408V512h-384V128H256v512zm1408%201024H256v256h1408v-256zm128-896H128v768h1664V768zM448%20896q40%200%2075%2015t61%2041%2041%2061%2015%2075q0%2040-15%2075t-41%2061-61%2041-75%2015h-64v128H256V896h192zm0%20256q26%200%2045-19t19-45q0-26-19-45t-45-19h-64v128h64zm448-256q53%200%2099%2020t82%2055%2055%2081%2020%20100q0%2053-20%2099t-55%2082-81%2055-100%2020H768V896h128zm0%20384q27%200%2050-10t40-27%2028-41%2010-50q0-27-10-50t-27-40-41-28-50-10v256zm384-384h320v128h-192v128h192v128h-192v128h-128V896z%27%20fill%3D%27%23d13438%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E",
+                
+                    // file icon
+                    "data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%202048%202048%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20d%3D%27M1243%200l549%20549v1499H128V0h1115zm37%20219v293h293l-293-293zM256%201920h1408V640h-512V128H256v1792zm256-896V896h896v128H512zm0%20256v-128h896v128H512zm0%20256v-128h896v128H512z%27%20fill%3D%27%237a7574%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
+                )
+            OnSelect: =Select(Parent);Navigate(GlossaryPage)
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Width: =40
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Title7 As label:
+            Color: =RGBA(50, 49, 48, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: |
+                =Select(Parent);Navigate(GlossaryPage)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Name
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - Image2.Width - 137
+            X: =74
+            Y: =25
+            ZIndex: =2
+
+    RectQuickActionBar2_2 As rectangle:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Fill: =RGBA(211, 66, 9, 1)
+        Height: =86
+        Width: =Parent.Width
+        ZIndex: =2
+
+    UFSLogo As image:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =86
+        Image: ='UFS LOGO'
+        Width: =179
+        ZIndex: =3
+
+    TitleLabel As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =62
+        Size: =18
+        Text: ="UFS Demand Creation Chef Homepage"
+        Width: =1142
+        X: =201
+        Y: =12
+        ZIndex: =4
+
+    UserNameLabel As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =44
+        Size: =13
+        Text: =User().FullName
+        Width: =288
+        X: =962
+        Y: =32
+        ZIndex: =12
+
+    UserPhoto As image:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        Height: =70
+        Image: =User().Image
+        RadiusBottomLeft: =55
+        RadiusBottomRight: =55
+        RadiusTopLeft: =55
+        RadiusTopRight: =55
+        Width: =70
+        X: =1277
+        Y: =6
+        ZIndex: =22
+
+    UserNameLabel_1 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =44
+        Size: =13
+        Text: ="Welcome"
+        Width: =288
+        X: =962
+        Y: =12
+        ZIndex: =23
+
+    TerritoryDropDown As dropdown:
+        AllowEmptySelection: =true
+        BorderColor: =RGBA(131, 24, 75, 1)
+        ChevronBackground: =RGBA(211, 66, 9, 1)
+        ChevronDisabledBackground: =RGBA(116, 116, 116, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(255, 255, 255, 1)
+        Height: =41
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 211, 205, 1)
+        Items: =Sort(Distinct(Choices(DC_Chef_CustomerMasterData.'DC Chef Name'),Value),Value)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(131, 24, 75, 1)
+        SelectionFill: =RGBA(211, 66, 9, 1)
+        Size: =14
+        Width: =318
+        X: =24
+        Y: =108
+        ZIndex: =24
+
+    Modules As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =24
+
+        CustomerInfoLabel As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Size: =13
+            Text: ="Customer Information"
+            X: =139
+            Y: =338
+            ZIndex: =5
+
+        RoutePlanningLabel As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Size: =13
+            Text: ="Route Planning"
+            X: =143
+            Y: =561
+            ZIndex: =6
+
+        MenuMatrix As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Size: =13
+            Text: ="Menu Matrix"
+            X: =451
+            Y: =334
+            ZIndex: =7
+
+        EmailIcon As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Size: =13
+            Text: ="Email"
+            X: =1053
+            Y: =561
+            ZIndex: =8
+
+        CartIcon As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Size: =13
+            Text: ="Cart"
+            X: =1053
+            Y: =334
+            ZIndex: =9
+
+        SKUPenIcon As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =54
+            Size: =13
+            Text: ="SKU and Menu Penetration Analysis"
+            Width: =187
+            X: =440
+            Y: =561
+            ZIndex: =10
+
+        "'In-Call' As label":
+            Align: =Align.Center
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Size: =13
+            Text: ="In-Call"
+            X: =755
+            Y: =334
+            ZIndex: =11
+
+        "'Rich Media' As label":
+            Align: =Align.Center
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Size: =13
+            Text: ="Rich Media"
+            X: =764
+            Y: =561
+            ZIndex: =13
+
+        CustomerInfoIcon As image:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =136
+            Image: =customer
+            OnSelect: |-
+                =true;
+                Navigate(CustomerScreen, ScreenTransition.Fade, {
+                    _V_Contact_Edit_Or_New: ""
+                })
+            Width: =136
+            X: =141
+            Y: =178
+            ZIndex: =14
+
+        SKUAnalysisIconImage As image:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =225
+            Image: =Cart
+            Width: =225
+            X: =414
+            Y: =359
+            ZIndex: =15
+
+        CartIconImage As image:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =136
+            Image: ='SKU and Menu Penetration Analysis'
+            Width: =136
+            X: =1060
+            Y: =172
+            ZIndex: =16
+
+        MenuMatrixIcon As image:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =136
+            Image: =menumatrix
+            OnSelect: =Navigate('Menu Matrix Screen');
+            Width: =136
+            X: =459
+            Y: =178
+            ZIndex: =17
+
+        InCallIcon As image:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =136
+            Image: =InCall
+            OnSelect: =Navigate('In Call Screen')
+            Width: =136
+            X: =764
+            Y: =172
+            ZIndex: =18
+
+        RoutePlanIconImage As image:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =143
+            Image: =routeplanning
+            OnSelect: =Navigate('Route Planning Screen')
+            Width: =143
+            X: =141
+            Y: =400
+            ZIndex: =19
+
+        EmailIconImage As image:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =143
+            Image: =Email_1
+            OnSelect: =
+            Width: =143
+            X: =1054
+            Y: =400
+            ZIndex: =20
+
+        RichMediaIconImage As image:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =155
+            Image: =RichMedia
+            OnSelect: =Navigate('RIch Media')
+            Width: =155
+            X: =759
+            Y: =394
+            ZIndex: =21
+
+    SelectDCChefLabelInfo As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =42
+        Size: =13
+        Text: ="Select DC Chef"
+        Visible: =If(IsBlank(TerritoryDropDown),true,false)
+        Width: =283
+        X: =24
+        Y: =107
+        ZIndex: =25
+

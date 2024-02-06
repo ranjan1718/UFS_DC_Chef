@@ -1,0 +1,1467 @@
+"'Customer Information' As screen":
+    BackgroundImage: =
+    Fill: =RGBA(255,255,255,1)
+    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
+
+    CustomerInfoContainer As button:
+        AutoDisableOnSelect: =false
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =285
+        HoverColor: =RGBA(131, 24, 75, 1)
+        HoverFill: =RGBA(255,255,255,1)
+        Size: =15
+        Text: =""
+        Width: =469
+        X: =420
+        Y: =101
+        ZIndex: =2
+
+    RectQuickActionBar2_3 As rectangle:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Fill: =RGBA(211, 66, 9, 1)
+        Height: =86
+        Width: =Parent.Width
+        ZIndex: =3
+
+    Image4_2 As image:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =86
+        Image: ='UFS LOGO'
+        Width: =179
+        ZIndex: =4
+
+    Armstrong_AddressLabel As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =30
+        Size: =10
+        Text: |-
+            ="Armstrong Address:"
+        Width: =104
+        X: =445
+        Y: =312
+        ZIndex: =5
+
+    CustInfoLabel As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =62
+        Size: =18
+        Text: ="Customer Information"
+        Width: =1142
+        X: =201
+        Y: =12
+        ZIndex: =6
+
+    Icon13_2 As icon.Home:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =44
+        Icon: =Icon.Home
+        OnSelect: =Navigate('Home Page')
+        Width: =44
+        X: =1306
+        Y: =21
+        ZIndex: =7
+
+    UserNameLabel_10 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =44
+        Size: =13
+        Text: =User().FullName
+        Width: =288
+        X: =920
+        Y: =32
+        ZIndex: =8
+
+    UserPhoto_5 As image:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        Height: =70
+        Image: =User().Image
+        RadiusBottomLeft: =55
+        RadiusBottomRight: =55
+        RadiusTopLeft: =55
+        RadiusTopRight: =55
+        Width: =70
+        X: =1221
+        Y: =6
+        ZIndex: =9
+
+    UserNameLabel_11 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =44
+        Size: =13
+        Text: ="Welcome"
+        Width: =288
+        X: =920
+        Y: =12
+        ZIndex: =10
+
+    RectQuickActionBar2_7 As rectangle:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Fill: =RGBA(211, 66, 9, 1)
+        Height: =682
+        Width: =179
+        Y: =85
+        ZIndex: =11
+
+    CustomerImage As image:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        X: =444
+        Y: =108
+        ZIndex: =12
+
+    "CustomerGallery As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
+        BorderColor: =RGBA(255, 255, 255, 1)
+        DelayItemLoading: =true
+        Height: =537
+        Items: =Sort(Filter(Filter(DC_Chef_CustomerMasterData,TerritoryDropDown.Selected.Value in 'DC Chef Name'.Value),StartsWith(CustomerName,SearchText.Text)),CustomerName)
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =52
+        Width: =211
+        X: =184
+        Y: =166
+        ZIndex: =14
+
+        CustNameInGallery As label:
+            Color: =RGBA(211, 66, 9, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =14
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =8
+            Text: =ThisItem.CustomerName
+            VerticalAlign: =VerticalAlign.Top
+            Width: =163
+            X: =16
+            Y: =7
+            ZIndex: =1
+
+        MotherGroupInGallery As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =17
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =6
+            Text: =ThisItem.MotherGroup
+            VerticalAlign: =VerticalAlign.Top
+            Width: =144
+            X: =CustNameInGallery.X
+            Y: =CustNameInGallery.Y + CustNameInGallery.Height
+            ZIndex: =2
+
+        Separator8 As rectangle:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =4
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =47
+            ZIndex: =4
+
+        Rectangle11 As rectangle:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Fill: =RGBA(131, 24, 75, 1)
+            Height: =Parent.TemplateHeight - Separator8.Height
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =4
+            ZIndex: =5
+
+    SelectedCustNameFromGallery As text:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =CustomerGallery.Selected.CustomerName
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        FontWeight: =FontWeight.Semibold
+        Height: =43
+        HoverBorderColor: =RGBA(131, 24, 75, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 211, 205, 1)
+        LineHeight: =1
+        OnSelect: =""
+        Size: =12
+        Width: =299
+        X: =553
+        Y: =106
+        ZIndex: =16
+
+    SelectedCustCode As text:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            ="Customer Code: " & CustomerGallery.Selected.CustomerCode
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        Height: =19
+        HoverBorderColor: =RGBA(131, 24, 75, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 211, 205, 1)
+        OnSelect: =""
+        Size: =8
+        X: =553
+        Y: =161
+        ZIndex: =17
+
+    SelectedArmstrongCode As text:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            ="Armstrong Code: " & CustomerGallery.Selected.ArmstrongCode
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        Height: =19
+        HoverBorderColor: =RGBA(131, 24, 75, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 211, 205, 1)
+        OnSelect: =""
+        Size: =8
+        X: =554
+        Y: =177
+        ZIndex: =18
+
+    SelectedMotherGroup As text:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            ="Mother Group: " &CustomerGallery.Selected.MotherGroup
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        HoverBorderColor: =RGBA(131, 24, 75, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 211, 205, 1)
+        OnSelect: =""
+        Size: =8
+        X: =553
+        Y: =143
+        ZIndex: =19
+
+    AreaLabel As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =17
+        Size: =10
+        Text: |-
+            ="Area:"
+        Width: =115
+        X: =443
+        Y: =230
+        ZIndex: =20
+
+    DistLabel As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =17
+        Size: =10
+        Text: |-
+            ="Distributor:"
+        Width: =115
+        X: =443
+        Y: =275
+        ZIndex: =21
+
+    EditIcon_CustomerInfo As icon.Edit:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(131, 24, 75, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =17
+        Icon: =Icon.Edit
+        OnSelect: =EditForm(CustEditInfo_Form);Navigate(Cust_EditInfo)
+        Width: =17
+        X: =861
+        Y: =115
+        ZIndex: =22
+
+    SelectedArmstrongAddress As text:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =CustomerGallery.Selected.'Armstrong Address'
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        Height: =33
+        HoverBorderColor: =RGBA(131, 24, 75, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 211, 205, 1)
+        Mode: =TextMode.MultiLine
+        OnSelect: =""
+        Size: =6
+        X: =565
+        Y: =315
+        ZIndex: =23
+
+    SelectedLEAddress As text:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =CustomerGallery.Selected.'LE Address'
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        Height: =27
+        HoverBorderColor: =RGBA(131, 24, 75, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 211, 205, 1)
+        Mode: =TextMode.MultiLine
+        OnSelect: =""
+        Size: =6
+        X: =565
+        Y: =348
+        ZIndex: =24
+
+    LE_AddressLabel As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =16
+        Size: =10
+        Text: |-
+            ="LE Address:"
+        Width: =104
+        X: =445
+        Y: =350
+        ZIndex: =25
+
+    SelectedCity As text:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =CustomerGallery.Selected.City
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        Height: =22
+        HoverBorderColor: =RGBA(131, 24, 75, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 211, 205, 1)
+        OnSelect: =""
+        Size: =8
+        X: =559
+        Y: =248
+        ZIndex: =29
+
+    CityLabel As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =17
+        Size: =10
+        Text: |-
+            ="City:"
+        Width: =115
+        X: =443
+        Y: =252
+        ZIndex: =30
+
+    Customer_Button As button:
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(211, 66, 9, 1)
+        FontWeight: =FontWeight.Semibold
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+        OnSelect: =Navigate('Customer Information')
+        Size: =15
+        Text: ="Customer"
+        X: =9
+        Y: =117
+        ZIndex: =31
+
+    MenuMatrix_Button As button:
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(211, 66, 9, 1)
+        FontWeight: =FontWeight.Semibold
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+        OnSelect: =Navigate('Menu Matrix')
+        Size: =15
+        Text: ="Menu Matrix"
+        X: =9
+        Y: =196
+        ZIndex: =32
+
+    RoutePlanning_Button As button:
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(211, 66, 9, 1)
+        FontWeight: =FontWeight.Semibold
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+        OnSelect: =
+        Size: =15
+        Text: ="Route Planning"
+        X: =9
+        Y: =283
+        ZIndex: =33
+
+    MenuMatrix_Button_1 As button:
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(211, 66, 9, 1)
+        FontWeight: =FontWeight.Semibold
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+        Size: =15
+        Text: ="Analytics"
+        X: =9
+        Y: =378
+        ZIndex: =34
+
+    InCall_Button As button:
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(211, 66, 9, 1)
+        FontWeight: =FontWeight.Semibold
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+        Size: =15
+        Text: ="In-Call"
+        X: =9
+        Y: =460
+        ZIndex: =35
+
+    RichMedia_Button As button:
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(211, 66, 9, 1)
+        FontWeight: =FontWeight.Semibold
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+        Size: =15
+        Text: ="Rich Media"
+        X: =9
+        Y: =542
+        ZIndex: =36
+
+    Search As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =36
+
+        SearchText As text:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderThickness: =2
+            Color: =RGBA(0, 0, 0, 1)
+            Default: =""
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            FocusedBorderThickness: =4
+            Height: =35
+            HintText: ="Search Customer"
+            HoverBorderColor: =RGBA(131, 24, 75, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(255, 211, 205, 1)
+            Size: =10
+            Width: =193
+            X: =194
+            Y: =107
+            ZIndex: =13
+
+        ClearSearchIcon As icon.Cancel:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(131, 24, 75, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =16
+            Icon: =Icon.Cancel
+            OnSelect: =Reset(SearchText)
+            Visible: =If(IsBlank(SearchText.Text),false,true)
+            Width: =18
+            X: =362
+            Y: =116
+            ZIndex: =15
+
+        SearchIcon As icon.Search:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(131, 24, 75, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =13
+            Icon: =Icon.Search
+            Rotation: =90
+            Visible: =If(IsBlank(SearchText.Text),true,false)
+            Width: =13
+            X: =364
+            Y: =117
+            ZIndex: =26
+
+    Cart_Button As button:
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(211, 66, 9, 1)
+        FontWeight: =FontWeight.Semibold
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+        Size: =15
+        Text: ="Cart"
+        X: =9
+        Y: =612
+        ZIndex: =37
+
+    SendEmail_Button As button:
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(211, 66, 9, 1)
+        FontWeight: =FontWeight.Semibold
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+        Size: =15
+        Text: ="Send Email"
+        X: =9
+        Y: =690
+        ZIndex: =38
+
+    SelectedDist As combobox:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        ChevronBackground: =RGBA(211, 66, 9, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DefaultSelectedItems: =CustomerGallery.Selected.'Distributor Name'
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayFields: =["Value"]
+        DisplayMode: =DisplayMode.View
+        Height: =32
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 211, 205, 1)
+        IsSearchable: =false
+        Items: =Choices(DC_Chef_CustomerMasterData.'Distributor Name')
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(131, 24, 75, 1)
+        SearchFields: =["Value"]
+        SearchItems: =[]
+        SelectionFill: =RGBA(211, 66, 9, 1)
+        Size: =8
+        Width: =311
+        X: =566
+        Y: =275
+        ZIndex: =39
+
+    SelectedArea As dropdown:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        ChevronBackground: =RGBA(211, 66, 9, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: ="Choose an Area"
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        Height: =30
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 211, 205, 1)
+        Items: =CustomerGallery.Selected.Area
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(131, 24, 75, 1)
+        SelectionFill: =RGBA(211, 66, 9, 1)
+        Size: =8
+        Width: =318
+        X: =559
+        Y: =222
+        ZIndex: =40
+
+    SelectedDCTerritory As dropdown:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        ChevronBackground: =RGBA(211, 66, 9, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: ="Choose an Area"
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        Height: =20
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 211, 205, 1)
+        Italic: =true
+        Items: =CustomerGallery.Selected.'DC Chef Territory'
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(131, 24, 75, 1)
+        SelectionFill: =RGBA(211, 66, 9, 1)
+        Size: =8
+        Width: =330
+        X: =556
+        Y: =193
+        ZIndex: =41
+
+    AccountBehavior_Form As form:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        DataSource: =DC_Chef_CustomerMasterData
+        DefaultMode: =FormMode.View
+        Height: =310
+        Item: =CustomerGallery.Selected
+        NumberOfColumns: =1
+        Width: =475
+        X: =420
+        Y: =443
+        ZIndex: =42
+
+        Ordering_DataCard1 As typedDataCard.comboBoxMultiSelectEditCard:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Ordering"
+            Default: =ThisItem.Ordering
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@DC_Chef_CustomerMasterData],DataSourceInfo.DisplayName,"Ordering")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =34
+            Required: =false
+            Update: =DataCardValue74.SelectedItems
+            Width: =475
+            X: =0
+            Y: =0
+            ZIndex: =55
+
+            DataCardKey75 As label:
+                AutoHeight: =true
+                Color: =RGBA(131, 24, 75, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                Size: =10
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =10
+                Y: =14
+                ZIndex: =1
+
+            DataCardValue74 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(211, 66, 9, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                DefaultSelectedItems: =Parent.Default
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Height: =35
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 211, 205, 1)
+                IsSearchable: =false
+                Items: =Choices([@DC_Chef_CustomerMasterData].Ordering)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(131, 24, 75, 1)
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectionFill: =RGBA(211, 66, 9, 1)
+                Size: =10
+                Tooltip: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.6
+                X: =181
+                Y: =8
+                ZIndex: =2
+
+            ErrorMessage73 As label:
+                AutoHeight: =true
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue74.Y + DataCardValue74.Height
+                ZIndex: =3
+
+            StarVisible73 As label:
+                Align: =Align.Center
+                Color: =RGBA(131, 24, 75, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =DataCardKey75.Height
+                Size: =13
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey75.Y
+                ZIndex: =4
+
+        "'Invoice To_DataCard1' As typedDataCard.comboBoxMultiSelectEditCard":
+            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="InvoiceTo"
+            Default: =ThisItem.'Invoice To'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@DC_Chef_CustomerMasterData],DataSourceInfo.DisplayName,"InvoiceTo")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue75.SelectedItems
+            Width: =475
+            X: =0
+            Y: =1
+            ZIndex: =55
+
+            DataCardKey76 As label:
+                AutoHeight: =true
+                Color: =RGBA(131, 24, 75, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                Size: =10
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =10
+                Y: =14
+                ZIndex: =1
+
+            DataCardValue75 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(211, 66, 9, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                DefaultSelectedItems: =Parent.Default
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Height: =37
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 211, 205, 1)
+                IsSearchable: =false
+                Items: =Choices([@DC_Chef_CustomerMasterData].'Invoice To')
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(131, 24, 75, 1)
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectionFill: =RGBA(211, 66, 9, 1)
+                Size: =10
+                Tooltip: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.6
+                X: =181
+                Y: =10
+                ZIndex: =2
+
+            ErrorMessage74 As label:
+                AutoHeight: =true
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue75.Y + DataCardValue75.Height
+                ZIndex: =3
+
+            StarVisible74 As label:
+                Align: =Align.Center
+                Color: =RGBA(131, 24, 75, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =DataCardKey76.Height
+                Size: =13
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey76.Y
+                ZIndex: =4
+
+        Delivery_DataCard1 As typedDataCard.comboBoxMultiSelectEditCard:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Delivery"
+            Default: =ThisItem.Delivery
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@DC_Chef_CustomerMasterData],DataSourceInfo.DisplayName,"Delivery")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue76.SelectedItems
+            Width: =475
+            X: =0
+            Y: =2
+            ZIndex: =55
+
+            DataCardKey77 As label:
+                AutoHeight: =true
+                Color: =RGBA(131, 24, 75, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                Size: =10
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =10
+                Y: =14
+                ZIndex: =1
+
+            DataCardValue76 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(211, 66, 9, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                DefaultSelectedItems: =Parent.Default
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Height: =37
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 211, 205, 1)
+                IsSearchable: =false
+                Items: =Choices([@DC_Chef_CustomerMasterData].Delivery)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(131, 24, 75, 1)
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectionFill: =RGBA(211, 66, 9, 1)
+                Size: =10
+                Tooltip: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.6
+                X: =181
+                Y: =10
+                ZIndex: =2
+
+            ErrorMessage75 As label:
+                AutoHeight: =true
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue76.Y + DataCardValue76.Height
+                ZIndex: =3
+
+            StarVisible75 As label:
+                Align: =Align.Center
+                Color: =RGBA(131, 24, 75, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =DataCardKey77.Height
+                Size: =13
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey77.Y
+                ZIndex: =4
+
+        "'Approval: New SKU/Dish_DataCard1' As typedDataCard.comboBoxMultiSelectEditCard":
+            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Approval_x003a_NewSKU_x002f_Dish"
+            Default: |-
+                =ThisItem.'Approval: New SKU/Dish'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@DC_Chef_CustomerMasterData],DataSourceInfo.DisplayName,"Approval_x003a_NewSKU_x002f_Dish")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue77.SelectedItems
+            Width: =475
+            X: =0
+            Y: =3
+            ZIndex: =55
+
+            DataCardKey78 As label:
+                AutoHeight: =true
+                Color: =RGBA(131, 24, 75, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                Size: =10
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =10
+                Y: =14
+                ZIndex: =1
+
+            DataCardValue77 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(211, 66, 9, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                DefaultSelectedItems: =Parent.Default
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Height: =37
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 211, 205, 1)
+                IsSearchable: =false
+                Items: |-
+                    =Choices([@DC_Chef_CustomerMasterData].'Approval: New SKU/Dish')
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(131, 24, 75, 1)
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectionFill: =RGBA(211, 66, 9, 1)
+                Size: =10
+                Tooltip: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.6
+                X: =181
+                Y: =10
+                ZIndex: =2
+
+            ErrorMessage76 As label:
+                AutoHeight: =true
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue77.Y + DataCardValue77.Height
+                ZIndex: =3
+
+            StarVisible76 As label:
+                Align: =Align.Center
+                Color: =RGBA(131, 24, 75, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =DataCardKey78.Height
+                Size: =13
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey78.Y
+                ZIndex: =4
+
+        "'Other Information_DataCard1' As typedDataCard.textualEditCard":
+            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="OtherInformation"
+            Default: =ThisItem.'Other Information'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@DC_Chef_CustomerMasterData],DataSourceInfo.DisplayName,"OtherInformation")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@DC_Chef_CustomerMasterData], DataSourceInfo.MaxLength, "OtherInformation")
+            Required: =false
+            Update: =DataCardValue78.Text
+            Width: =475
+            X: =0
+            Y: =4
+            ZIndex: =55
+
+            DataCardKey79 As label:
+                AutoHeight: =true
+                Color: =RGBA(131, 24, 75, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                Size: =10
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =10
+                Y: =14
+                ZIndex: =1
+
+            DataCardValue78 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =4
+                Height: =37
+                HoverBorderColor: =RGBA(131, 24, 75, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 211, 205, 1)
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =10
+                Tooltip: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.6
+                X: =181
+                Y: =10
+                ZIndex: =2
+
+            ErrorMessage77 As label:
+                AutoHeight: =true
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue78.Y + DataCardValue78.Height
+                ZIndex: =3
+
+            StarVisible77 As label:
+                Align: =Align.Center
+                Color: =RGBA(131, 24, 75, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =DataCardKey79.Height
+                Size: =13
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey79.Y
+                ZIndex: =4
+
+    Concepts_Gallery As gallery.galleryVertical:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        DelayItemLoading: =true
+        Height: =185
+        Items: =Sort(Filter(DC_Chef_ConceptRestaurants,'Customer List ID'=CustomerGallery.Selected.ID,varReset),'Concept Restaurants',SortOrder.Ascending)
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: =29
+        Width: =473
+        X: =893
+        Y: =130
+        ZIndex: =44
+
+        ConceptRestaurants_Input As text:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderThickness: =0
+            Color: =RGBA(0, 0, 0, 1)
+            Default: =ThisItem.'Concept Restaurants'
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            FocusedBorderThickness: =4
+            Height: =33
+            HoverBorderColor: =RGBA(131, 24, 75, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(255, 211, 205, 1)
+            OnChange: =Select(SaveHide_Button)
+            OnSelect: =Select(Parent)
+            PaddingLeft: =5
+            RadiusBottomLeft: =1
+            RadiusBottomRight: =1
+            RadiusTopLeft: =1
+            RadiusTopRight: =1
+            Size: =9
+            Width: =220
+            ZIndex: =1
+
+        NoOfDoors_Input As text:
+            Align: =Align.Center
+            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderThickness: =0
+            Color: =RGBA(0, 0, 0, 1)
+            Default: |-
+                =ThisItem.'# of Doors'
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            FocusedBorderThickness: =4
+            Format: =TextFormat.Number
+            Height: =33
+            HoverBorderColor: =RGBA(131, 24, 75, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(255, 211, 205, 1)
+            OnChange: =Select(SaveHide_Button)
+            OnSelect: =Select(Parent)
+            PaddingLeft: =5
+            RadiusBottomLeft: =1
+            RadiusBottomRight: =1
+            RadiusTopLeft: =1
+            RadiusTopRight: =1
+            Size: =9
+            Width: =57
+            X: =220
+            ZIndex: =2
+
+        Remarks_Input As text:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderThickness: =0
+            Color: =RGBA(0, 0, 0, 1)
+            Default: =ThisItem.Remarks
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            FocusedBorderThickness: =4
+            Height: =33
+            HoverBorderColor: =RGBA(131, 24, 75, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(255, 211, 205, 1)
+            OnChange: =Select(SaveHide_Button)
+            OnSelect: =Select(Parent)
+            PaddingLeft: =5
+            RadiusBottomLeft: =1
+            RadiusBottomRight: =1
+            RadiusTopLeft: =1
+            RadiusTopRight: =1
+            Size: =9
+            Width: =159
+            X: =278
+            ZIndex: =3
+
+        RemoveIcon_Concept As icon.Cancel:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(131, 24, 75, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =12
+            Icon: =Icon.Cancel
+            OnSelect: =Remove(DC_Chef_ConceptRestaurants,ThisItem);Set(varReset,false);Set(varReset,true)
+            Visible: =CountRows(colConceptGridData)=0
+            Width: =12
+            X: =445
+            Y: =10
+            ZIndex: =4
+
+        SaveHide_Button As button:
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(230, 230, 230, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =29
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+            OnSelect: |-
+                =If(
+                    IsBlank(
+                        LookUp(
+                            colConceptGridData,
+                            ID = ThisItem.ID
+                        )
+                    ),
+                    Collect(
+                        colConceptGridData,
+                        ThisItem
+                    )
+                );
+                UpdateIf(
+                    colConceptGridData,
+                    ID = ThisItem.ID,
+                    {
+                        'Concept Restaurants': ConceptRestaurants_Input.Text,
+                        '# of Doors': NoOfDoors_Input.Text,
+                        Remarks:Remarks_Input.Text
+                    }
+                )
+            Size: =8
+            Text: ="S"
+            Visible: =false
+            Width: =6
+            X: =457
+            ZIndex: =5
+
+    AddIcon_Concepts As icon.Add:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(131, 24, 75, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =20
+        Icon: =Icon.Add
+        OnSelect: |-
+            =Patch(DC_Chef_ConceptRestaurants,Defaults(DC_Chef_ConceptRestaurants),{'Customer List ID':CustomerGallery.Selected.ID,Title:CustomerGallery.Selected.CustomerName,'Concept Restaurants':"New Concept",Remarks:"If change cust name"});Set(varReset,false);Set(varReset,true)
+        Width: =20
+        X: =1281
+        Y: =108
+        ZIndex: =49
+
+    SaveIcon_Concepts As icon.Save:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(131, 24, 75, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =18
+        Icon: =Icon.Save
+        OnSelect: =Patch(DC_Chef_ConceptRestaurants,ShowColumns(colConceptGridData,"Title","ConceptRestaurants","OData__x0023_ofDoors","Remarks","ID"));Notify("Concept Restaurants updates saved successfully",NotificationType.Success,3000);Clear(colConceptGridData)
+        Width: =18
+        X: =1311
+        Y: =110
+        ZIndex: =50
+
+    CustomerCount As text:
+        Align: =Align.Center
+        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderThickness: =2
+        Color: =RGBA(131, 24, 75, 1)
+        Default: |
+            =CountRows(CustomerGallery.AllItems)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        Height: =18
+        HoverBorderColor: =RGBA(131, 24, 75, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 211, 205, 1)
+        Size: =10
+        Width: =41
+        X: =313
+        Y: =115
+        ZIndex: =51
+
+    Concepts_Header As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =51
+
+        Rectangle9 As rectangle:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Fill: =RGBA(230, 230, 230, 1)
+            Height: =31
+            Width: =436
+            X: =899
+            Y: =103
+            ZIndex: =1
+
+        ConceptRestos_Label As label:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =33
+            Size: =10
+            Text: ="Concept Restaurants"
+            Width: =173
+            X: =899
+            Y: =103
+            ZIndex: =45
+
+        NoofDoors_Label As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =33
+            Size: =10
+            Text: |-
+                ="# of Doors"
+            Width: =58
+            X: =1118
+            Y: =103
+            ZIndex: =46
+
+        Remarks_Label As label:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =33
+            Size: =10
+            Text: ="Remarks"
+            Width: =158
+            X: =1177
+            Y: =102
+            ZIndex: =47
+
+    AddCust_Button As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(211, 66, 9, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+        OnSelect: =Navigate(Cust_EditInfo);NewForm(CustEditInfo_Form)
+        Size: =12
+        Text: ="+ Add Customer"
+        Width: =161
+        X: =200
+        Y: =730
+        ZIndex: =52
+
+    AccountBehavior_Label As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =53
+
+        CustInfoLabel_5 As label:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(230, 230, 230, 1)
+            Fill: =RGBA(230, 230, 230, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =39
+            Size: =12
+            Text: ="Account Behavior"
+            Width: =475
+            X: =420
+            Y: =404
+            ZIndex: =27
+
+        EditIcon_AcctBehavior As icon.Edit:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(131, 24, 75, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =17
+            Icon: =Icon.Edit
+            OnSelect: =EditForm(AccountBehavior_Form)
+            Visible: =AccountBehavior_Form.Mode = FormMode.View
+            Width: =17
+            X: =866
+            Y: =415
+            ZIndex: =28
+
+        SaveIcon_AcctBehavior As icon.Save:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(131, 24, 75, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =21
+            Icon: =Icon.Save
+            OnSelect: =SubmitForm(AccountBehavior_Form);ViewForm(AccountBehavior_Form)
+            Visible: =AccountBehavior_Form.Mode = FormMode.Edit
+            Width: =21
+            X: =866
+            Y: =412
+            ZIndex: =43
+
