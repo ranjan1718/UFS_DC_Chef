@@ -52,8 +52,7 @@
         Width: =Parent.Width
         ZIndex: =1
 
-        "'Main Header_6' As 'Main Header'":
-            Height: =Parent.Height/8
+        "'Main Header_Route_4' As 'Main Header_Route_2'":
             LayoutMinHeight: =640
             LayoutMinWidth: =640
             Width: =Parent.Width
@@ -150,7 +149,7 @@
                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 DisabledFill: =RGBA(244, 244, 244, 1)
-                                Fill: =If(var_week= true ,RGBA(211,66,9,.5),var_month= true ,RGBA(211,66,9,1),var_day= true ,RGBA(211,66,9,.5))
+                                Fill: =If(var_week= true ,var_ModuleHeaderColor,var_month= true ,var_ModuleBodyColor,var_day= true ,var_ModuleHeaderColor)
                                 FontWeight: =FontWeight.Semibold
                                 Height: =Parent.Height-10
                                 HoverColor: =RGBA(255, 255, 255, 1)
@@ -185,7 +184,7 @@
                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 DisabledFill: =RGBA(244, 244, 244, 1)
-                                Fill: =If(var_week,RGBA(211,66,9,1),var_month= true ,RGBA(211,66,9,.5),var_day= true ,RGBA(211,66,9,.5))
+                                Fill: =If(var_week,var_ModuleBodyColor,var_month= true ,var_ModuleHeaderColor,var_day= true ,var_ModuleHeaderColor)
                                 FontWeight: =FontWeight.Semibold
                                 Height: =Parent.Height-10
                                 HoverColor: =RGBA(255, 255, 255, 1)
@@ -220,7 +219,7 @@
                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 DisabledFill: =RGBA(244, 244, 244, 1)
-                                Fill: =If(var_week= true ,RGBA(211,66,9,.5),var_month= true ,RGBA(211,66,9,.5),var_day= true ,RGBA(211,66,9,1))
+                                Fill: =If(var_week= true ,var_ModuleHeaderColor,var_month= true ,var_ModuleHeaderColor,var_day= true ,var_ModuleBodyColor)
                                 FontWeight: =FontWeight.Semibold
                                 Height: =Parent.Height-10
                                 HoverColor: =RGBA(255, 255, 255, 1)
@@ -316,7 +315,7 @@
                             Icon3_9 As icon.BackArrow:
                                 AlignInContainer: =AlignInContainer.Center
                                 BorderColor: =RGBA(131, 24, 75, 1)
-                                Color: =RGBA(131, 24, 75, 1)
+                                Color: =var_ModuleHeaderColor
                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                 DisabledColor: =RGBA(244, 244, 244, 1)
                                 Height: =Parent.Height-5
@@ -387,7 +386,9 @@
                             Icon6_10 As icon.NextArrow:
                                 AlignInContainer: =AlignInContainer.Center
                                 BorderColor: =RGBA(131, 24, 75, 1)
-                                Color: =RGBA(131, 24, 75, 1)
+                                Color: |-
+                                    =//RGBA(131, 24, 75, 1)
+                                    var_ModuleHeaderColor
                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                 DisabledColor: =RGBA(244, 244, 244, 1)
                                 Height: =Parent.Height-5
@@ -485,7 +486,9 @@
 
                         Cont_MonthWeek_2 As groupContainer.horizontalAutoLayoutContainer:
                             AlignInContainer: =AlignInContainer.Start
-                            Fill: =RGBA(211,66,9,1)
+                            Fill: |-
+                                =//RGBA(211,66,9,1)
+                                var_ModuleBodyColor
                             FillPortions: =0
                             Height: =Parent.Height/16
                             LayoutAlignItems: =LayoutAlignItems.Center
@@ -523,7 +526,7 @@
                                     Size: =13
                                     Text: =ThisItem.Value
                                     VerticalAlign: =VerticalAlign.Top
-                                    Width: =1
+                                    Width: =Parent.Width/10.8
                                     Y: =5
                                     ZIndex: =17
 
@@ -1475,7 +1478,7 @@
                                         Align: =Align.Center
                                         AlignInContainer: =AlignInContainer.Center
                                         BorderColor: =RGBA(131, 24, 75, 1)
-                                        Color: =RGBA(211,66,9,1)
+                                        Color: =var_ModuleHeaderColor
                                         DisabledColor: =RGBA(166, 166, 166, 1)
                                         FontWeight: =FontWeight.Bold
                                         Height: =Parent.Height/3
@@ -1627,7 +1630,7 @@
                                     Label18_4 As label:
                                         Align: =Align.Center
                                         BorderColor: =RGBA(131, 24, 75, 1)
-                                        Color: =RGBA(211,66,9,1)
+                                        Color: =var_ModuleHeaderColor
                                         DisabledColor: =RGBA(166, 166, 166, 1)
                                         FontWeight: =FontWeight.Bold
                                         Height: =Parent.Height/3
@@ -1846,7 +1849,7 @@
                                     Label2_10 As label:
                                         Align: =Align.Center
                                         BorderColor: =RGBA(131, 24, 75, 1)
-                                        Color: =RGBA(211,66,9,1)
+                                        Color: =var_ModuleHeaderColor
                                         DisabledColor: =RGBA(166, 166, 166, 1)
                                         FontWeight: =FontWeight.Bold
                                         Height: =Parent.Height/3
@@ -2079,7 +2082,9 @@
                             Icon3_11 As icon.BackArrow:
                                 AlignInContainer: =AlignInContainer.End
                                 BorderColor: =RGBA(131, 24, 75, 1)
-                                Color: =RGBA(131, 24, 75, 1)
+                                Color: |-
+                                    =//RGBA(131, 24, 75, 1)
+                                    var_ModuleHeaderColor
                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                 DisabledColor: =RGBA(244, 244, 244, 1)
                                 Height: =Parent.Height-5
@@ -2223,7 +2228,9 @@
                             Icon6_12 As icon.NextArrow:
                                 AlignInContainer: =AlignInContainer.End
                                 BorderColor: =RGBA(131, 24, 75, 1)
-                                Color: =RGBA(131, 24, 75, 1)
+                                Color: |-
+                                    =//RGBA(131, 24, 75, 1)
+                                    var_ModuleHeaderColor
                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                 DisabledColor: =RGBA(244, 244, 244, 1)
                                 Height: =Parent.Height-5
@@ -2239,7 +2246,9 @@
                         Cont_MonthWeek_3 As groupContainer.horizontalAutoLayoutContainer:
                             AlignInContainer: =AlignInContainer.Start
                             DropShadow: =DropShadow.Light
-                            Fill: =RGBA(211,66,9,1)
+                            Fill: |-
+                                =//RGBA(211,66,9,1)
+                                var_ModuleBodyColor
                             FillPortions: =0
                             Height: =Parent.Height/16
                             LayoutAlignItems: =LayoutAlignItems.Center
@@ -2387,8 +2396,8 @@
 
                                         Separator2_2 As rectangle:
                                             BorderColor: =RGBA(131, 24, 75, 1)
-                                            Fill: =RGBA(189, 49, 51, 1)
-                                            Height: =1
+                                            Fill: =RGBA(255, 255, 255, 1)
+                                            Height: =2
                                             OnSelect: =Select(Parent)
                                             Width: =Parent.TemplateWidth
                                             Y: |-
@@ -2400,7 +2409,7 @@
                                             DropShadow: =DropShadow.Light
                                             Fill: |
                                                 =//RGBA(0, 0, 0, 0)
-                                                If(ThisItem.'Call Status'= 444670002,RGBA(45, 128, 0, .5),ThisItem.'Call Status'=444670000, RGBA(204, 72, 0, .2),ThisItem.'Call Status'=444670004,RGBA(214, 221, 224, 1))
+                                                If(ThisItem.'Call Status'= 444670002,RGBA(0,176,80,255),ThisItem.'Call Status'=444670000,RGBA(255,90,0,255),ThisItem.'Call Status'=444670004,RGBA(127,127,127,255))
                                             Height: =50
                                             LayoutAlignItems: =LayoutAlignItems.Center
                                             LayoutMode: =LayoutMode.Auto
@@ -2735,7 +2744,9 @@
                             Heading_Container_3 As groupContainer.verticalAutoLayoutContainer:
                                 AlignInContainer: =AlignInContainer.SetByContainer
                                 DropShadow: =DropShadow.Semilight
-                                Fill: =RGBA(204, 72, 0, 1)
+                                Fill: |-
+                                    =//RGBA(204, 72, 0, 1)
+                                    var_ModuleBodyColor
                                 FillPortions: =0
                                 Height: |-
                                     =//(Parent.Height-20)/4.5
@@ -2914,7 +2925,7 @@
                                     Icon10_2 As icon.Add:
                                         AlignInContainer: =AlignInContainer.Start
                                         BorderColor: =RGBA(131, 24, 75, 1)
-                                        Color: =RGBA(255, 255, 255, 1)
+                                        Color: =RGBA(255,255,255,1)
                                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                         DisabledColor: =RGBA(244, 244, 244, 1)
                                         Height: =Parent.Height/1.1
@@ -3028,7 +3039,7 @@
                                         Fill: |
                                             =//RGBA(0, 0,0,0) 
                                             //If(Text('Call Status')= "Completed", RGBA(0, 255, 0, 1), RGBA(255, 165, 0, 1))
-                                            If(ThisItem.'Call Status'= 444670002,RGBA(45, 128, 0, .5),ThisItem.'Call Status'= 444670000, RGBA(204, 72, 0, .2),ThisItem.'Call Status'= 444670004, RGBA(214, 221, 224, 1))
+                                            If(ThisItem.'Call Status'= 444670002,RGBA(0,176,80,255),ThisItem.'Call Status'= 444670000,RGBA(255,90,0,255),ThisItem.'Call Status'= 444670004,RGBA(127,127,127,255))
                                         Height: =Parent.TemplateHeight
                                         LayoutAlignItems: =LayoutAlignItems.End
                                         LayoutGap: =2
@@ -3257,7 +3268,7 @@
                             Heading_Container_4 As groupContainer.verticalAutoLayoutContainer:
                                 AlignInContainer: =AlignInContainer.SetByContainer
                                 DropShadow: =DropShadow.Semilight
-                                Fill: =RGBA(204, 72, 0, 1)
+                                Fill: =var_ModuleBodyColor
                                 FillPortions: =0
                                 Height: |-
                                     =//(Parent.Height-20)/4.5
@@ -3412,7 +3423,9 @@
                                     Icon10_3 As icon.Add:
                                         AlignInContainer: =AlignInContainer.End
                                         BorderColor: =RGBA(131, 24, 75, 1)
-                                        Color: =RGBA(255, 255, 255, 1)
+                                        Color: |-
+                                            =RGBA(255, 255, 255, 1)
+                                            //var_save
                                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                         DisabledColor: =RGBA(244, 244, 244, 1)
                                         Height: =Parent.Height/1.1
@@ -3724,7 +3737,9 @@
 
                                 "'Heading-Container_4' As groupContainer.verticalAutoLayoutContainer":
                                     DropShadow: =DropShadow.Semilight
-                                    Fill: =RGBA(204, 72, 0, 1)
+                                    Fill: |-
+                                        =//RGBA(204, 72, 0, 1)
+                                        var_ModuleBodyColor
                                     FillPortions: =0
                                     Height: |-
                                         =//Parent.Height-20)/4.5
@@ -4200,7 +4215,7 @@
                                                 Icon15_1 As icon.View:
                                                     AlignInContainer: =AlignInContainer.Start
                                                     BorderColor: =RGBA(131, 24, 75, 1)
-                                                    Color: =RGBA(131, 24, 75, 1)
+                                                    Color: =var_ModuleHeaderColor
                                                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                                     DisabledColor: =RGBA(244, 244, 244, 1)
                                                     Height: =Parent.Height-15
@@ -4215,7 +4230,9 @@
                 Cont_CalSummary_1 As groupContainer.verticalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.Center
                     BorderThickness: =0.5
-                    Fill: =RGBA(211,66,9,.5)
+                    Fill: |-
+                        =//RGBA(211,66,9,.5)
+                        var_ModuleBodyColor
                     FillPortions: =0
                     Height: =Parent.Height-10
                     LayoutDirection: =LayoutDirection.Vertical
@@ -4424,6 +4441,9 @@
                         AlignInContainer: =AlignInContainer.SetByContainer
                         BorderColor: =RGBA(255,255,255,1)
                         BorderThickness: =0.5
+                        Fill: |
+                            =//RGBA(255, 255, 255, 1)
+                            RGBA(0,0,0,0)
                         FillPortions: =0
                         Height: =Parent.Height/3.8
                         LayoutDirection: =LayoutDirection.Vertical
@@ -5664,7 +5684,7 @@
             Header_5 As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.Light
-                Fill: =RGBA(204, 72, 0, 1)
+                Fill: =var_ModuleHeaderColor
                 FillPortions: =0
                 Height: =Parent.Height*1.5/11
                 LayoutMinHeight: =0
@@ -5864,7 +5884,9 @@
             Header_7 As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.Light
-                Fill: =RGBA(204, 72, 0, 1)
+                Fill: |-
+                    =//RGBA(204, 72, 0, 1)
+                    var_ModuleHeaderColor
                 FillPortions: =0
                 Height: =Parent.Height*1.5/11
                 LayoutMinHeight: =0
@@ -5893,7 +5915,9 @@
 
                 AC_Behaviour_Edit_9 As icon.Edit:
                     BorderColor: =RGBA(131, 24, 75, 1)
-                    Color: =RGBA(255, 255, 255, 1)
+                    Color: |-
+                        =RGBA(255, 255, 255, 1)
+                        //var_cancel
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     DisabledColor: =RGBA(244, 244, 244, 1)
                     Height: =Parent.Height
@@ -5998,7 +6022,9 @@
                         ComboBox4_1 As combobox:
                             AlignInContainer: =AlignInContainer.Center
                             BorderColor: =RGBA(131, 24, 75, 1)
-                            ChevronBackground: =RGBA(211, 66, 9, 1)
+                            ChevronBackground: |-
+                                =//RGBA(211, 66, 9, 1)
+                                var_ModuleBodyColor
                             ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
                             ChevronDisabledFill: =RGBA(244, 244, 244, 1)
                             ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
@@ -6168,7 +6194,9 @@
                     ComboBox3_1 As combobox:
                         AlignInContainer: =AlignInContainer.Center
                         BorderColor: =RGBA(131, 24, 75, 1)
-                        ChevronBackground: =RGBA(211, 66, 9, 1)
+                        ChevronBackground: |-
+                            =//RGBA(211, 66, 9, 1)
+                            var_ModuleBodyColor
                         ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
                         ChevronDisabledFill: =RGBA(244, 244, 244, 1)
                         ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
@@ -6326,7 +6354,7 @@
 
                     Icon14_3 As icon.CancelBadge:
                         BorderColor: =RGBA(131, 24, 75, 1)
-                        Color: =RGBA(131, 24, 75, 1)
+                        Color: =var_cancel
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                         DisabledColor: =RGBA(244, 244, 244, 1)
                         Height: =Parent.Height/1.5
@@ -6345,7 +6373,7 @@
 
                     Icon13_6 As icon.CheckBadge:
                         BorderColor: =RGBA(131, 24, 75, 1)
-                        Color: =RGBA(45, 128, 40, 1)
+                        Color: =var_save
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                         DisabledColor: =RGBA(244, 244, 244, 1)
                         Height: =Parent.Height/1.5
@@ -6419,7 +6447,9 @@
 
                     Icon14_4 As icon.CancelBadge:
                         BorderColor: =RGBA(131, 24, 75, 1)
-                        Color: =RGBA(131, 24, 75, 1)
+                        Color: |-
+                            =//RGBA(131, 24, 75, 1)
+                            var_cancel
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                         DisabledColor: =RGBA(244, 244, 244, 1)
                         Height: =Parent.Height/1.5
@@ -6435,7 +6465,9 @@
 
                     Icon13_9 As icon.CheckBadge:
                         BorderColor: =RGBA(131, 24, 75, 1)
-                        Color: =RGBA(45, 128, 40, 1)
+                        Color: |-
+                            =//RGBA(45, 128, 40, 1)
+                            var_save
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                         DisabledColor: =RGBA(244, 244, 244, 1)
                         Height: =Parent.Height/1.5

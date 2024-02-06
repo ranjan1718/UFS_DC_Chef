@@ -15,7 +15,9 @@
     Container1_6 As groupContainer.verticalAutoLayoutContainer:
         BorderColor: =RGBA(0, 0, 0, 0)
         DropShadow: =DropShadow.ExtraBold
-        Fill: =RGBA(127, 69, 38, 1)
+        Fill: |
+            =//RGBA(127, 69, 38, 1)
+            RGBA(132,60,12,255)
         Height: =Parent.Height-10
         LayoutAlignItems: =LayoutAlignItems.Center
         LayoutGap: =1

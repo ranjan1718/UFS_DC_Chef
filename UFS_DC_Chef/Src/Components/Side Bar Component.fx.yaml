@@ -157,7 +157,9 @@
 
     Container17 As groupContainer.verticalAutoLayoutContainer:
         DropShadow: =DropShadow.ExtraBold
-        Fill: =RGBA(127, 69, 38, 1)
+        Fill: |-
+            =//RGBA(127, 69, 38, 1)
+            RGBA(50,45,51,255)
         Height: =Parent.Height-10
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
