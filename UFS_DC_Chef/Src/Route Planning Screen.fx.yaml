@@ -2405,6 +2405,49 @@
                                                 0
                                             ZIndex: =2
 
+                                        Button9_6 As button:
+                                            Align: =Align.Left
+                                            BorderThickness: =0
+                                            Color: |-
+                                                =//RGBA(0, 0, 0, 1)
+                                                If(ThisItem.'Call Status'= 444670002,RGBA(255,255,255,1),RGBA(0, 0, 0, 1))
+                                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                            DisabledColor: =RGBA(166, 166, 166, 1)
+                                            DisabledFill: =RGBA(244, 244, 244, 1)
+                                            Fill: |
+                                                =//RGBA(0,128,0,1)
+                                                //If(Text(LookUp(_C_All_Incalls, ThisItem.'Scheduled Call Date'=Button11.Text).'Call Status')="444670002",RGBA(0,128,0,1),LookUp(_C_All_Incalls,ThisItem.Name=Name).'Call Status'=444670000,RGBA(204, 72, 0, .9))
+                                                /*If(
+                                                    LookUp(
+                                                        _C_All_Incalls,
+                                                        DateValue('Scheduled Call Date') = DateAdd(var_firstWeek, ThisItem.Value, TimeUnit.Days)
+                                                    ).'Call Status'= 444670002,
+                                                    RGBA(0, 128, 0, 1),
+                                                    LookUp(
+                                                    _C_All_Incalls,
+                                                    DateValue('Scheduled Call Date') = DateValue(DateAdd(var_firstWeek, ThisItem.Value, TimeUnit.Days))
+                                                ).'Call Status' = "444670000",
+                                                    RGBA(204, 72, 0, 0.9)
+                                                )
+                                                */
+                                                
+                                                If(ThisItem.'Call Status'= 444670002,RGBA(0,128,0,1),ThisItem.'Call Status'=444670000, RGBA(204, 72, 0, .2),ThisItem.'Call Status'=444670004,RGBA(214, 221, 224, 1))
+                                            FontWeight: =FontWeight.Semibold
+                                            Height: =Parent.TemplateHeight
+                                            HoverColor: =RGBA(255, 255, 255, 1)
+                                            HoverFill: =//ColorFade(RGBA(211, 66, 9, 1), -20%)
+                                            OnSelect: =Select(Parent)
+                                            PaddingBottom: =0
+                                            PaddingLeft: =0
+                                            PaddingRight: =0
+                                            PaddingTop: =0
+                                            Size: =10
+                                            Text: =ThisItem.Name
+                                            Visible: =false
+                                            Width: =Parent.TemplateWidth
+                                            Y: =10
+                                            ZIndex: =3
+
                                         Container36 As groupContainer.horizontalAutoLayoutContainer:
                                             DropShadow: =DropShadow.Light
                                             Fill: |
@@ -2418,7 +2461,7 @@
                                             RadiusTopLeft: =4
                                             RadiusTopRight: =4
                                             Width: =Parent.Width
-                                            ZIndex: =3
+                                            ZIndex: =4
 
                                             Button9_5 As button:
                                                 Align: =Align.Left
@@ -2488,49 +2531,6 @@
                                                 Visible: =ThisItem.'Call Status'=444670000
                                                 Width: =Parent.Width/5
                                                 ZIndex: =3
-
-                                        Button9_6 As button:
-                                            Align: =Align.Left
-                                            BorderThickness: =0
-                                            Color: |-
-                                                =//RGBA(0, 0, 0, 1)
-                                                If(ThisItem.'Call Status'= 444670002,RGBA(255,255,255,1),RGBA(0, 0, 0, 1))
-                                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                            DisabledColor: =RGBA(166, 166, 166, 1)
-                                            DisabledFill: =RGBA(244, 244, 244, 1)
-                                            Fill: |
-                                                =//RGBA(0,128,0,1)
-                                                //If(Text(LookUp(_C_All_Incalls, ThisItem.'Scheduled Call Date'=Button11.Text).'Call Status')="444670002",RGBA(0,128,0,1),LookUp(_C_All_Incalls,ThisItem.Name=Name).'Call Status'=444670000,RGBA(204, 72, 0, .9))
-                                                /*If(
-                                                    LookUp(
-                                                        _C_All_Incalls,
-                                                        DateValue('Scheduled Call Date') = DateAdd(var_firstWeek, ThisItem.Value, TimeUnit.Days)
-                                                    ).'Call Status'= 444670002,
-                                                    RGBA(0, 128, 0, 1),
-                                                    LookUp(
-                                                    _C_All_Incalls,
-                                                    DateValue('Scheduled Call Date') = DateValue(DateAdd(var_firstWeek, ThisItem.Value, TimeUnit.Days))
-                                                ).'Call Status' = "444670000",
-                                                    RGBA(204, 72, 0, 0.9)
-                                                )
-                                                */
-                                                
-                                                If(ThisItem.'Call Status'= 444670002,RGBA(0,128,0,1),ThisItem.'Call Status'=444670000, RGBA(204, 72, 0, .2),ThisItem.'Call Status'=444670004,RGBA(214, 221, 224, 1))
-                                            FontWeight: =FontWeight.Semibold
-                                            Height: =Parent.TemplateHeight
-                                            HoverColor: =RGBA(255, 255, 255, 1)
-                                            HoverFill: =//ColorFade(RGBA(211, 66, 9, 1), -20%)
-                                            OnSelect: =Select(Parent)
-                                            PaddingBottom: =0
-                                            PaddingLeft: =0
-                                            PaddingRight: =0
-                                            PaddingTop: =0
-                                            Size: =10
-                                            Text: =ThisItem.Name
-                                            Visible: =false
-                                            Width: =Parent.TemplateWidth
-                                            Y: =10
-                                            ZIndex: =4
 
                                 Button1_2 As button:
                                     Color: =RGBA(0, 0, 0, 1)
