@@ -69,7 +69,7 @@
               "PaddingBottom",
               "PaddingLeft"
             ],
-            "ControlUniqueId": "59",
+            "ControlUniqueId": "2377",
             "DynamicProperties": [
               {
                 "ControlPropertyState": {
@@ -128,11 +128,11 @@
             "IsLocked": false,
             "LayoutName": "",
             "MetaDataIDKey": "",
-            "Name": "Image1_6",
+            "Name": "Image1_8",
             "OptimizeForDevices": "Off",
-            "Parent": "Container1_9",
+            "Parent": "Container1_11",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 2227,
+            "PublishOrderIndex": 2154,
             "Rules": [
               {
                 "Category": "Data",
@@ -428,7 +428,7 @@
                 "NameMapSourceSchema": "?"
               }
             ],
-            "ControlUniqueId": "60",
+            "ControlUniqueId": "2378",
             "DynamicProperties": [
               {
                 "ControlPropertyState": "FillPortions",
@@ -480,15 +480,15 @@
             "IsLocked": false,
             "LayoutName": "",
             "MetaDataIDKey": "",
-            "Name": "Icon4_4",
+            "Name": "Icon4_8",
             "OptimizeForDevices": "Off",
-            "Parent": "Container1_9",
+            "Parent": "Container1_11",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 2228,
+            "PublishOrderIndex": 2155,
             "Rules": [
               {
                 "Category": "Design",
-                "InvariantScript": "'Main Header_5'.Items.icon",
+                "InvariantScript": "'Main Header_6'.Items.icon",
                 "Property": "Icon",
                 "RuleProviderType": "Unknown"
               },
@@ -650,7 +650,7 @@
               },
               {
                 "Category": "Behavior",
-                "InvariantScript": "Navigate('Main Header_5'.Items.navigate)\n",
+                "InvariantScript": "Navigate('Main Header_6'.Items.navigate)\r\n",
                 "Property": "OnSelect",
                 "RuleProviderType": "Unknown"
               }
@@ -778,7 +778,7 @@
                 "NameMapSourceSchema": "?"
               }
             ],
-            "ControlUniqueId": "61",
+            "ControlUniqueId": "2379",
             "DynamicProperties": [
               {
                 "ControlPropertyState": {
@@ -837,11 +837,11 @@
             "IsLocked": false,
             "LayoutName": "",
             "MetaDataIDKey": "",
-            "Name": "Label1_10",
+            "Name": "Label1_3",
             "OptimizeForDevices": "Off",
-            "Parent": "Container1_9",
+            "Parent": "Container1_11",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 2229,
+            "PublishOrderIndex": 2156,
             "Rules": [
               {
                 "Category": "Data",
@@ -851,7 +851,7 @@
               },
               {
                 "Category": "Data",
-                "InvariantScript": "\"Customer and Contact Information\"",
+                "InvariantScript": "//\"Customer and Contact Information\"\r\n\"Menu Matrix\"",
                 "Property": "Text",
                 "RuleProviderType": "Unknown"
               },
@@ -1194,7 +1194,7 @@
               "PaddingBottom",
               "PaddingLeft"
             ],
-            "ControlUniqueId": "62",
+            "ControlUniqueId": "2380",
             "DynamicProperties": [
               {
                 "ControlPropertyState": {
@@ -1253,11 +1253,11 @@
             "IsLocked": false,
             "LayoutName": "",
             "MetaDataIDKey": "",
-            "Name": "Label3_12",
+            "Name": "Label3_3",
             "OptimizeForDevices": "Off",
-            "Parent": "Container1_9",
+            "Parent": "Container1_11",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 2230,
+            "PublishOrderIndex": 2157,
             "Rules": [
               {
                 "Category": "Data",
@@ -1656,7 +1656,7 @@
                 "NameMapSourceSchema": "?"
               }
             ],
-            "ControlUniqueId": "63",
+            "ControlUniqueId": "2381",
             "DynamicProperties": [
               {
                 "ControlPropertyState": {
@@ -1715,11 +1715,11 @@
             "IsLocked": false,
             "LayoutName": "",
             "MetaDataIDKey": "",
-            "Name": "Image4_18",
+            "Name": "Image4_16",
             "OptimizeForDevices": "Off",
-            "Parent": "Container1_9",
+            "Parent": "Container1_11",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 2231,
+            "PublishOrderIndex": 2158,
             "Rules": [
               {
                 "Category": "Data",
@@ -2076,7 +2076,7 @@
             "NameMapSourceSchema": "?"
           }
         ],
-        "ControlUniqueId": "58",
+        "ControlUniqueId": "2376",
         "HasDynamicProperties": false,
         "Index": 0,
         "IsAutoGenerated": false,
@@ -2086,11 +2086,11 @@
         "IsLocked": false,
         "LayoutName": "",
         "MetaDataIDKey": "",
-        "Name": "Container1_9",
+        "Name": "Container1_11",
         "OptimizeForDevices": "Off",
-        "Parent": "Main Header_5",
+        "Parent": "Main Header_6",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 2226,
+        "PublishOrderIndex": 2153,
         "Rules": [
           {
             "Category": "Design",
@@ -2302,12 +2302,12 @@
       "Items",
       "Navigate"
     ],
-    "LastModifiedTimestamp": "638428215955026110",
-    "Name": "Main Header_5",
+    "LastModifiedTimestamp": "638428142509588961",
+    "Name": "Main Header_6",
     "Rules": [
       {
         "Category": "Data",
-        "InvariantScript": "{\n    icon: Icon.Home,\n    navigate: App.ActiveScreen\n}",
+        "InvariantScript": "{\r\n    icon: Icon.Home,\r\n    navigate: App.ActiveScreen\r\n}",
         "Property": "Items",
         "RuleProviderType": "System"
       },
@@ -2321,31 +2321,31 @@
         "Category": "Design",
         "InvariantScript": "1",
         "Property": "ZIndex",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
         "InvariantScript": "0",
         "Property": "Y",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
         "InvariantScript": "0",
         "Property": "X",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
         "InvariantScript": "1366",
         "Property": "Width",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
         "InvariantScript": "100",
         "Property": "Height",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
@@ -2359,8 +2359,8 @@
     "AllowAccessToGlobals": false,
     "AllowCustomization": true,
     "Description": "",
-    "Name": "Main Header_5",
-    "TemplateGuid": "8a20d5674d1b4c2881902bdc06ead78e"
+    "Name": "Main Header_6",
+    "TemplateGuid": "c9789a84fbff45cabb7dcebcb0798c20"
   },
   "ComponentType": "CanvasComponent",
   "CustomGroupControlTemplateName": "",
@@ -2392,8 +2392,8 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638428215955026110",
-  "Name": "8a20d5674d1b4c2881902bdc06ead78e",
+  "LastModifiedTimestamp": "638428142509588961",
+  "Name": "c9789a84fbff45cabb7dcebcb0798c20",
   "OverridableProperties": {},
   "TemplateOriginalName": "d4fb06e1725547adade56ff83056f2d8",
   "Version": "1.0"

@@ -5,8 +5,8 @@
     "AllowAccessToGlobals": false,
     "AllowCustomization": true,
     "Description": "",
-    "Name": "Side Bar Component_5",
-    "TemplateGuid": "209d1cf5020847bea8be4d9cf52c57e8"
+    "Name": "Side Bar Component_7",
+    "TemplateGuid": "93c3b4e786d346f2993c434954e0ce3c"
   },
   "ComponentType": "CanvasComponent",
   "CustomGroupControlTemplateName": "",
@@ -19,9 +19,9 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638428215955167367",
-  "Name": "209d1cf5020847bea8be4d9cf52c57e8",
+  "LastModifiedTimestamp": "638428142509619611",
+  "Name": "93c3b4e786d346f2993c434954e0ce3c",
   "OverridableProperties": {},
-  "TemplateOriginalName": "0d57134a3dee4d0da181c34a35570c22",
+  "TemplateOriginalName": "226c85ad7af94a36a171ff248d927213",
   "Version": "1.0"
 }

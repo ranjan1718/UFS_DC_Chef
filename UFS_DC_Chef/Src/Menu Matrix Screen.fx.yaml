@@ -1181,7 +1181,7 @@
                                                         'Related SKUS', Collect(_C_RSKUs, AddColumns(ThisRecord, "ID", Last(_C_RSKUs).ID+1))
                                                     )*/
                                             Set(
-                                                _V_SelectedDish,
+                                                _V_SelectedDish_1,
                                                 ThisItem
                                             );
                                             ClearCollect(col_selectedDishDetails,Table());
@@ -1189,7 +1189,7 @@
                                                 Filter(
                                                 _C_RSKUs,
                                                 Customer.Customer = _V_SelectedCustomer.Customer,
-                                                'Related Dish'.'Related Dish' = _V_SelectedDish.'Related Dish'
+                                                'Related Dish'.'Related Dish' = _V_SelectedDish_1.'Related Dish'
                                             ),
                                                 Collect(col_selectedDishDetails, AddColumns(ThisRecord, "id", Last(col_selectedDishDetails).id+1))
                                                     
@@ -1266,7 +1266,7 @@
                                                         'Related SKUS', Collect(_C_RSKUs, AddColumns(ThisRecord, "ID", Last(_C_RSKUs).ID+1))
                                                     )*/
                                             Set(
-                                                _V_SelectedDish,
+                                                _V_SelectedDish_1,
                                                 ThisItem
                                             );
                                             ClearCollect(col_selectedDishDetails,Table());
@@ -1274,7 +1274,7 @@
                                                 Filter(
                                                 _C_RSKUs,
                                                 Customer.Customer = _V_SelectedCustomer.Customer,
-                                                'Related Dish'.'Related Dish' = _V_SelectedDish.'Related Dish'
+                                                'Related Dish'.'Related Dish' = _V_SelectedDish_1.'Related Dish'
                                             ),
                                                 Collect(col_selectedDishDetails, AddColumns(ThisRecord, "id", Last(col_selectedDishDetails).id+1))
                                                     
@@ -1368,7 +1368,7 @@
                                                         'Related SKUS', Collect(_C_RSKUs, AddColumns(ThisRecord, "ID", Last(_C_RSKUs).ID+1))
                                                     )*/
                                             Set(
-                                                _V_SelectedDish,
+                                                _V_SelectedDish_1,
                                                 ThisItem
                                             );
                                             ClearCollect(col_selectedDishDetails,Table());
@@ -1376,7 +1376,7 @@
                                                 Filter(
                                                 _C_RSKUs,
                                                 Customer.Customer = _V_SelectedCustomer.Customer,
-                                                'Related Dish'.'Related Dish' = _V_SelectedDish.'Related Dish'
+                                                'Related Dish'.'Related Dish' = _V_SelectedDish_1.'Related Dish'
                                             ),
                                                 Collect(col_selectedDishDetails, AddColumns(ThisRecord, "id", Last(col_selectedDishDetails).id+1))
                                                     
@@ -1452,7 +1452,7 @@
                                                         'Related SKUS', Collect(_C_RSKUs, AddColumns(ThisRecord, "ID", Last(_C_RSKUs).ID+1))
                                                     )*/
                                             Set(
-                                                _V_SelectedDish,
+                                                _V_SelectedDish_1,
                                                 ThisItem
                                             );
                                             ClearCollect(col_selectedDishDetails,Table());
@@ -1460,7 +1460,7 @@
                                                 Filter(
                                                 _C_RSKUs,
                                                 Customer.Customer = _V_SelectedCustomer.Customer,
-                                                'Related Dish'.'Related Dish' = _V_SelectedDish.'Related Dish'
+                                                'Related Dish'.'Related Dish' = _V_SelectedDish_1.'Related Dish'
                                             ),
                                                 Collect(col_selectedDishDetails, AddColumns(ThisRecord, "id", Last(col_selectedDishDetails).id+1))
                                                     
@@ -1551,7 +1551,7 @@
                                                         'Related SKUS', Collect(_C_RSKUs, AddColumns(ThisRecord, "ID", Last(_C_RSKUs).ID+1))
                                                     )*/
                                             Set(
-                                                _V_SelectedDish,
+                                                _V_SelectedDish_1,
                                                 ThisItem
                                             );
                                             ClearCollect(col_selectedDishDetails,Table());
@@ -1559,7 +1559,7 @@
                                                 Filter(
                                                 _C_RSKUs,
                                                 Customer.Customer = _V_SelectedCustomer.Customer,
-                                                'Related Dish'.'Related Dish' = _V_SelectedDish.'Related Dish'
+                                                'Related Dish'.'Related Dish' = _V_SelectedDish_1.'Related Dish'
                                             ),
                                                 Collect(col_selectedDishDetails, AddColumns(ThisRecord, "id", Last(col_selectedDishDetails).id+1))
                                                     
@@ -1636,7 +1636,7 @@
                                                         'Related SKUS', Collect(_C_RSKUs, AddColumns(ThisRecord, "ID", Last(_C_RSKUs).ID+1))
                                                     )*/
                                             Set(
-                                                _V_SelectedDish,
+                                                _V_SelectedDish_1,
                                                 ThisItem
                                             );
                                             ClearCollect(col_selectedDishDetails,Table());
@@ -1644,7 +1644,7 @@
                                                 Filter(
                                                 _C_RSKUs,
                                                 Customer.Customer = _V_SelectedCustomer.Customer,
-                                                'Related Dish'.'Related Dish' = _V_SelectedDish.'Related Dish'
+                                                'Related Dish'.'Related Dish' = _V_SelectedDish_1.'Related Dish'
                                             ),
                                                 Collect(col_selectedDishDetails, AddColumns(ThisRecord, "id", Last(col_selectedDishDetails).id+1))
                                                     
@@ -1740,7 +1740,7 @@
                                                         'Related SKUS', Collect(_C_RSKUs, AddColumns(ThisRecord, "ID", Last(_C_RSKUs).ID+1))
                                                     )*/
                                             Set(
-                                                _V_SelectedDish,
+                                                _V_SelectedDish_1,
                                                 ThisItem
                                             );
                                             ClearCollect(col_selectedDishDetails,Table());
@@ -1748,7 +1748,7 @@
                                                 Filter(
                                                 _C_RSKUs,
                                                 Customer.Customer = _V_SelectedCustomer.Customer,
-                                                'Related Dish'.'Related Dish' = _V_SelectedDish.'Related Dish'
+                                                'Related Dish'.'Related Dish' = _V_SelectedDish_1.'Related Dish'
                                             ),
                                                 Collect(col_selectedDishDetails, AddColumns(ThisRecord, "id", Last(col_selectedDishDetails).id+1))
                                                     
@@ -1824,7 +1824,7 @@
                                                         'Related SKUS', Collect(_C_RSKUs, AddColumns(ThisRecord, "ID", Last(_C_RSKUs).ID+1))
                                                     )*/
                                             Set(
-                                                _V_SelectedDish,
+                                                _V_SelectedDish_1,
                                                 ThisItem
                                             );
                                             ClearCollect(col_selectedDishDetails,Table());
@@ -1832,7 +1832,7 @@
                                                 Filter(
                                                 _C_RSKUs,
                                                 Customer.Customer = _V_SelectedCustomer.Customer,
-                                                'Related Dish'.'Related Dish' = _V_SelectedDish.'Related Dish'
+                                                'Related Dish'.'Related Dish' = _V_SelectedDish_1.'Related Dish'
                                             ),
                                                 Collect(col_selectedDishDetails, AddColumns(ThisRecord, "id", Last(col_selectedDishDetails).id+1))
                                                     
@@ -1948,7 +1948,7 @@
                                     true
                                 );
                                 Set(
-                                    _V_SelectedDish,
+                                    _V_SelectedDish_1,
                                     Blank()
                                 );
                                 Set(
@@ -1971,7 +1971,7 @@
                                 Reset(AddMediaButton2_8);
                                 Reset(Cb_DishNames);
                                 Reset('ip_Potential oppertunity_2');
-                                //Set(_V_SelectedDish,
+                                //Set(_V_SelectedDish_1,
                                 /*Patch(
                                     _C_RDishes,
                                     Defaults(_C_RDishes),
@@ -2281,7 +2281,7 @@
                                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                     DisabledFill: =RGBA(244, 244, 244, 1)
                                     Height: =Parent.Height-10
-                                    Image: =If(IsBlank(_V_SelectedDish.'Main Dish Photo'),SampleImage,_V_SelectedDish.'Main Dish Photo')
+                                    Image: =If(IsBlank(_V_SelectedDish_1.'Main Dish Photo'),SampleImage,_V_SelectedDish_1.'Main Dish Photo')
                                     Visible: =!_V_editDish
                                     Width: =Self.Height
                                     ZIndex: =2
@@ -2335,7 +2335,7 @@
                                             FillPortions: =1
                                             Height: =Parent.Height
                                             Size: =10
-                                            Text: =_V_SelectedDish.'Dish Name'
+                                            Text: =_V_SelectedDish_1.'Dish Name'
                                             Visible: =!_V_editDish
                                             Width: =Parent.Width/2
                                             ZIndex: =3
@@ -2346,7 +2346,7 @@
                                             BorderStyle: =BorderStyle.None
                                             BorderThickness: =2
                                             Color: =RGBA(0, 0, 0, 1)
-                                            Default: =If(_V_newDish,"",_V_SelectedDish.'Dish Name')
+                                            Default: =If(_V_newDish,"",_V_SelectedDish_1.'Dish Name')
                                             DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                             DisabledColor: =RGBA(166, 166, 166, 1)
                                             DisabledFill: =RGBA(244, 244, 244, 1)
@@ -2374,7 +2374,7 @@
                                             ChevronDisabledFill: =RGBA(244, 244, 244, 1)
                                             ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                                             ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                                            DefaultSelectedItems: =If(_V_newDish,[],[_V_SelectedDish.'Dish Name'])
+                                            DefaultSelectedItems: =If(_V_newDish,[],[_V_SelectedDish_1.'Dish Name'])
                                             DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                             DisabledColor: =RGBA(166, 166, 166, 1)
                                             DisabledFill: =RGBA(244, 244, 244, 1)
@@ -2428,7 +2428,7 @@
                                             Height: =Parent.Height
                                             Size: =10
                                             Text: |
-                                                =_V_SelectedDish.'Type of Dish'
+                                                =_V_SelectedDish_1.'Type of Dish'
                                             Visible: =!_V_editDish
                                             Width: =Parent.Width/4
                                             ZIndex: =3
@@ -2442,7 +2442,7 @@
                                             ChevronDisabledFill: =RGBA(244, 244, 244, 1)
                                             ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                                             ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                                            DefaultSelectedItems: =If(_V_newDish,[],[_V_SelectedDish.'Type of Dish'])
+                                            DefaultSelectedItems: =If(_V_newDish,[],[_V_SelectedDish_1.'Type of Dish'])
                                             DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                             DisabledColor: =RGBA(166, 166, 166, 1)
                                             DisabledFill: =RGBA(244, 244, 244, 1)
@@ -2499,7 +2499,7 @@
                                             Height: =Parent.Height
                                             Size: =10
                                             Text: |
-                                                =_V_SelectedDish.'Transactions per Day'
+                                                =_V_SelectedDish_1.'Transactions per Day'
                                             Visible: =!_V_editDish
                                             Width: =Parent.Width/4
                                             ZIndex: =3
@@ -2512,7 +2512,7 @@
                                             Color: =RGBA(0, 0, 0, 1)
                                             Default: |-
                                                 =
-                                                If(_V_newDish,"",_V_SelectedDish.'Transactions per Day')
+                                                If(_V_newDish,"",_V_SelectedDish_1.'Transactions per Day')
                                             DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                             DisabledColor: =RGBA(166, 166, 166, 1)
                                             DisabledFill: =RGBA(244, 244, 244, 1)
@@ -2561,11 +2561,11 @@
                                             LayoutMinWidth: =0
                                             Size: =10
                                             Text: |-
-                                                =//Text(_V_SelectedDish.'Potential Oppertunity')
+                                                =//Text(_V_SelectedDish_1.'Potential Oppertunity')
                                                 Sum(Filter(
                                                     'Related SKUS',
                                                     Customer.Customer = _V_SelectedCustomer.Customer,
-                                                    'Related Dish'.'Related Dish' = _V_SelectedDish.'Related Dish'
+                                                    'Related Dish'.'Related Dish' = _V_SelectedDish_1.'Related Dish'
                                                 ),'Total Potential Opportunity ')
                                             Visible: =!_V_editDish
                                             Width: =Parent.Width/4
@@ -2578,15 +2578,15 @@
                                             BorderThickness: =2
                                             Color: =RGBA(0, 0, 0, 1)
                                             Default: |-
-                                                =//Text(_V_SelectedDish.'Potential Oppertunity')
+                                                =//Text(_V_SelectedDish_1.'Potential Oppertunity')
                                                 /*Sum(Filter(
                                                     'Related SKUS',
                                                     Customer.Customer = _V_SelectedCustomer.Customer,
-                                                    'Related Dish'.'Related Dish' = _V_SelectedDish.'Related Dish'
+                                                    'Related Dish'.'Related Dish' = _V_SelectedDish_1.'Related Dish'
                                                 ),'Total Potential Opportunity ')*/
                                                 
                                                 
-                                                If(_V_newDish,"",_V_SelectedDish.'Total Potential Opportunity')
+                                                If(_V_newDish,"",_V_SelectedDish_1.'Total Potential Opportunity')
                                             DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                             DisabledColor: =RGBA(166, 166, 166, 1)
                                             DisabledFill: =RGBA(244, 244, 244, 1)
@@ -2768,7 +2768,7 @@
                                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                     DisabledFill: =RGBA(244, 244, 244, 1)
                                     Height: =Parent.Height-30
-                                    Image: =If(IsBlank(_V_SelectedDish.ulchef_dishphoto1),SampleImage,_V_SelectedDish.ulchef_dishphoto1)
+                                    Image: =If(IsBlank(_V_SelectedDish_1.ulchef_dishphoto1),SampleImage,_V_SelectedDish_1.ulchef_dishphoto1)
                                     Visible: =!_V_editDish
                                     ZIndex: =9
 
@@ -2778,7 +2778,7 @@
                                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                     DisabledFill: =RGBA(244, 244, 244, 1)
                                     Height: =Parent.Height-30
-                                    Image: =If(IsBlank(_V_SelectedDish.'Dish Photo 2'),SampleImage,_V_SelectedDish.'Dish Photo 2')
+                                    Image: =If(IsBlank(_V_SelectedDish_1.'Dish Photo 2'),SampleImage,_V_SelectedDish_1.'Dish Photo 2')
                                     Visible: =!_V_editDish
                                     ZIndex: =10
 
@@ -2788,7 +2788,7 @@
                                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                     DisabledFill: =RGBA(244, 244, 244, 1)
                                     Height: =Parent.Height-30
-                                    Image: =If(IsBlank(_V_SelectedDish.'Dish Photo 3'),SampleImage,_V_SelectedDish.'Dish Photo 3')
+                                    Image: =If(IsBlank(_V_SelectedDish_1.'Dish Photo 3'),SampleImage,_V_SelectedDish_1.'Dish Photo 3')
                                     Visible: =!_V_editDish
                                     ZIndex: =11
 
@@ -3045,7 +3045,7 @@
                                                 ),
                                                 'Related Dish': LookUp(
                                                     'Related Dishes',
-                                                    'Related Dish' = _V_SelectedDish.'Related Dish'
+                                                    'Related Dish' = _V_SelectedDish_1.'Related Dish'
                                                 ),
                                                 ID: CountRows(_C_RSKUs)+1   
                                                 
@@ -3088,7 +3088,7 @@
                                             Filter(
                                                 _C_RSKUs,
                                                 Customer.Customer = _V_SelectedCustomer.Customer,
-                                                'Related Dish'.'Related Dish' = _V_SelectedDish.'Related Dish'
+                                                'Related Dish'.'Related Dish' = _V_SelectedDish_1.'Related Dish'
                                             )
                                         )
                                         =0
@@ -3848,7 +3848,7 @@
                                                 Re_ispenetrated:ThisItem.ispenetrated,
                                                 Re_Gdishday:ThisItem.Gdishday,
                                                 Re_remarks:ThisItem.Remarks,
-                                                GU_ID:_V_SelectedDish.'Related Dish',
+                                                GU_ID:_V_SelectedDish_1.'Related Dish',
                                                 Id:ThisItem.Id*/
                                             
                                         );
@@ -3872,7 +3872,7 @@
                                         /*&& Last(Filter(
                                             _C_RSKUs,
                                             Customer.Customer = _V_SelectedCustomer.Customer,
-                                            'Related Dish'.'Related Dish' = _V_SelectedDish.'Related Dish'
+                                            'Related Dish'.'Related Dish' = _V_SelectedDish_1.'Related Dish'
                                         )).ID = ThisItem.ID*/
                                     Width: =Parent.Width/40
                                     X: =1071
@@ -3895,7 +3895,7 @@
                                                     ),
                                                     'Related Dish': LookUp(
                                                         'Related Dishes',
-                                                        'Related Dish' = _V_SelectedDish.'Related Dish'
+                                                        'Related Dish' = _V_SelectedDish_1.'Related Dish'
                                                     ),
                                                     ID: CountRows(_C_RSKUs)+1   
                                                     
@@ -3996,7 +3996,7 @@
                                     =Filter(
                                         _C_RSKUs,
                                         Customer.Customer = _V_SelectedCustomer.Customer,
-                                        'Related Dish'.'Related Dish' = _V_SelectedDish.'Related Dish'
+                                        'Related Dish'.'Related Dish' = _V_SelectedDish_1.'Related Dish'
                                     )
                                 Layout: =Layout.Vertical
                                 LayoutMinHeight: =0
@@ -4381,7 +4381,7 @@
                                         Height: =Parent.Height
                                         LayoutMinWidth: =0
                                         Size: =10
-                                        Text: =Text(_V_SelectedDish.'Launch Date',"dd/mm/yyyy")
+                                        Text: =Text(_V_SelectedDish_1.'Launch Date',"dd/mm/yyyy")
                                         Visible: =!_V_editDish
                                         Width: =Parent.Width/4
                                         ZIndex: =3
@@ -4392,7 +4392,7 @@
                                         BorderStyle: =BorderStyle.None
                                         CalendarHeaderFill: =RGBA(211, 66, 9, 1)
                                         Color: =RGBA(0, 0, 0, 1)
-                                        DefaultDate: =_V_SelectedDish.'Launch Date'
+                                        DefaultDate: =_V_SelectedDish_1.'Launch Date'
                                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                         DisabledColor: =RGBA(166, 166, 166, 1)
                                         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -4429,7 +4429,7 @@
                                         Height: =Parent.Height
                                         LayoutMinWidth: =0
                                         Size: =10
-                                        Text: =Text(_V_SelectedDish.'Potential Oppertunity')
+                                        Text: =Text(_V_SelectedDish_1.'Potential Oppertunity')
                                         Visible: |-
                                             =//!_V_editDish
                                             false
@@ -4442,7 +4442,7 @@
                                         BorderStyle: =BorderStyle.None
                                         BorderThickness: =2
                                         Color: =RGBA(0, 0, 0, 1)
-                                        Default: =Text(_V_SelectedDish.'Potential Oppertunity')
+                                        Default: =Text(_V_SelectedDish_1.'Potential Oppertunity')
                                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                         DisabledColor: =RGBA(166, 166, 166, 1)
                                         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -4490,7 +4490,7 @@
                                         Height: =Parent.Height
                                         LayoutMinWidth: =0
                                         Size: =10
-                                        Text: =_V_SelectedDish.'Dish Remarks'
+                                        Text: =_V_SelectedDish_1.'Dish Remarks'
                                         Visible: =!_V_editDish
                                         Width: =Parent.Width/4
                                         ZIndex: =3
@@ -4501,7 +4501,7 @@
                                         BorderStyle: =BorderStyle.None
                                         BorderThickness: =2
                                         Color: =RGBA(0, 0, 0, 1)
-                                        Default: =If(_V_newDish,"",_V_SelectedDish.'Dish Remarks')
+                                        Default: =If(_V_newDish,"",_V_SelectedDish_1.'Dish Remarks')
                                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                         DisabledColor: =RGBA(166, 166, 166, 1)
                                         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -4548,7 +4548,7 @@
                                         Height: =Parent.Height
                                         LayoutMinWidth: =0
                                         Size: =10
-                                        Text: =_V_SelectedDish.Details
+                                        Text: =_V_SelectedDish_1.Details
                                         Visible: =!_V_editDish
                                         Width: =Parent.Width/4
                                         ZIndex: =3
@@ -4559,7 +4559,7 @@
                                         BorderStyle: =BorderStyle.None
                                         BorderThickness: =2
                                         Color: =RGBA(0, 0, 0, 1)
-                                        Default: =If(_V_newDish,"",_V_SelectedDish.Details)
+                                        Default: =If(_V_newDish,"",_V_SelectedDish_1.Details)
                                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                         DisabledColor: =RGBA(166, 166, 166, 1)
                                         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -4643,7 +4643,7 @@
                             OnSelect: |
                                 =/*Remove(
                                     _C_RDishes,
-                                    _V_SelectedDish
+                                    _V_SelectedDish_1
                                 );
                                 Set(_V_editDish,false);
                                 Set(_V_hideDishGallery,false);
@@ -4738,7 +4738,7 @@
                                 If(
                                     _V_newDish,
                                     Set(
-                                        _V_SelectedDish,
+                                        _V_SelectedDish_1,
                                         Patch(
                                             'Related Dishes',
                                             Defaults('Related Dishes'),
@@ -4758,7 +4758,7 @@
                                             }
                                         )
                                     );
-                                    //Set(_V_SelectedDish,Last('Related Dishes'));
+                                    //Set(_V_SelectedDish_1,Last('Related Dishes'));
                                 ForAll(
                                         col_newSKUs,
                                         Patch(
@@ -4766,7 +4766,7 @@
                                             Defaults('Related SKUS'),
                                             {
                                                 Customer: _V_SelectedCustomer,
-                                                'Related Dish': _V_SelectedDish,
+                                                'Related Dish': _V_SelectedDish_1,
                                                 Name: ThisRecord.Name,
                                                 IsPenetrated: If(
                                                     ThisRecord.IsPenetrated = true,
@@ -4781,17 +4781,17 @@
                                     );
                                     Collect(
                                         _C_RDishes,
-                                        _V_SelectedDish
+                                        _V_SelectedDish_1
                                     ),
                                     Set(
-                                        _V_SelectedDish,
+                                        _V_SelectedDish_1,
                                         Patch(
                                             'Related Dishes',
-                                            {'Related Dish': _V_SelectedDish.'Related Dish'},
+                                            {'Related Dish': _V_SelectedDish_1.'Related Dish'},
                                             {
                                                 'Dish Name': If(
                                                     IsBlank(Cb_DishNames.Selected.Name),
-                                                    _V_SelectedDish.'Dish Name',
+                                                    _V_SelectedDish_1.'Dish Name',
                                                     Cb_DishNames.Selected.Name
                                                 ),
                                                 'Type of Dish': cb_TypeOfDish.Selected.Value,
@@ -4815,7 +4815,7 @@
                                             Defaults('Related SKUS'),
                                             {
                                                 Customer: _V_SelectedCustomer,
-                                                'Related Dish': _V_SelectedDish,
+                                                'Related Dish': _V_SelectedDish_1,
                                                 Name: ThisRecord.Name,
                                                 IsPenetrated: If(
                                                     ThisRecord.IsPenetrated = true,
@@ -4842,8 +4842,8 @@
                                     Clear(col_removedSKUs);
                                     Patch(
                                         _C_RDishes,
-                                        {'Related Dish': _V_SelectedDish.'Related Dish'},
-                                        _V_SelectedDish
+                                        {'Related Dish': _V_SelectedDish_1.'Related Dish'},
+                                        _V_SelectedDish_1
                                     );
                                     
                                 );
@@ -4913,7 +4913,7 @@
                                 If(
                                     _V_newDish,
                                     Set(
-                                        _V_SelectedDish,
+                                        _V_SelectedDish_1,
                                         Patch(
                                             'Related Dishes',
                                             Defaults('Related Dishes'),
@@ -4922,7 +4922,7 @@
                                                     Filter(
                                                         'Related SKUS',
                                                         Customer.Customer = _V_SelectedCustomer.Customer,
-                                                        'Related Dish'.'Related Dish' = _V_SelectedDish.'Related Dish'
+                                                        'Related Dish'.'Related Dish' = _V_SelectedDish_1.'Related Dish'
                                                     ),
                                                     'Total Potential Opportunity '
                                                 )
@@ -4930,15 +4930,15 @@
                                         )
                                     ),
                                     Set(
-                                        _V_SelectedDish,
+                                        _V_SelectedDish_1,
                                         Patch(
                                             'Related Dishes',
-                                            {'Related Dish': _V_SelectedDish.'Related Dish'},
+                                            {'Related Dish': _V_SelectedDish_1.'Related Dish'},
                                             {'Total Potential Opportunity':Sum(
                                                     Filter(
                                                         'Related SKUS',
                                                         Customer.Customer = _V_SelectedCustomer.Customer,
-                                                        'Related Dish'.'Related Dish' = _V_SelectedDish.'Related Dish'
+                                                        'Related Dish'.'Related Dish' = _V_SelectedDish_1.'Related Dish'
                                                     ),
                                                     'Total Potential Opportunity '
                                                 )
@@ -5581,7 +5581,7 @@
                                             true
                                         );
                                         Set(
-                                            _V_SelectedDish,
+                                            _V_SelectedDish_1,
                                             ThisItem
                                         );
                                         Set(
@@ -5600,7 +5600,7 @@
                                             Filter(
                                                 _C_RSKUs,
                                                 Customer.Customer = _V_SelectedCustomer.Customer,
-                                                'Related Dish'.'Related Dish' = _V_SelectedDish.'Related Dish'
+                                                'Related Dish'.'Related Dish' = _V_SelectedDish_1.'Related Dish'
                                             ),
                                             Collect(
                                                 col_selectedDishDetails,
@@ -6167,9 +6167,9 @@
                             */
                             Remove(
                                 _C_RDishes,
-                                _V_SelectedDish
+                                _V_SelectedDish_1
                             );
-                            Remove('Related Dishes',_V_SelectedDish);
+                            Remove('Related Dishes',_V_SelectedDish_1);
                             Set(_V_editDish,false);
                             Set(_V_hideDishGallery,false);
                             //Set(_V_setPenetration,true);
@@ -6185,4 +6185,30 @@
                         Text: ="Yes! "
                         Width: =Parent.Width/6
                         ZIndex: =2
+
+    Main_Container_9 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        X: =40
+        Y: =40
+        ZIndex: =4
+
+        "'Main Header_12' As 'Main Header_6'":
+            Height: =Parent.Height/11
+            LayoutMinHeight: =640
+            LayoutMinWidth: =640
+            Visible: =true
+            Width: =Parent.Width
+
+        Body_Container_9 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =Parent.Height*10/11
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            ZIndex: =3
 
