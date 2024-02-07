@@ -8158,7 +8158,7 @@
                                         Text: =ThisItem.Remarks
                                         Visible: =!_V_editDish
                                         Width: =322
-                                        X: ='lbl_PotentialOpportunity_1'.X+'lbl_PotentialOpportunity_1'.Width
+                                        X: =lbl_PotentialOpportunity_1.X+lbl_PotentialOpportunity_1.Width
                                         ZIndex: =9
 
                                     ip_remarks_7 As text:
@@ -8190,7 +8190,7 @@
                                         Size: =10
                                         Visible: =_V_editDish
                                         Width: =274
-                                        X: ='lbl_PotentialOpportunity_1'.X+'lbl_PotentialOpportunity_1'.Width
+                                        X: =lbl_PotentialOpportunity_1.X+lbl_PotentialOpportunity_1.Width
                                         ZIndex: =10
 
                                     Icon_deleteSKU_1 As icon.CancelBadge:
