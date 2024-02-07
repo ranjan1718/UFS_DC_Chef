@@ -39860,6 +39860,186 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Route_Planning_Screen.Con_SpecialEvent_1.DeletePopUp_Container_8.Header_10.AC_Behaviour_Edit_12.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.Con_SpecialEvent_1.DeletePopUp_Container_8.Header_10.AC_Behaviour_Edit_12.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.Con_SpecialEvent_1.DeletePopUp_Container_8.Header_10.AC_Behaviour_Edit_12"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.Con_SpecialEvent_1.DeletePopUp_Container_8.Header_10.AC_Behaviour_Edit_12.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.Con_SpecialEvent_1.DeletePopUp_Container_8.Header_10.AC_Behaviour_Edit_12.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.Con_SpecialEvent_1.DeletePopUp_Container_8.Header_10.AC_Behaviour_Edit_12"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.Con_SpecialEvent_1.DeletePopUp_Container_8.'Con_Special Event_4'.Heading_Container_8.Container9_8.Icon10_7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.Con_SpecialEvent_1.DeletePopUp_Container_8.'Con_Special Event_4'.Heading_Container_8.Container9_8.Icon10_7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.Con_SpecialEvent_1.DeletePopUp_Container_8.'Con_Special Event_4'.Heading_Container_8.Container9_8.Icon10_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.Con_SpecialEvent_1.DeletePopUp_Container_8.'Con_Special Event_4'.Heading_Container_8.Container9_8.Icon10_7.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.Con_SpecialEvent_1.DeletePopUp_Container_8.'Con_Special Event_4'.Heading_Container_8.Container9_8.Icon10_7.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.Con_SpecialEvent_1.DeletePopUp_Container_8.'Con_Special Event_4'.Heading_Container_8.Container9_8.Icon10_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.Con_SpecialEvent_1.DeletePopUp_Container_8.'Con_Special Event_4'.Records_Container_8.AllDayIncall_7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.Con_SpecialEvent_1.DeletePopUp_Container_8.'Con_Special Event_4'.Records_Container_8.AllDayIncall_7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.Con_SpecialEvent_1.DeletePopUp_Container_8.'Con_Special Event_4'.Records_Container_8.AllDayIncall_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Route_Planning_Screen.Con_SpecialEvent_1.DeletePopUp_Container_8.'Con_Special Event_4'.Records_Container_8.AllDayIncall_7.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Route_Planning_Screen.Con_SpecialEvent_1.DeletePopUp_Container_8.'Con_Special Event_4'.Records_Container_8.AllDayIncall_7.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Route_Planning_Screen",
+                "type": "Route_Planning_Screen.Con_SpecialEvent_1.DeletePopUp_Container_8.'Con_Special Event_4'.Records_Container_8.AllDayIncall_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.var_ModuleblackColor"
                 }
               ],
