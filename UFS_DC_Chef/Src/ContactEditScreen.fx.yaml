@@ -2073,7 +2073,8 @@ ContactEditScreen As screen:
                                     ZIndex: =3
 
                                 "'DC Chef Teritory ComboBox_1' As combobox":
-                                    BorderColor: =RGBA(131, 24, 75, 1)
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    BorderThickness: =1
                                     ChevronBackground: =//RGBA(255, 90, 0, 1)
                                     ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
                                     ChevronDisabledFill: =RGBA(244, 244, 244, 1)
@@ -2163,13 +2164,12 @@ ContactEditScreen As screen:
                                     ZIndex: =3
 
                                 "'Concepts Input_1' As text":
-                                    Color: =RGBA(255, 255, 255, 1)
+                                    Color: =RGBA(0, 0, 0, 1)
                                     Default: =If(_V_Customer_New,"",Concat(Filter(Concepts, Customer.Customer=_V_SelectedCustomer.Customer),'Name of Concept Resto', ", "))
                                     DisabledBorderColor: =RGBA(204, 72, 0, 1)
                                     DisabledColor: =RGBA(106, 122, 127, 1)
                                     DisabledFill: =RGBA(255, 255, 255, 1)
                                     DisplayMode: =DisplayMode.Disabled
-                                    Fill: =RGBA(255, 139, 76, 1)
                                     FillPortions: =1
                                     FocusedBorderThickness: =4
                                     Height: =Parent.Height-5
@@ -4521,10 +4521,12 @@ ContactEditScreen As screen:
                                                 ZIndex: =3
 
                                             "'Type of Engagement ComboBox' As combobox":
-                                                BorderColor: =RGBA(131, 24, 75, 1)
-                                                ChevronBackground: =RGBA(255, 90, 0, 1)
+                                                BorderColor: =RGBA(0, 0, 0, 1)
+                                                BorderThickness: =1
+                                                ChevronBackground: =//RGBA(255, 90, 0, 1)
                                                 ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
                                                 ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                                                ChevronFill: =RGBA(0, 0, 0, 1)
                                                 ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                                                 ChevronHoverFill: =RGBA(255, 255, 255, 1)
                                                 DefaultSelectedItems: =If(!_V_Customer_New,[_V_SelectedCustomer.ulchef_typeofengagement])
@@ -4535,7 +4537,7 @@ ContactEditScreen As screen:
                                                 FillPortions: =1
                                                 Height: =Parent.Height-12
                                                 HoverColor: =RGBA(0, 0, 0, 1)
-                                                HoverFill: =RGBA(255, 211, 205, 1)
+                                                HoverFill: =RGBA(255, 255, 255, 1)
                                                 InputTextPlaceholder: ="Find items"
                                                 IsSearchable: =false
                                                 Items: =Choices('Customer Approval')
@@ -5041,10 +5043,12 @@ ContactEditScreen As screen:
                                                 ZIndex: =3
 
                                             "'Ordering ComboBox' As combobox":
-                                                BorderColor: =RGBA(131, 24, 75, 1)
-                                                ChevronBackground: =RGBA(255, 90, 0, 1)
+                                                BorderColor: =RGBA(0, 0, 0, 1)
+                                                BorderThickness: =1
+                                                ChevronBackground: =RGBA(255, 255, 255, 1)
                                                 ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
                                                 ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                                                ChevronFill: =RGBA(0, 0, 0, 1)
                                                 ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                                                 ChevronHoverFill: =RGBA(255, 255, 255, 1)
                                                 DefaultSelectedItems: =If(!_V_Customer_New,[_V_SelectedCustomer.ulchef_ordering])
@@ -5055,7 +5059,7 @@ ContactEditScreen As screen:
                                                 FillPortions: =1
                                                 Height: =Parent.Height-12
                                                 HoverColor: =RGBA(0, 0, 0, 1)
-                                                HoverFill: =RGBA(255, 211, 205, 1)
+                                                HoverFill: =RGBA(255, 255, 255, 1)
                                                 InputTextPlaceholder: ="Find items"
                                                 Items: =Choices('Customer Approval')
                                                 LayoutMinWidth: =0
@@ -5132,10 +5136,12 @@ ContactEditScreen As screen:
                                                 ZIndex: =3
 
                                             "'Invoice To ComboBox' As combobox":
-                                                BorderColor: =RGBA(131, 24, 75, 1)
-                                                ChevronBackground: =RGBA(255, 90, 0, 1)
+                                                BorderColor: =RGBA(0, 0, 0, 1)
+                                                BorderThickness: =1
+                                                ChevronBackground: =RGBA(255, 255, 255, 1)
                                                 ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
                                                 ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                                                ChevronFill: =RGBA(0, 0, 0, 1)
                                                 ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                                                 ChevronHoverFill: =RGBA(255, 255, 255, 1)
                                                 DefaultSelectedItems: =If(!_V_Customer_New,[_V_SelectedCustomer.ulchef_invoiceto])
@@ -5146,7 +5152,7 @@ ContactEditScreen As screen:
                                                 FillPortions: =1
                                                 Height: =Parent.Height-12
                                                 HoverColor: =RGBA(0, 0, 0, 1)
-                                                HoverFill: =RGBA(255, 211, 205, 1)
+                                                HoverFill: =RGBA(255, 255, 255, 1)
                                                 InputTextPlaceholder: ="Find items"
                                                 Items: =Choices('Customer Approval')
                                                 LayoutMinWidth: =0
@@ -5223,10 +5229,12 @@ ContactEditScreen As screen:
                                                 ZIndex: =3
 
                                             "'Delivery ComboBox' As combobox":
-                                                BorderColor: =RGBA(131, 24, 75, 1)
-                                                ChevronBackground: =RGBA(255, 90, 0, 1)
+                                                BorderColor: =RGBA(0, 0, 0, 1)
+                                                BorderThickness: =1
+                                                ChevronBackground: =RGBA(255, 255, 255, 1)
                                                 ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
                                                 ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                                                ChevronFill: =RGBA(0, 0, 0, 1)
                                                 ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                                                 ChevronHoverFill: =RGBA(255, 255, 255, 1)
                                                 DefaultSelectedItems: =If(!_V_Customer_New,[_V_SelectedCustomer.ulchef_delivery])
@@ -5237,7 +5245,7 @@ ContactEditScreen As screen:
                                                 FillPortions: =1
                                                 Height: =Parent.Height-12
                                                 HoverColor: =RGBA(0, 0, 0, 1)
-                                                HoverFill: =RGBA(255, 211, 205, 1)
+                                                HoverFill: =RGBA(255, 255, 255, 1)
                                                 InputTextPlaceholder: ="Find items"
                                                 Items: =Choices('Customer Approval')
                                                 LayoutMinWidth: =0
@@ -5314,10 +5322,12 @@ ContactEditScreen As screen:
                                                 ZIndex: =3
 
                                             "'Approval ComboBox' As combobox":
-                                                BorderColor: =RGBA(131, 24, 75, 1)
-                                                ChevronBackground: =RGBA(255, 90, 0, 1)
+                                                BorderColor: =RGBA(0, 0, 0, 1)
+                                                BorderThickness: =1
+                                                ChevronBackground: =RGBA(255, 255, 255, 1)
                                                 ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
                                                 ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                                                ChevronFill: =RGBA(0, 0, 0, 1)
                                                 ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                                                 ChevronHoverFill: =RGBA(255, 255, 255, 1)
                                                 DefaultSelectedItems: =If(!_V_Customer_New,[_V_SelectedCustomer.ulchef_approval])
@@ -5328,7 +5338,7 @@ ContactEditScreen As screen:
                                                 FillPortions: =1
                                                 Height: =Parent.Height-12
                                                 HoverColor: =RGBA(0, 0, 0, 1)
-                                                HoverFill: =RGBA(255, 211, 205, 1)
+                                                HoverFill: =RGBA(255, 255, 255, 1)
                                                 InputTextPlaceholder: ="Find items"
                                                 Items: =Choices('Customer Approval')
                                                 LayoutMinWidth: =0
@@ -5384,14 +5394,14 @@ ContactEditScreen As screen:
                                                 ZIndex: =2
 
                                             "'Average Monthly Sales Input' As text":
-                                                BorderColor: =RGBA(204, 72, 0, 1)
-                                                BorderThickness: =0
-                                                Color: =RGBA(255, 255, 255, 1)
+                                                Color: =RGBA(0, 0, 0, 1)
                                                 Default: =If(_V_Customer_New,"",_V_SelectedCustomer.ulchef_averagemonthlysales)
                                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                                 DisabledFill: =RGBA(244, 244, 244, 1)
-                                                Fill: =RGBA(255, 90, 0, 1)
+                                                Fill: |-
+                                                    =//RGBA(255, 90, 0, 1)
+                                                    var_whitecolor
                                                 FillPortions: =1
                                                 FocusedBorderThickness: =4
                                                 Format: =TextFormat.Number
@@ -5470,14 +5480,11 @@ ContactEditScreen As screen:
                                                 ZIndex: =2
 
                                             "'Seating Capacity Input' As text":
-                                                BorderColor: =RGBA(204, 72, 0, 1)
-                                                BorderThickness: =0
-                                                Color: =RGBA(255, 255, 255, 1)
+                                                Color: =RGBA(0, 0, 0, 1)
                                                 Default: =If(_V_Customer_New,"",_V_SelectedCustomer.ulchef_seatingcapacity)
                                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                                 DisabledFill: =RGBA(244, 244, 244, 1)
-                                                Fill: =RGBA(255, 90, 0, 1)
                                                 FillPortions: =1
                                                 FocusedBorderThickness: =4
                                                 Format: =TextFormat.Number
@@ -5557,14 +5564,11 @@ ContactEditScreen As screen:
                                                 ZIndex: =2
 
                                             "'# of Chairs Input' As text":
-                                                BorderColor: =RGBA(204, 72, 0, 1)
-                                                BorderThickness: =0
-                                                Color: =RGBA(255, 255, 255, 1)
+                                                Color: =RGBA(0, 0, 0, 1)
                                                 Default: =If(_V_Customer_New,"",_V_SelectedCustomer.ulchef_ofchairs)
                                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                                 DisabledFill: =RGBA(244, 244, 244, 1)
-                                                Fill: =RGBA(255, 90, 0, 1)
                                                 FillPortions: =1
                                                 FocusedBorderThickness: =4
                                                 Format: =TextFormat.Number
@@ -5644,14 +5648,11 @@ ContactEditScreen As screen:
                                                 ZIndex: =2
 
                                             "'# of Tables Input' As text":
-                                                BorderColor: =RGBA(204, 72, 0, 1)
-                                                BorderThickness: =0
-                                                Color: =RGBA(255, 255, 255, 1)
+                                                Color: =RGBA(0, 0, 0, 1)
                                                 Default: =If(_V_Customer_New,"",_V_SelectedCustomer.ulchef_oftables)
                                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                                 DisabledFill: =RGBA(244, 244, 244, 1)
-                                                Fill: =RGBA(255, 90, 0, 1)
                                                 FillPortions: =1
                                                 FocusedBorderThickness: =4
                                                 Format: =TextFormat.Number
@@ -5730,14 +5731,11 @@ ContactEditScreen As screen:
                                                 ZIndex: =2
 
                                             "'Operating Hours Input' As text":
-                                                BorderColor: =RGBA(204, 72, 0, 1)
-                                                BorderThickness: =0
-                                                Color: =RGBA(255, 255, 255, 1)
+                                                Color: =RGBA(0, 0, 0, 1)
                                                 Default: =If(_V_Customer_New,"",_V_SelectedCustomer.ulchef_operatinghours)
                                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                                 DisabledFill: =RGBA(244, 244, 244, 1)
-                                                Fill: =RGBA(255, 90, 0, 1)
                                                 FillPortions: =1
                                                 FocusedBorderThickness: =4
                                                 Format: =TextFormat.Number
@@ -5817,14 +5815,11 @@ ContactEditScreen As screen:
                                                 ZIndex: =2
 
                                             "'# of takeaway food per Input' As text":
-                                                BorderColor: =RGBA(204, 72, 0, 1)
-                                                BorderThickness: =0
-                                                Color: =RGBA(255, 255, 255, 1)
+                                                Color: =RGBA(0, 0, 0, 1)
                                                 Default: =If(_V_Customer_New,"",_V_SelectedCustomer.ulchef_oftakeawayfoodperday)
                                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                                 DisabledFill: =RGBA(244, 244, 244, 1)
-                                                Fill: =RGBA(255, 90, 0, 1)
                                                 FillPortions: =1
                                                 FocusedBorderThickness: =4
                                                 Format: =TextFormat.Number
