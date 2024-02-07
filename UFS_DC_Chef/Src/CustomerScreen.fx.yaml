@@ -126,7 +126,7 @@ CustomerScreen As screen:
                             LoadingSpinner: =LoadingSpinner.Data
                             OnSelect: |-
                                 =
-                                //ClearCollect(_V_SelectedCustomer,ThisItem);
+                                //ClearCollect(_V_SelectedCustomer_1,ThisItem);
                             TemplatePadding: =8
                             TemplateSize: =280
                             ZIndex: =1
@@ -155,7 +155,7 @@ CustomerScreen As screen:
                                     Height: =19
                                     OnSelect: |
                                         =Set(
-                                            _V_SelectedCustomer, ThisItem
+                                            _V_SelectedCustomer_1, ThisItem
                                         );
                                         Set(
                                             _V_PrimaryContact,
@@ -176,7 +176,7 @@ CustomerScreen As screen:
                                     FontWeight: =FontWeight.Semibold
                                     OnSelect: |
                                         =Set(
-                                            _V_SelectedCustomer, ThisItem
+                                            _V_SelectedCustomer_1, ThisItem
                                         );
                                         Set(
                                             _V_PrimaryContact,
@@ -317,7 +317,7 @@ CustomerScreen As screen:
                                     DisabledFill: =RGBA(244, 244, 244, 1)
                                     Fill: =RGBA(255, 255, 255, 1)
                                     Height: =Parent.Height/1.3
-                                    Image: =_V_SelectedCustomer.'Profile Image'
+                                    Image: =_V_SelectedCustomer_1.'Profile Image'
                                     ImagePosition: =ImagePosition.Fill
                                     PaddingBottom: =2
                                     PaddingLeft: =2
@@ -350,7 +350,7 @@ CustomerScreen As screen:
                                         FontWeight: =FontWeight.Bold
                                         Height: =Parent.Height/3
                                         Size: =13
-                                        Text: =_V_SelectedCustomer.Name
+                                        Text: =_V_SelectedCustomer_1.Name
                                         Width: =Parent.Width
                                         ZIndex: =1
 
@@ -363,7 +363,7 @@ CustomerScreen As screen:
                                         LayoutMinHeight: =0
                                         PaddingBottom: =0
                                         Size: =12
-                                        Text: =_V_SelectedCustomer.'Customer Code'
+                                        Text: =_V_SelectedCustomer_1.'Customer Code'
                                         Width: =Parent.Width
                                         ZIndex: =2
 
@@ -376,7 +376,7 @@ CustomerScreen As screen:
                                         LayoutMinHeight: =0
                                         PaddingTop: =0
                                         Size: =12
-                                        Text: =_V_SelectedCustomer.'Armstrong Code'
+                                        Text: =_V_SelectedCustomer_1.'Armstrong Code'
                                         Width: =Parent.Width
                                         ZIndex: =3
 
@@ -390,7 +390,7 @@ CustomerScreen As screen:
                                         LayoutMinHeight: =0
                                         PaddingTop: =0
                                         Size: =12
-                                        Text: =_V_SelectedCustomer.'Tag Inactive Reason'
+                                        Text: =_V_SelectedCustomer_1.'Tag Inactive Reason'
                                         Width: =Parent.Width
                                         ZIndex: =4
 
@@ -461,7 +461,7 @@ CustomerScreen As screen:
                                                 Reset('# of Tables Input');
                                                 Reset('Operating Hours Input');
                                                 Reset('# of takeaway food per Input');
-                                            Visible: =_V_SelectedCustomer.Status='Status (Customers)'.Active
+                                            Visible: =_V_SelectedCustomer_1.Status='Status (Customers)'.Active
                                             Width: =23
                                             ZIndex: =1
 
@@ -552,7 +552,7 @@ CustomerScreen As screen:
                                 LayoutMinWidth: =0
                                 PaddingLeft: =15
                                 Size: =10
-                                Text: =_V_SelectedCustomer.ulchef_area
+                                Text: =_V_SelectedCustomer_1.ulchef_area
                                 Width: =Parent.Width/3
                                 ZIndex: =2
 
@@ -595,7 +595,7 @@ CustomerScreen As screen:
                                 LayoutMinWidth: =0
                                 PaddingLeft: =15
                                 Size: =10
-                                Text: =_V_SelectedCustomer.Distributor.Name
+                                Text: =_V_SelectedCustomer_1.Distributor.Name
                                 Width: =Parent.Width/3
                                 ZIndex: =2
 
@@ -638,7 +638,7 @@ CustomerScreen As screen:
                                 LayoutMinWidth: =0
                                 PaddingLeft: =15
                                 Size: =13
-                                Text: =_V_SelectedCustomer.'Mother Group (ulchef_mothergroupslt)'
+                                Text: =_V_SelectedCustomer_1.'Mother Group (ulchef_mothergroupslt)'
                                 Width: =Parent.Width/3
                                 ZIndex: =2
 
@@ -683,7 +683,7 @@ CustomerScreen As screen:
                                 Size: =10
                                 Text: |-
                                     =
-                                    _V_SelectedCustomer.ulchef_leaddress
+                                    _V_SelectedCustomer_1.ulchef_leaddress
                                 Width: =Parent.Width/3
                                 ZIndex: =2
 
@@ -730,7 +730,7 @@ CustomerScreen As screen:
                                     =//Customers_Gallery.Selected.'Concepts (ulchef_Concepts)'.'Name of Concept Resto'
                                     Concat(Filter(
                                         Concepts,
-                                        _V_SelectedCustomer.Customer = ThisRecord.Customer.Customer
+                                        _V_SelectedCustomer_1.Customer = ThisRecord.Customer.Customer
                                     ), 'Name of Concept Resto', ", ")
                                 Width: =Parent.Width/3
                                 ZIndex: =2
@@ -799,7 +799,7 @@ CustomerScreen As screen:
                                     Navigate(ContactEditScreen, ScreenTransition.Fade, {
                                         _V_Customer_New: false
                                     });
-                                Visible: =_V_SelectedCustomer.Status='Status (Customers)'.Active
+                                Visible: =_V_SelectedCustomer_1.Status='Status (Customers)'.Active
                                 Width: =Self.Height
                                 ZIndex: =2
 
@@ -888,7 +888,7 @@ CustomerScreen As screen:
                                     LayoutMinWidth: =0
                                     PaddingLeft: =15
                                     Size: =10
-                                    Text: =_V_SelectedCustomer.ulchef_typeofengagement
+                                    Text: =_V_SelectedCustomer_1.ulchef_typeofengagement
                                     Width: =Parent.Width/3
                                     ZIndex: =2
 
@@ -930,7 +930,7 @@ CustomerScreen As screen:
                                     LayoutMinWidth: =0
                                     PaddingLeft: =15
                                     Size: =10
-                                    Text: =_V_SelectedCustomer.ulchef_ordering
+                                    Text: =_V_SelectedCustomer_1.ulchef_ordering
                                     Width: =Parent.Width/3
                                     ZIndex: =2
 
@@ -972,7 +972,7 @@ CustomerScreen As screen:
                                     LayoutMinWidth: =0
                                     PaddingLeft: =15
                                     Size: =10
-                                    Text: =_V_SelectedCustomer.ulchef_invoiceto
+                                    Text: =_V_SelectedCustomer_1.ulchef_invoiceto
                                     Width: =Parent.Width/3
                                     ZIndex: =2
 
@@ -1014,7 +1014,7 @@ CustomerScreen As screen:
                                     LayoutMinWidth: =0
                                     PaddingLeft: =15
                                     Size: =10
-                                    Text: =_V_SelectedCustomer.ulchef_delivery
+                                    Text: =_V_SelectedCustomer_1.ulchef_delivery
                                     Width: =Parent.Width/3
                                     ZIndex: =2
 
@@ -1056,7 +1056,7 @@ CustomerScreen As screen:
                                     LayoutMinWidth: =0
                                     PaddingLeft: =15
                                     Size: =10
-                                    Text: =_V_SelectedCustomer.ulchef_approval
+                                    Text: =_V_SelectedCustomer_1.ulchef_approval
                                     Width: =Parent.Width/3
                                     ZIndex: =2
 
@@ -1111,7 +1111,7 @@ CustomerScreen As screen:
                                     LayoutMinWidth: =0
                                     PaddingLeft: =15
                                     Size: =10
-                                    Text: =_V_SelectedCustomer.ulchef_averagemonthlysales
+                                    Text: =_V_SelectedCustomer_1.ulchef_averagemonthlysales
                                     Width: =Parent.Width/3
                                     ZIndex: =2
 
@@ -1153,7 +1153,7 @@ CustomerScreen As screen:
                                     LayoutMinWidth: =0
                                     PaddingLeft: =15
                                     Size: =10
-                                    Text: =_V_SelectedCustomer.ulchef_seatingcapacity
+                                    Text: =_V_SelectedCustomer_1.ulchef_seatingcapacity
                                     Width: =Parent.Width/3
                                     ZIndex: =2
 
@@ -1197,7 +1197,7 @@ CustomerScreen As screen:
                                     LayoutMinWidth: =0
                                     PaddingLeft: =15
                                     Size: =10
-                                    Text: =_V_SelectedCustomer.ulchef_ofchairs
+                                    Text: =_V_SelectedCustomer_1.ulchef_ofchairs
                                     Width: =Parent.Width/3
                                     ZIndex: =2
 
@@ -1240,7 +1240,7 @@ CustomerScreen As screen:
                                     LayoutMinWidth: =0
                                     PaddingLeft: =15
                                     Size: =10
-                                    Text: =_V_SelectedCustomer.ulchef_oftables
+                                    Text: =_V_SelectedCustomer_1.ulchef_oftables
                                     Width: =Parent.Width/3
                                     ZIndex: =2
 
@@ -1282,7 +1282,7 @@ CustomerScreen As screen:
                                     LayoutMinWidth: =0
                                     PaddingLeft: =15
                                     Size: =10
-                                    Text: =_V_SelectedCustomer.ulchef_operatinghours
+                                    Text: =_V_SelectedCustomer_1.ulchef_operatinghours
                                     Width: =Parent.Width/3
                                     ZIndex: =2
 
@@ -1325,7 +1325,7 @@ CustomerScreen As screen:
                                     LayoutMinWidth: =0
                                     PaddingLeft: =15
                                     Size: =10
-                                    Text: =_V_SelectedCustomer.ulchef_oftakeawayfoodperday
+                                    Text: =_V_SelectedCustomer_1.ulchef_oftakeawayfoodperday
                                     Width: =Parent.Width/3
                                     ZIndex: =2
 
@@ -1481,7 +1481,7 @@ CustomerScreen As screen:
                                     LayoutMinWidth: =0
                                     PaddingLeft: =15
                                     Size: =10
-                                    Text: =_V_SelectedCustomer.ulchef_averagemonthlysales
+                                    Text: =_V_SelectedCustomer_1.ulchef_averagemonthlysales
                                     Width: =Parent.Width/3
                                     ZIndex: =2
 
@@ -1524,7 +1524,7 @@ CustomerScreen As screen:
                                     LayoutMinWidth: =0
                                     PaddingLeft: =15
                                     Size: =10
-                                    Text: =_V_SelectedCustomer.ulchef_seatingcapacity
+                                    Text: =_V_SelectedCustomer_1.ulchef_seatingcapacity
                                     Width: =Parent.Width/3
                                     ZIndex: =2
 
@@ -1568,7 +1568,7 @@ CustomerScreen As screen:
                                     LayoutMinWidth: =0
                                     PaddingLeft: =15
                                     Size: =10
-                                    Text: =_V_SelectedCustomer.ulchef_ofchairs
+                                    Text: =_V_SelectedCustomer_1.ulchef_ofchairs
                                     Width: =Parent.Width/3
                                     ZIndex: =2
 
@@ -1737,7 +1737,7 @@ CustomerScreen As screen:
                                     LayoutMinWidth: =0
                                     PaddingLeft: =15
                                     Size: =10
-                                    Text: =_V_SelectedCustomer.ulchef_typeofengagement
+                                    Text: =_V_SelectedCustomer_1.ulchef_typeofengagement
                                     Width: =Parent.Width/3
                                     ZIndex: =2
 
@@ -1780,7 +1780,7 @@ CustomerScreen As screen:
                                     LayoutMinWidth: =0
                                     PaddingLeft: =15
                                     Size: =10
-                                    Text: =_V_SelectedCustomer.ulchef_ordering
+                                    Text: =_V_SelectedCustomer_1.ulchef_ordering
                                     Width: =Parent.Width/3
                                     ZIndex: =2
 
@@ -1823,7 +1823,7 @@ CustomerScreen As screen:
                                     LayoutMinWidth: =0
                                     PaddingLeft: =15
                                     Size: =10
-                                    Text: =_V_SelectedCustomer.ulchef_invoiceto
+                                    Text: =_V_SelectedCustomer_1.ulchef_invoiceto
                                     Width: =Parent.Width/3
                                     ZIndex: =2
 
@@ -1866,7 +1866,7 @@ CustomerScreen As screen:
                                     LayoutMinWidth: =0
                                     PaddingLeft: =15
                                     Size: =10
-                                    Text: =_V_SelectedCustomer.ulchef_delivery
+                                    Text: =_V_SelectedCustomer_1.ulchef_delivery
                                     Width: =Parent.Width/3
                                     ZIndex: =2
 
@@ -1909,7 +1909,7 @@ CustomerScreen As screen:
                                     LayoutMinWidth: =0
                                     PaddingLeft: =15
                                     Size: =10
-                                    Text: =_V_SelectedCustomer.ulchef_approval
+                                    Text: =_V_SelectedCustomer_1.ulchef_approval
                                     Width: =Parent.Width/3
                                     ZIndex: =2
 
@@ -2260,7 +2260,7 @@ CustomerScreen As screen:
                                                 Concepts,
                                                 Defaults(Concepts),
                                                 {
-                                                    Customer: LookUp(Customers, Customer=_V_SelectedCustomer.Customer)
+                                                    Customer: LookUp(Customers, Customer=_V_SelectedCustomer_1.Customer)
                                                 }
                                             ))*/
                                             
@@ -2271,14 +2271,14 @@ CustomerScreen As screen:
                                                 Collect(
                                                     _C_Concepts,
                                                     AddColumns({
-                                                        Customer: LookUp(_C_Customers, Customer=_V_SelectedCustomer.Customer)
+                                                        Customer: LookUp(_C_Customers, Customer=_V_SelectedCustomer_1.Customer)
                                                     }, "createofflineRequired", false)
                                                 );
                                                 Patch(
                                                     Concepts,
                                                     Defaults(Concepts),
                                                     {
-                                                        Customer: LookUp(_C_Customers, Customer=_V_SelectedCustomer.Customer)
+                                                        Customer: LookUp(_C_Customers, Customer=_V_SelectedCustomer_1.Customer)
                                                     }
                                                 );
                                                 Refresh(Concepts);
@@ -2290,14 +2290,14 @@ CustomerScreen As screen:
                                                 Collect(
                                                     _C_Concepts,
                                                     AddColumns({
-                                                        Customer: LookUp(_C_Customers, Customer=_V_SelectedCustomer.Customer)
+                                                        Customer: LookUp(_C_Customers, Customer=_V_SelectedCustomer_1.Customer)
                                                     }, "createofflineRequired", true)
                                                 );
                                                 Select(btn_ClearData_customer);
                                                 Select(btn_SaveData_customer);
                                             
                                             )
-                                        Visible: =_V_SelectedCustomer.Status='Status (Customers)'.Active
+                                        Visible: =_V_SelectedCustomer_1.Status='Status (Customers)'.Active
                                         Width: =25
                                         X: =1281
                                         Y: =108
@@ -2367,7 +2367,7 @@ CustomerScreen As screen:
                                     PaddingLeft: =5
                                     PaddingRight: =5
                                     PaddingTop: =5
-                                    Visible: =_V_SelectedCustomer.Status='Status (Customers)'.Active
+                                    Visible: =_V_SelectedCustomer_1.Status='Status (Customers)'.Active
                                     Width: =Self.Height
                                     ZIndex: =5
 
@@ -2399,7 +2399,7 @@ CustomerScreen As screen:
                                         
                                         Filter(
                                             _C_Concepts,
-                                            ThisRecord.Customer.Customer = _V_SelectedCustomer.Customer, !removeofflineRequired
+                                            ThisRecord.Customer.Customer = _V_SelectedCustomer_1.Customer, !removeofflineRequired
                                         )
                                     Layout: =Layout.Vertical
                                     LayoutMinHeight: =0
@@ -2620,7 +2620,7 @@ CustomerScreen As screen:
                                             PaddingLeft: =4
                                             PaddingRight: =4
                                             PaddingTop: =4
-                                            Visible: =_V_SelectedCustomer.Status='Status (Customers)'.Active
+                                            Visible: =_V_SelectedCustomer_1.Status='Status (Customers)'.Active
                                             Width: =30
                                             ZIndex: =4
 
@@ -3368,7 +3368,7 @@ CustomerScreen As screen:
                                             PaddingLeft: =3
                                             PaddingRight: =3
                                             PaddingTop: =3
-                                            Visible: =_V_Contact_Edit_Or_New in ["Open2", ""] && _V_SelectedCustomer.Status='Status (Customers)'.Active
+                                            Visible: =_V_Contact_Edit_Or_New in ["Open2", ""] && _V_SelectedCustomer_1.Status='Status (Customers)'.Active
                                             Width: =25
                                             X: =1281
                                             Y: =108
@@ -3701,7 +3701,7 @@ CustomerScreen As screen:
                                 DelayItemLoading: =true
                                 FillPortions: =10
                                 Height: =Parent.Height-Self.Y-5
-                                Items: =Filter(_C_Contacts, !IsBlank(ThisRecord.Customer), ThisRecord.Customer.Customer = _V_SelectedCustomer.Customer, Component1_2.TypedText in Name, !removeofflineRequired)
+                                Items: =Filter(_C_Contacts, !IsBlank(ThisRecord.Customer), ThisRecord.Customer.Customer = _V_SelectedCustomer_1.Customer, Component1_2.TypedText in Name, !removeofflineRequired)
                                 Layout: =Layout.Vertical
                                 LayoutMinHeight: =0
                                 LayoutMinWidth: =320
@@ -4182,7 +4182,7 @@ CustomerScreen As screen:
                                     PaddingLeft: =8
                                     PaddingRight: =10
                                     PaddingTop: =10
-                                    Visible: =!var_enableEdit && _V_SelectedCustomer.Status='Status (Customers)'.Active
+                                    Visible: =!var_enableEdit && _V_SelectedCustomer_1.Status='Status (Customers)'.Active
                                     Width: =Parent.Width/14
                                     ZIndex: =5
 
@@ -5293,7 +5293,7 @@ CustomerScreen As screen:
                                                                 Facebook: 'Facebook Input'.Text,
                                                                 IG: 'IG Input'.Text,
                                                                 'Linked In': 'LinkedIn Input'.Text,
-                                                                Customer: LookUp(Customers, Customer = _V_SelectedCustomer.Customer),
+                                                                Customer: LookUp(Customers, Customer = _V_SelectedCustomer_1.Customer),
                                                                 Image:UploadedImage1_3.Image,
                                                                 Position:If(ComboBox2.Selected.Value="Others" && !IsBlank('Position Input'),'Position Input'.Text,ComboBox2.Selected.Value),
                                                                 'Decision Level':cmbDecisionLevel.SelectedItems,
@@ -5304,10 +5304,10 @@ CustomerScreen As screen:
                                                         If(
                                                             Toggle1_1.Value,
                                                             If(
-                                                                (!IsBlankOrError(_V_SelectedCustomer.'Primary Contact'.Contact)) && _V_SelectedCustomer.'Primary Contact'.Contact <> _V_SelectedContact.Contact,
+                                                                (!IsBlankOrError(_V_SelectedCustomer_1.'Primary Contact'.Contact)) && _V_SelectedCustomer_1.'Primary Contact'.Contact <> _V_SelectedContact.Contact,
                                                                 Patch(
                                                                     Contacts_1,
-                                                                    {Contact: _V_SelectedCustomer.'Primary Contact'.Contact},
+                                                                    {Contact: _V_SelectedCustomer_1.'Primary Contact'.Contact},
                                                                     {
                                                                         IsPrimaryContact: false
                                                                     }
@@ -5315,7 +5315,7 @@ CustomerScreen As screen:
                                                             );
                                                             Patch(
                                                                 Customers,
-                                                                {Customer: _V_SelectedCustomer.Customer},
+                                                                {Customer: _V_SelectedCustomer_1.Customer},
                                                                 {
                                                                     'Primary Contact': DropColumns(
                                                                         _V_SelectedContact,
@@ -5346,7 +5346,7 @@ CustomerScreen As screen:
                                                                 Facebook: 'Facebook Input'.Text,
                                                                 IG: 'IG Input'.Text,
                                                                 'Linked In': 'LinkedIn Input'.Text,
-                                                                Customer: LookUp(Customers, Customer = _V_SelectedCustomer.Customer),
+                                                                Customer: LookUp(Customers, Customer = _V_SelectedCustomer_1.Customer),
                                                                 Image:UploadedImage1_3.Image,
                                                                 Position:If(ComboBox2.Selected.Value="Others" && !IsBlank('Position Input'),'Position Input'.Text,ComboBox2.Selected.Value),
                                                                 'Decision Level':cmbDecisionLevel.SelectedItems,
@@ -5356,10 +5356,10 @@ CustomerScreen As screen:
                                                         If(
                                                             Toggle1_1.Value,
                                                             If(
-                                                                (!IsBlankOrError(_V_SelectedCustomer.'Primary Contact'.Contact)) && _V_SelectedCustomer.'Primary Contact'.Contact <> _V_SelectedContact.Contact,
+                                                                (!IsBlankOrError(_V_SelectedCustomer_1.'Primary Contact'.Contact)) && _V_SelectedCustomer_1.'Primary Contact'.Contact <> _V_SelectedContact.Contact,
                                                                 Patch(
                                                                     Contacts_1,
-                                                                    {Contact: _V_SelectedCustomer.'Primary Contact'.Contact},
+                                                                    {Contact: _V_SelectedCustomer_1.'Primary Contact'.Contact},
                                                                     {
                                                                         IsPrimaryContact: false
                                                                     }
@@ -5367,7 +5367,7 @@ CustomerScreen As screen:
                                                             );
                                                             Patch(
                                                                 Customers,
-                                                                {Customer: _V_SelectedCustomer.Customer},
+                                                                {Customer: _V_SelectedCustomer_1.Customer},
                                                                 {
                                                                     'Primary Contact': DropColumns(
                                                                         _V_SelectedContact,
@@ -5413,7 +5413,7 @@ CustomerScreen As screen:
                                                                     Facebook: 'Facebook Input'.Text,
                                                                     IG: 'IG Input'.Text,
                                                                     'Linked In': 'LinkedIn Input'.Text,
-                                                                    Customer: LookUp(Customers, Customer = _V_SelectedCustomer.Customer),
+                                                                    Customer: LookUp(Customers, Customer = _V_SelectedCustomer_1.Customer),
                                                                     Image:UploadedImage1_3.Image,
                                                                     Position:If(ComboBox2.Selected.Value="Others" && !IsBlank('Position Input'),'Position Input'.Text,ComboBox2.Selected.Value),
                                                                     'Decision Level':cmbDecisionLevel.SelectedItems,
@@ -5425,10 +5425,10 @@ CustomerScreen As screen:
                                                         If(
                                                             Toggle1_1.Value,
                                                             If(
-                                                                (!IsBlankOrError(_V_SelectedCustomer.'Primary Contact'.Contact)) && _V_SelectedCustomer.'Primary Contact'.Contact <> _V_SelectedContact.Contact,
+                                                                (!IsBlankOrError(_V_SelectedCustomer_1.'Primary Contact'.Contact)) && _V_SelectedCustomer_1.'Primary Contact'.Contact <> _V_SelectedContact.Contact,
                                                                 Patch(
                                                                     _C_Contacts,
-                                                                    {Contact: _V_SelectedCustomer.'Primary Contact'.Contact},
+                                                                    {Contact: _V_SelectedCustomer_1.'Primary Contact'.Contact},
                                                                     {
                                                                         IsPrimaryContact: false,
                                                                         updateofflineRequired: true
@@ -5437,7 +5437,7 @@ CustomerScreen As screen:
                                                             );
                                                             Patch(
                                                                 _C_Customers,
-                                                                {Customer: _V_SelectedCustomer.Customer},
+                                                                {Customer: _V_SelectedCustomer_1.Customer},
                                                                 {
                                                                     'Primary Contact': DropColumns(
                                                                         _V_SelectedContact,
@@ -5468,7 +5468,7 @@ CustomerScreen As screen:
                                                                     Facebook: 'Facebook Input'.Text,
                                                                     IG: 'IG Input'.Text,
                                                                     'Linked In': 'LinkedIn Input'.Text,
-                                                                    Customer: LookUp(Customers, Customer = _V_SelectedCustomer.Customer),
+                                                                    Customer: LookUp(Customers, Customer = _V_SelectedCustomer_1.Customer),
                                                                     Image:UploadedImage1_3.Image,
                                                                     Position:If(ComboBox2.Selected.Value="Others" && !IsBlank('Position Input'),'Position Input'.Text,ComboBox2.Selected.Value),
                                                                     'Decision Level':cmbDecisionLevel.SelectedItems,
@@ -5480,10 +5480,10 @@ CustomerScreen As screen:
                                                         If(
                                                             Toggle1_1.Value,
                                                             If(
-                                                                (!IsBlankOrError(_V_SelectedCustomer.'Primary Contact'.Contact)) && _V_SelectedCustomer.'Primary Contact'.Contact <> _V_SelectedContact.Contact,
+                                                                (!IsBlankOrError(_V_SelectedCustomer_1.'Primary Contact'.Contact)) && _V_SelectedCustomer_1.'Primary Contact'.Contact <> _V_SelectedContact.Contact,
                                                                 Patch(
                                                                     _C_Contacts,
-                                                                    {Contact: _V_SelectedCustomer.'Primary Contact'.Contact},
+                                                                    {Contact: _V_SelectedCustomer_1.'Primary Contact'.Contact},
                                                                     {
                                                                         IsPrimaryContact: false,
                                                                         updateofflineRequired: true
@@ -5492,7 +5492,7 @@ CustomerScreen As screen:
                                                             );
                                                             Patch(
                                                                 _C_Customers,
-                                                                {Customer: _V_SelectedCustomer.Customer},
+                                                                {Customer: _V_SelectedCustomer_1.Customer},
                                                                 {
                                                                     'Primary Contact': DropColumns(
                                                                         _V_SelectedContact,
@@ -5747,10 +5747,10 @@ CustomerScreen As screen:
                                     }
                                 );
                                 If(
-                                    (!IsBlankOrError(_V_SelectedCustomer.'Primary Contact'.Contact)) && _V_SelectedCustomer.'Primary Contact'.Contact <> _V_SelectedContact.Contact,
+                                    (!IsBlankOrError(_V_SelectedCustomer_1.'Primary Contact'.Contact)) && _V_SelectedCustomer_1.'Primary Contact'.Contact <> _V_SelectedContact.Contact,
                                     Patch(
                                         Customers,
-                                        {Customer: _V_SelectedCustomer.Customer},
+                                        {Customer: _V_SelectedCustomer_1.Customer},
                                         {
                                             'Primary Contact': Blank()
                                         }
@@ -5770,10 +5770,10 @@ CustomerScreen As screen:
                                     }
                                 );
                                 If(
-                                    (!IsBlankOrError(_V_SelectedCustomer.'Primary Contact'.Contact)) && _V_SelectedCustomer.'Primary Contact'.Contact <> _V_SelectedContact.Contact,
+                                    (!IsBlankOrError(_V_SelectedCustomer_1.'Primary Contact'.Contact)) && _V_SelectedCustomer_1.'Primary Contact'.Contact <> _V_SelectedContact.Contact,
                                     Patch(
                                         _C_Customers,
-                                        {Customer: _V_SelectedCustomer.Customer},
+                                        {Customer: _V_SelectedCustomer_1.Customer},
                                         {
                                             'Primary Contact': Blank(),
                                             updateofflineRequired: true
@@ -6144,7 +6144,7 @@ CustomerScreen As screen:
                         ChevronDisabledFill: =RGBA(244, 244, 244, 1)
                         ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                         ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                        DefaultSelectedItems: =[_V_SelectedCustomer.'Tag Inactive Reason']
+                        DefaultSelectedItems: =[_V_SelectedCustomer_1.'Tag Inactive Reason']
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -6230,10 +6230,10 @@ CustomerScreen As screen:
                         OnSelect: |+
                             =If(
                                 Connection.Connected,
-                                Set(_V_SelectedCustomer,
+                                Set(_V_SelectedCustomer_1,
                                 Patch(
                                     Customers,
-                                    {Customer: _V_SelectedCustomer.Customer},
+                                    {Customer: _V_SelectedCustomer_1.Customer},
                                     {
                                         Status:'Status (Customers)'.Inactive,
                                         'Tag Inactive Reason': cmbTagInactiveDueTo.Selected.Value
@@ -6251,10 +6251,10 @@ CustomerScreen As screen:
                                 Select(btn_ClearData_customer);
                                 Select(btn_SaveData_customer);
                                 ,
-                                Set(_V_SelectedCustomer,
+                                Set(_V_SelectedCustomer_1,
                                 Patch(
                                     _C_Customers,
-                                    {Customer: _V_SelectedCustomer.Customer},
+                                    {Customer: _V_SelectedCustomer_1.Customer},
                                     {
                                         Status:'Status (Customers)'.Inactive,
                                         'Tag Inactive Reason': cmbTagInactiveDueTo.Selected.Value

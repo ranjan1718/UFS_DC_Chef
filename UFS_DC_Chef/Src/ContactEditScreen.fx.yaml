@@ -128,7 +128,7 @@ ContactEditScreen As screen:
                             LoadingSpinner: =LoadingSpinner.Data
                             OnSelect: |-
                                 =Set(
-                                    _V_SelectedCustomer, ThisItem
+                                    _V_SelectedCustomer_1, ThisItem
                                 )
                             TemplatePadding: =8
                             TemplateSize: =280
@@ -159,7 +159,7 @@ ContactEditScreen As screen:
                                     Height: =19
                                     OnSelect: |-
                                         =Set(
-                                            _V_SelectedCustomer, ThisItem
+                                            _V_SelectedCustomer_1, ThisItem
                                         )
                                     Size: =10
                                     Text: =ThisItem.Name
@@ -174,7 +174,7 @@ ContactEditScreen As screen:
                                     FontWeight: =FontWeight.Semibold
                                     OnSelect: |-
                                         =Set(
-                                            _V_SelectedCustomer, ThisItem
+                                            _V_SelectedCustomer_1, ThisItem
                                         )
                                     PaddingTop: =0
                                     Size: =10
@@ -421,7 +421,7 @@ ContactEditScreen As screen:
                                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                         DisabledFill: =RGBA(244, 244, 244, 1)
                                         Height: =Parent.Height
-                                        Image: =If(_V_Customer_New , If(IsBlank(AddMediaButton1_2.Media), SampleImage, AddMediaButton1_2.Media), If(IsBlank(AddMediaButton1_2.Media), _V_SelectedCustomer.'Profile Image'.Value, AddMediaButton1_2.Media))
+                                        Image: =If(_V_Customer_New , If(IsBlank(AddMediaButton1_2.Media), SampleImage, AddMediaButton1_2.Media), If(IsBlank(AddMediaButton1_2.Media), _V_SelectedCustomer_1.'Profile Image'.Value, AddMediaButton1_2.Media))
                                         LayoutMinWidth: =0
                                         PaddingBottom: =5
                                         PaddingLeft: =5
@@ -500,7 +500,7 @@ ContactEditScreen As screen:
                                         BorderColor: =RGBA(204, 72, 0, 1)
                                         BorderThickness: =0
                                         Color: =RGBA(255, 255, 255, 1)
-                                        Default: =If(_V_Customer_New,"",_V_SelectedCustomer.ulchef_name)
+                                        Default: =If(_V_Customer_New,"",_V_SelectedCustomer_1.ulchef_name)
                                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                         DisabledColor: =RGBA(166, 166, 166, 1)
                                         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -522,7 +522,7 @@ ContactEditScreen As screen:
                                         DisabledColor: =RGBA(166, 166, 166, 1)
                                         Height: =Parent.Height/3
                                         Size: =10
-                                        Text: =If(_V_Customer_New,"",_V_SelectedCustomer.ulchef_name)
+                                        Text: =If(_V_Customer_New,"",_V_SelectedCustomer_1.ulchef_name)
                                         Visible: =!var_editCustomerInfo
                                         Width: =Parent.Width-10
                                         ZIndex: =3
@@ -672,7 +672,7 @@ ContactEditScreen As screen:
                                         Height: =Parent.Height
                                         LayoutMinWidth: =0
                                         Size: =13
-                                        Text: =If(_V_Contact_New,"",_V_SelectedCustomer.ulchef_customercode)
+                                        Text: =If(_V_Contact_New,"",_V_SelectedCustomer_1.ulchef_customercode)
                                         Visible: =!var_editCustomerInfo
                                         ZIndex: =2
 
@@ -681,7 +681,7 @@ ContactEditScreen As screen:
                                         BorderColor: =RGBA(204, 72, 0, 1)
                                         BorderThickness: =0
                                         Color: =RGBA(255, 255, 255, 1)
-                                        Default: =If(_V_Customer_New,"",_V_SelectedCustomer.ulchef_customercode)
+                                        Default: =If(_V_Customer_New,"",_V_SelectedCustomer_1.ulchef_customercode)
                                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                         DisabledColor: =RGBA(166, 166, 166, 1)
                                         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -762,7 +762,7 @@ ContactEditScreen As screen:
                                         Height: =Parent.Height
                                         LayoutMinWidth: =0
                                         Size: =13
-                                        Text: =If(_V_Contact_New,"",_V_SelectedCustomer.ulchef_armstrongcode)
+                                        Text: =If(_V_Contact_New,"",_V_SelectedCustomer_1.ulchef_armstrongcode)
                                         Visible: =!var_editCustomerInfo
                                         ZIndex: =2
 
@@ -771,7 +771,7 @@ ContactEditScreen As screen:
                                         BorderColor: =RGBA(204, 72, 0, 1)
                                         BorderThickness: =0
                                         Color: =RGBA(255, 255, 255, 1)
-                                        Default: =If(_V_Customer_New,"",_V_SelectedCustomer.ulchef_armstrongcode)
+                                        Default: =If(_V_Customer_New,"",_V_SelectedCustomer_1.ulchef_armstrongcode)
                                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                         DisabledColor: =RGBA(166, 166, 166, 1)
                                         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -1056,7 +1056,7 @@ ContactEditScreen As screen:
                                     Height: =Parent.Height-5
                                     LayoutMinWidth: =0
                                     Size: =13
-                                    Text: =If(_V_Contact_New,"",_V_SelectedCustomer.ulchef_area)
+                                    Text: =If(_V_Contact_New,"",_V_SelectedCustomer_1.ulchef_area)
                                     Visible: =!var_editCustomerInfo
                                     ZIndex: =2
 
@@ -1087,7 +1087,7 @@ ContactEditScreen As screen:
                                     ChevronDisabledFill: =RGBA(244, 244, 244, 1)
                                     ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                                     ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                                    DefaultSelectedItems: =If(!_V_Customer_New, [_V_SelectedCustomer.Area])
+                                    DefaultSelectedItems: =If(!_V_Customer_New, [_V_SelectedCustomer_1.Area])
                                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                     DisabledColor: =RGBA(166, 166, 166, 1)
                                     DisabledFill: =RGBA(244, 244, 244, 1)
@@ -1303,7 +1303,7 @@ ContactEditScreen As screen:
                                     Height: =Parent.Height-5
                                     LayoutMinWidth: =0
                                     Size: =13
-                                    Text: =_V_SelectedCustomer.ulchef_city
+                                    Text: =_V_SelectedCustomer_1.ulchef_city
                                     Visible: =!var_editCustomerInfo
                                     ZIndex: =2
 
@@ -1679,7 +1679,7 @@ ContactEditScreen As screen:
                                     Height: =Parent.Height-5
                                     LayoutMinWidth: =0
                                     Size: =13
-                                    Text: =_V_SelectedCustomer.ulchef_lecity
+                                    Text: =_V_SelectedCustomer_1.ulchef_lecity
                                     Visible: =!var_editCustomerInfo
                                     ZIndex: =2
 
@@ -1687,7 +1687,7 @@ ContactEditScreen As screen:
                                     BorderColor: =RGBA(204, 72, 0, 1)
                                     BorderThickness: =0
                                     Color: =RGBA(255, 255, 255, 1)
-                                    Default: =If(_V_Customer_New,"",_V_SelectedCustomer.ulchef_city)
+                                    Default: =If(_V_Customer_New,"",_V_SelectedCustomer_1.ulchef_city)
                                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                     DisabledColor: =RGBA(166, 166, 166, 1)
                                     DisabledFill: =RGBA(244, 244, 244, 1)
@@ -1766,7 +1766,7 @@ ContactEditScreen As screen:
                                     Height: =Parent.Height-5
                                     LayoutMinWidth: =0
                                     Size: =13
-                                    Text: =_V_SelectedCustomer.ulchef_leaddress
+                                    Text: =_V_SelectedCustomer_1.ulchef_leaddress
                                     Visible: =!var_editCustomerInfo
                                     ZIndex: =2
 
@@ -1774,7 +1774,7 @@ ContactEditScreen As screen:
                                     BorderColor: =RGBA(204, 72, 0, 1)
                                     BorderThickness: =0
                                     Color: =RGBA(255, 255, 255, 1)
-                                    Default: =If(_V_Customer_New,"",_V_SelectedCustomer.ulchef_leaddress)
+                                    Default: =If(_V_Customer_New,"",_V_SelectedCustomer_1.ulchef_leaddress)
                                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                     DisabledColor: =RGBA(166, 166, 166, 1)
                                     DisabledFill: =RGBA(244, 244, 244, 1)
@@ -1851,7 +1851,7 @@ ContactEditScreen As screen:
                                     Height: =Parent.Height-5
                                     LayoutMinWidth: =0
                                     Size: =13
-                                    Text: =_V_SelectedCustomer.Distributor.Name
+                                    Text: =_V_SelectedCustomer_1.Distributor.Name
                                     Visible: =!var_editCustomerInfo
                                     ZIndex: =2
 
@@ -1882,7 +1882,7 @@ ContactEditScreen As screen:
                                     ChevronDisabledFill: =RGBA(244, 244, 244, 1)
                                     ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                                     ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                                    DefaultSelectedItems: =_V_SelectedCustomer.Distributor
+                                    DefaultSelectedItems: =_V_SelectedCustomer_1.Distributor
                                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                     DisabledColor: =RGBA(166, 166, 166, 1)
                                     DisabledFill: =RGBA(244, 244, 244, 1)
@@ -1940,7 +1940,7 @@ ContactEditScreen As screen:
                                     Height: =Parent.Height-5
                                     LayoutMinWidth: =0
                                     Size: =13
-                                    Text: =_V_SelectedCustomer.'Mother Group (ulchef_MotherGroup)'.Name
+                                    Text: =_V_SelectedCustomer_1.'Mother Group (ulchef_MotherGroup)'.Name
                                     Visible: =!var_editCustomerInfo
                                     ZIndex: =2
 
@@ -1948,7 +1948,7 @@ ContactEditScreen As screen:
                                     BorderColor: =RGBA(204, 72, 0, 1)
                                     BorderThickness: =0
                                     Color: =RGBA(255, 255, 255, 1)
-                                    Default: =If(_V_Customer_New,"",_V_SelectedCustomer.'Mother Group (ulchef_mothergroupslt)')
+                                    Default: =If(_V_Customer_New,"",_V_SelectedCustomer_1.'Mother Group (ulchef_mothergroupslt)')
                                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                     DisabledColor: =RGBA(166, 166, 166, 1)
                                     DisabledFill: =RGBA(244, 244, 244, 1)
@@ -1970,7 +1970,7 @@ ContactEditScreen As screen:
                                     ChevronDisabledFill: =RGBA(244, 244, 244, 1)
                                     ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                                     ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                                    DefaultSelectedItems: =_V_SelectedCustomer.'Mother Group (ulchef_MotherGroup)'
+                                    DefaultSelectedItems: =_V_SelectedCustomer_1.'Mother Group (ulchef_MotherGroup)'
                                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                     DisabledColor: =RGBA(166, 166, 166, 1)
                                     DisabledFill: =RGBA(244, 244, 244, 1)
@@ -2028,7 +2028,7 @@ ContactEditScreen As screen:
                                     Height: =Parent.Height
                                     LayoutMinWidth: =0
                                     Size: =13
-                                    Text: =_V_SelectedCustomer.ulchef_dcchefteritory
+                                    Text: =_V_SelectedCustomer_1.ulchef_dcchefteritory
                                     Visible: =!var_editCustomerInfo
                                     ZIndex: =2
 
@@ -2059,7 +2059,7 @@ ContactEditScreen As screen:
                                     ChevronDisabledFill: =RGBA(244, 244, 244, 1)
                                     ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                                     ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                                    DefaultSelectedItems: =[_V_SelectedCustomer.ulchef_dcchefteritory]
+                                    DefaultSelectedItems: =[_V_SelectedCustomer_1.ulchef_dcchefteritory]
                                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                     DisabledColor: =RGBA(166, 166, 166, 1)
                                     DisabledFill: =RGBA(244, 244, 244, 1)
@@ -2118,7 +2118,7 @@ ContactEditScreen As screen:
                                     Height: =Parent.Height
                                     LayoutMinWidth: =0
                                     Size: =13
-                                    Text: =_V_SelectedCustomer.'Concepts (ulchef_Concepts)'.'Name of Concept Resto'
+                                    Text: =_V_SelectedCustomer_1.'Concepts (ulchef_Concepts)'.'Name of Concept Resto'
                                     Visible: =!var_editCustomerInfo
                                     ZIndex: =2
 
@@ -2146,7 +2146,7 @@ ContactEditScreen As screen:
                                     BorderColor: =RGBA(204, 72, 0, 1)
                                     BorderThickness: =0
                                     Color: =RGBA(255, 255, 255, 1)
-                                    Default: =If(_V_Customer_New,"",Concat(Filter(Concepts, Customer.Customer=_V_SelectedCustomer.Customer),'Name of Concept Resto', ", "))
+                                    Default: =If(_V_Customer_New,"",Concat(Filter(Concepts, Customer.Customer=_V_SelectedCustomer_1.Customer),'Name of Concept Resto', ", "))
                                     DisabledBorderColor: =RGBA(204, 72, 0, 1)
                                     DisabledColor: =RGBA(106, 122, 127, 1)
                                     DisabledFill: =RGBA(255, 255, 255, 1)
@@ -2199,7 +2199,7 @@ ContactEditScreen As screen:
                                     Height: =Parent.Height
                                     LayoutMinWidth: =0
                                     Size: =13
-                                    Text: =_V_SelectedCustomer.'Primary Contact'.Name
+                                    Text: =_V_SelectedCustomer_1.'Primary Contact'.Name
                                     Visible: =
                                     ZIndex: =2
 
@@ -2255,7 +2255,7 @@ ContactEditScreen As screen:
                                     ChevronDisabledFill: =RGBA(244, 244, 244, 1)
                                     ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                                     ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                                    DefaultSelectedItems: =If(!_V_Customer_New, _V_SelectedCustomer.'Primary Contact')
+                                    DefaultSelectedItems: =If(!_V_Customer_New, _V_SelectedCustomer_1.'Primary Contact')
                                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                     DisabledColor: =RGBA(166, 166, 166, 1)
                                     DisabledFill: =RGBA(244, 244, 244, 1)
@@ -2317,7 +2317,7 @@ ContactEditScreen As screen:
                                     Height: =Parent.Height
                                     LayoutMinWidth: =0
                                     Size: =13
-                                    Text: =_V_SelectedCustomer.Menu.Name
+                                    Text: =_V_SelectedCustomer_1.Menu.Name
                                     Visible: |-
                                         =//!var_editCustomerInfo
                                         false
@@ -2350,7 +2350,7 @@ ContactEditScreen As screen:
                                     ChevronDisabledFill: =RGBA(244, 244, 244, 1)
                                     ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                                     ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                                    DefaultSelectedItems: =If(!_V_Customer_New,_V_SelectedCustomer.Menu)
+                                    DefaultSelectedItems: =If(!_V_Customer_New,_V_SelectedCustomer_1.Menu)
                                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                     DisabledColor: =RGBA(166, 166, 166, 1)
                                     DisabledFill: =RGBA(244, 244, 244, 1)
@@ -2422,7 +2422,7 @@ ContactEditScreen As screen:
                                                 DisabledFill: =RGBA(244, 244, 244, 1)
                                                 FillPortions: =3
                                                 Height: =Parent.Height
-                                                Image: =If(_V_Customer_New , If(IsBlank(AddMediaButton1_4.Media), SampleImage, AddMediaButton1_4.Media), If(IsBlank(AddMediaButton1_4.Media), _V_SelectedCustomer.'Manu Image 1'.Value, AddMediaButton1_4.Media))
+                                                Image: =If(_V_Customer_New , If(IsBlank(AddMediaButton1_4.Media), SampleImage, AddMediaButton1_4.Media), If(IsBlank(AddMediaButton1_4.Media), _V_SelectedCustomer_1.'Manu Image 1'.Value, AddMediaButton1_4.Media))
                                                 LayoutMinWidth: =0
                                                 PaddingBottom: =5
                                                 PaddingLeft: =5
@@ -2492,7 +2492,7 @@ ContactEditScreen As screen:
                                                 DisabledFill: =RGBA(244, 244, 244, 1)
                                                 FillPortions: =3
                                                 Height: =Parent.Height
-                                                Image: =If(_V_Customer_New , If(IsBlank(AddMediaButton1_5.Media), SampleImage, AddMediaButton1_5.Media), If(IsBlank(AddMediaButton1_5.Media), _V_SelectedCustomer.'Manu Image 2'.Value, AddMediaButton1_5.Media))
+                                                Image: =If(_V_Customer_New , If(IsBlank(AddMediaButton1_5.Media), SampleImage, AddMediaButton1_5.Media), If(IsBlank(AddMediaButton1_5.Media), _V_SelectedCustomer_1.'Manu Image 2'.Value, AddMediaButton1_5.Media))
                                                 LayoutMinWidth: =0
                                                 PaddingBottom: =5
                                                 PaddingLeft: =5
@@ -2562,7 +2562,7 @@ ContactEditScreen As screen:
                                                 DisabledFill: =RGBA(244, 244, 244, 1)
                                                 FillPortions: =3
                                                 Height: =Parent.Height
-                                                Image: =If(_V_Customer_New , If(IsBlank(AddMediaButton1_6.Media), SampleImage, AddMediaButton1_6.Media), If(IsBlank(AddMediaButton1_6.Media), _V_SelectedCustomer.'Manu Image 3'.Value, AddMediaButton1_6.Media))
+                                                Image: =If(_V_Customer_New , If(IsBlank(AddMediaButton1_6.Media), SampleImage, AddMediaButton1_6.Media), If(IsBlank(AddMediaButton1_6.Media), _V_SelectedCustomer_1.'Manu Image 3'.Value, AddMediaButton1_6.Media))
                                                 LayoutMinWidth: =0
                                                 PaddingBottom: =5
                                                 PaddingLeft: =5
@@ -2643,7 +2643,7 @@ ContactEditScreen As screen:
                                                 DisabledFill: =RGBA(244, 244, 244, 1)
                                                 FillPortions: =3
                                                 Height: =Parent.Height
-                                                Image: =If(_V_Customer_New , If(IsBlank(AddMediaButton1_7.Media), SampleImage, AddMediaButton1_7.Media), If(IsBlank(AddMediaButton1_7.Media), _V_SelectedCustomer.'Manu Image 4'.Value, AddMediaButton1_7.Media))
+                                                Image: =If(_V_Customer_New , If(IsBlank(AddMediaButton1_7.Media), SampleImage, AddMediaButton1_7.Media), If(IsBlank(AddMediaButton1_7.Media), _V_SelectedCustomer_1.'Manu Image 4'.Value, AddMediaButton1_7.Media))
                                                 LayoutMinWidth: =0
                                                 PaddingBottom: =5
                                                 PaddingLeft: =5
@@ -2713,7 +2713,7 @@ ContactEditScreen As screen:
                                                 DisabledFill: =RGBA(244, 244, 244, 1)
                                                 FillPortions: =3
                                                 Height: =Parent.Height
-                                                Image: =If(_V_Customer_New , If(IsBlank(AddMediaButton1_8.Media), SampleImage, AddMediaButton1_8.Media), If(IsBlank(AddMediaButton1_8.Media), _V_SelectedCustomer.'Manu Image 5'.Value, AddMediaButton1_8.Media))
+                                                Image: =If(_V_Customer_New , If(IsBlank(AddMediaButton1_8.Media), SampleImage, AddMediaButton1_8.Media), If(IsBlank(AddMediaButton1_8.Media), _V_SelectedCustomer_1.'Manu Image 5'.Value, AddMediaButton1_8.Media))
                                                 LayoutMinWidth: =0
                                                 PaddingBottom: =5
                                                 PaddingLeft: =5
@@ -3527,7 +3527,7 @@ ContactEditScreen As screen:
                                     Height: =Parent.Height-5
                                     LayoutMinWidth: =0
                                     Size: =13
-                                    Text: =_V_SelectedCustomer.Distributor.Name
+                                    Text: =_V_SelectedCustomer_1.Distributor.Name
                                     Visible: =!var_editCustomerInfo
                                     ZIndex: =2
 
@@ -3558,7 +3558,7 @@ ContactEditScreen As screen:
                                     ChevronDisabledFill: =RGBA(244, 244, 244, 1)
                                     ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                                     ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                                    DefaultSelectedItems: =_V_SelectedCustomer.Distributor
+                                    DefaultSelectedItems: =_V_SelectedCustomer_1.Distributor
                                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                     DisabledColor: =RGBA(166, 166, 166, 1)
                                     DisabledFill: =RGBA(244, 244, 244, 1)
@@ -3667,7 +3667,7 @@ ContactEditScreen As screen:
                                     Height: =Parent.Height-5
                                     LayoutMinWidth: =0
                                     Size: =13
-                                    Text: =_V_SelectedCustomer.'Mother Group (ulchef_MotherGroup)'.Name
+                                    Text: =_V_SelectedCustomer_1.'Mother Group (ulchef_MotherGroup)'.Name
                                     Visible: =!var_editCustomerInfo
                                     ZIndex: =2
 
@@ -3698,7 +3698,7 @@ ContactEditScreen As screen:
                                     ChevronDisabledFill: =RGBA(244, 244, 244, 1)
                                     ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                                     ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                                    DefaultSelectedItems: =_V_SelectedCustomer.'Mother Group (ulchef_MotherGroup)'
+                                    DefaultSelectedItems: =_V_SelectedCustomer_1.'Mother Group (ulchef_MotherGroup)'
                                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                     DisabledColor: =RGBA(166, 166, 166, 1)
                                     DisabledFill: =RGBA(244, 244, 244, 1)
@@ -3851,7 +3851,7 @@ ContactEditScreen As screen:
                                     Height: =Parent.Height
                                     LayoutMinWidth: =0
                                     Size: =13
-                                    Text: =_V_SelectedCustomer.ulchef_dcchefteritory
+                                    Text: =_V_SelectedCustomer_1.ulchef_dcchefteritory
                                     Visible: =!var_editCustomerInfo
                                     ZIndex: =2
 
@@ -3882,7 +3882,7 @@ ContactEditScreen As screen:
                                     ChevronDisabledFill: =RGBA(244, 244, 244, 1)
                                     ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                                     ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                                    DefaultSelectedItems: =[_V_SelectedCustomer.ulchef_dcchefteritory]
+                                    DefaultSelectedItems: =[_V_SelectedCustomer_1.ulchef_dcchefteritory]
                                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                     DisabledColor: =RGBA(166, 166, 166, 1)
                                     DisabledFill: =RGBA(244, 244, 244, 1)
@@ -3941,7 +3941,7 @@ ContactEditScreen As screen:
                                     Height: =Parent.Height
                                     LayoutMinWidth: =0
                                     Size: =13
-                                    Text: =_V_SelectedCustomer.'Concepts (ulchef_Concepts)'.'Name of Concept Resto'
+                                    Text: =_V_SelectedCustomer_1.'Concepts (ulchef_Concepts)'.'Name of Concept Resto'
                                     Visible: =!var_editCustomerInfo
                                     ZIndex: =2
 
@@ -3969,7 +3969,7 @@ ContactEditScreen As screen:
                                     BorderColor: =RGBA(204, 72, 0, 1)
                                     BorderThickness: =0
                                     Color: =RGBA(255, 255, 255, 1)
-                                    Default: =If(_V_Customer_New,"",Concat(Filter(Concepts, Customer.Customer=_V_SelectedCustomer.Customer),'Name of Concept Resto', ", "))
+                                    Default: =If(_V_Customer_New,"",Concat(Filter(Concepts, Customer.Customer=_V_SelectedCustomer_1.Customer),'Name of Concept Resto', ", "))
                                     DisabledBorderColor: =RGBA(204, 72, 0, 1)
                                     DisabledColor: =RGBA(106, 122, 127, 1)
                                     DisabledFill: =RGBA(255, 255, 255, 1)
@@ -4022,7 +4022,7 @@ ContactEditScreen As screen:
                                     Height: =Parent.Height
                                     LayoutMinWidth: =0
                                     Size: =13
-                                    Text: =_V_SelectedCustomer.'Primary Contact'.Name
+                                    Text: =_V_SelectedCustomer_1.'Primary Contact'.Name
                                     Visible: =
                                     ZIndex: =2
 
@@ -4078,7 +4078,7 @@ ContactEditScreen As screen:
                                     ChevronDisabledFill: =RGBA(244, 244, 244, 1)
                                     ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                                     ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                                    DefaultSelectedItems: =If(!_V_Customer_New, _V_SelectedCustomer.'Primary Contact')
+                                    DefaultSelectedItems: =If(!_V_Customer_New, _V_SelectedCustomer_1.'Primary Contact')
                                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                     DisabledColor: =RGBA(166, 166, 166, 1)
                                     DisabledFill: =RGBA(244, 244, 244, 1)
@@ -4139,7 +4139,7 @@ ContactEditScreen As screen:
                                     Height: =Parent.Height
                                     LayoutMinWidth: =0
                                     Size: =13
-                                    Text: =_V_SelectedCustomer.Menu.Name
+                                    Text: =_V_SelectedCustomer_1.Menu.Name
                                     Visible: =!var_editCustomerInfo
                                     ZIndex: =2
 
@@ -4170,7 +4170,7 @@ ContactEditScreen As screen:
                                     ChevronDisabledFill: =RGBA(244, 244, 244, 1)
                                     ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                                     ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                                    DefaultSelectedItems: =If(!_V_Customer_New,_V_SelectedCustomer.Menu)
+                                    DefaultSelectedItems: =If(!_V_Customer_New,_V_SelectedCustomer_1.Menu)
                                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                     DisabledColor: =RGBA(166, 166, 166, 1)
                                     DisabledFill: =RGBA(244, 244, 244, 1)
@@ -4471,7 +4471,7 @@ ContactEditScreen As screen:
                                                 Height: =Parent.Height
                                                 LayoutMinWidth: =0
                                                 Size: =13
-                                                Text: =_V_SelectedCustomer.ulchef_typeofengagement
+                                                Text: =_V_SelectedCustomer_1.ulchef_typeofengagement
                                                 Visible: |
                                                     =!var_editAccountBehaviour
                                                 ZIndex: =2
@@ -4503,7 +4503,7 @@ ContactEditScreen As screen:
                                                 ChevronDisabledFill: =RGBA(244, 244, 244, 1)
                                                 ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                                                 ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                                                DefaultSelectedItems: =If(!_V_Customer_New,[_V_SelectedCustomer.ulchef_typeofengagement])
+                                                DefaultSelectedItems: =If(!_V_Customer_New,[_V_SelectedCustomer_1.ulchef_typeofengagement])
                                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -4992,7 +4992,7 @@ ContactEditScreen As screen:
                                                 Height: =Parent.Height
                                                 LayoutMinWidth: =0
                                                 Size: =13
-                                                Text: =_V_SelectedCustomer.ulchef_ordering
+                                                Text: =_V_SelectedCustomer_1.ulchef_ordering
                                                 Visible: =!var_editAccountBehaviour
                                                 ZIndex: =2
 
@@ -5023,7 +5023,7 @@ ContactEditScreen As screen:
                                                 ChevronDisabledFill: =RGBA(244, 244, 244, 1)
                                                 ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                                                 ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                                                DefaultSelectedItems: =If(!_V_Customer_New,[_V_SelectedCustomer.ulchef_ordering])
+                                                DefaultSelectedItems: =If(!_V_Customer_New,[_V_SelectedCustomer_1.ulchef_ordering])
                                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -5083,7 +5083,7 @@ ContactEditScreen As screen:
                                                 Height: =Parent.Height
                                                 LayoutMinWidth: =0
                                                 Size: =13
-                                                Text: =_V_SelectedCustomer.ulchef_invoiceto
+                                                Text: =_V_SelectedCustomer_1.ulchef_invoiceto
                                                 Visible: =!var_editAccountBehaviour
                                                 ZIndex: =2
 
@@ -5114,7 +5114,7 @@ ContactEditScreen As screen:
                                                 ChevronDisabledFill: =RGBA(244, 244, 244, 1)
                                                 ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                                                 ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                                                DefaultSelectedItems: =If(!_V_Customer_New,[_V_SelectedCustomer.ulchef_invoiceto])
+                                                DefaultSelectedItems: =If(!_V_Customer_New,[_V_SelectedCustomer_1.ulchef_invoiceto])
                                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -5174,7 +5174,7 @@ ContactEditScreen As screen:
                                                 Height: =Parent.Height
                                                 LayoutMinWidth: =0
                                                 Size: =13
-                                                Text: =_V_SelectedCustomer.ulchef_delivery
+                                                Text: =_V_SelectedCustomer_1.ulchef_delivery
                                                 Visible: =!var_editAccountBehaviour
                                                 ZIndex: =2
 
@@ -5205,7 +5205,7 @@ ContactEditScreen As screen:
                                                 ChevronDisabledFill: =RGBA(244, 244, 244, 1)
                                                 ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                                                 ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                                                DefaultSelectedItems: =If(!_V_Customer_New,[_V_SelectedCustomer.ulchef_delivery])
+                                                DefaultSelectedItems: =If(!_V_Customer_New,[_V_SelectedCustomer_1.ulchef_delivery])
                                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -5265,7 +5265,7 @@ ContactEditScreen As screen:
                                                 Height: =Parent.Height
                                                 LayoutMinWidth: =0
                                                 Size: =13
-                                                Text: =_V_SelectedCustomer.ulchef_approval
+                                                Text: =_V_SelectedCustomer_1.ulchef_approval
                                                 Visible: =!var_editAccountBehaviour
                                                 ZIndex: =2
 
@@ -5296,7 +5296,7 @@ ContactEditScreen As screen:
                                                 ChevronDisabledFill: =RGBA(244, 244, 244, 1)
                                                 ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                                                 ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                                                DefaultSelectedItems: =If(!_V_Customer_New,[_V_SelectedCustomer.ulchef_approval])
+                                                DefaultSelectedItems: =If(!_V_Customer_New,[_V_SelectedCustomer_1.ulchef_approval])
                                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -5355,7 +5355,7 @@ ContactEditScreen As screen:
                                                 Height: =Parent.Height
                                                 LayoutMinWidth: =0
                                                 Size: =13
-                                                Text: =_V_SelectedCustomer.ulchef_averagemonthlysales
+                                                Text: =_V_SelectedCustomer_1.ulchef_averagemonthlysales
                                                 Visible: =!var_editAccountBehaviour
                                                 ZIndex: =2
 
@@ -5363,7 +5363,7 @@ ContactEditScreen As screen:
                                                 BorderColor: =RGBA(204, 72, 0, 1)
                                                 BorderThickness: =0
                                                 Color: =RGBA(255, 255, 255, 1)
-                                                Default: =If(_V_Customer_New,"",_V_SelectedCustomer.ulchef_averagemonthlysales)
+                                                Default: =If(_V_Customer_New,"",_V_SelectedCustomer_1.ulchef_averagemonthlysales)
                                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -5441,7 +5441,7 @@ ContactEditScreen As screen:
                                                 Height: =Parent.Height
                                                 LayoutMinWidth: =0
                                                 Size: =13
-                                                Text: =_V_SelectedCustomer.ulchef_seatingcapacity
+                                                Text: =_V_SelectedCustomer_1.ulchef_seatingcapacity
                                                 Visible: =!var_editAccountBehaviour
                                                 ZIndex: =2
 
@@ -5449,7 +5449,7 @@ ContactEditScreen As screen:
                                                 BorderColor: =RGBA(204, 72, 0, 1)
                                                 BorderThickness: =0
                                                 Color: =RGBA(255, 255, 255, 1)
-                                                Default: =If(_V_Customer_New,"",_V_SelectedCustomer.ulchef_seatingcapacity)
+                                                Default: =If(_V_Customer_New,"",_V_SelectedCustomer_1.ulchef_seatingcapacity)
                                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -5528,7 +5528,7 @@ ContactEditScreen As screen:
                                                 Height: =Parent.Height
                                                 LayoutMinWidth: =0
                                                 Size: =13
-                                                Text: =_V_SelectedCustomer.ulchef_ofchairs
+                                                Text: =_V_SelectedCustomer_1.ulchef_ofchairs
                                                 Visible: =!var_editAccountBehaviour
                                                 ZIndex: =2
 
@@ -5536,7 +5536,7 @@ ContactEditScreen As screen:
                                                 BorderColor: =RGBA(204, 72, 0, 1)
                                                 BorderThickness: =0
                                                 Color: =RGBA(255, 255, 255, 1)
-                                                Default: =If(_V_Customer_New,"",_V_SelectedCustomer.ulchef_ofchairs)
+                                                Default: =If(_V_Customer_New,"",_V_SelectedCustomer_1.ulchef_ofchairs)
                                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -5615,7 +5615,7 @@ ContactEditScreen As screen:
                                                 Height: =Parent.Height
                                                 LayoutMinWidth: =0
                                                 Size: =13
-                                                Text: =_V_SelectedCustomer.ulchef_oftables
+                                                Text: =_V_SelectedCustomer_1.ulchef_oftables
                                                 Visible: =!var_editAccountBehaviour
                                                 ZIndex: =2
 
@@ -5623,7 +5623,7 @@ ContactEditScreen As screen:
                                                 BorderColor: =RGBA(204, 72, 0, 1)
                                                 BorderThickness: =0
                                                 Color: =RGBA(255, 255, 255, 1)
-                                                Default: =If(_V_Customer_New,"",_V_SelectedCustomer.ulchef_oftables)
+                                                Default: =If(_V_Customer_New,"",_V_SelectedCustomer_1.ulchef_oftables)
                                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -5701,7 +5701,7 @@ ContactEditScreen As screen:
                                                 Height: =Parent.Height
                                                 LayoutMinWidth: =0
                                                 Size: =13
-                                                Text: =_V_SelectedCustomer.ulchef_operatinghours
+                                                Text: =_V_SelectedCustomer_1.ulchef_operatinghours
                                                 Visible: =!var_editAccountBehaviour
                                                 ZIndex: =2
 
@@ -5709,7 +5709,7 @@ ContactEditScreen As screen:
                                                 BorderColor: =RGBA(204, 72, 0, 1)
                                                 BorderThickness: =0
                                                 Color: =RGBA(255, 255, 255, 1)
-                                                Default: =If(_V_Customer_New,"",_V_SelectedCustomer.ulchef_operatinghours)
+                                                Default: =If(_V_Customer_New,"",_V_SelectedCustomer_1.ulchef_operatinghours)
                                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -5788,7 +5788,7 @@ ContactEditScreen As screen:
                                                 Height: =Parent.Height
                                                 LayoutMinWidth: =0
                                                 Size: =13
-                                                Text: =_V_SelectedCustomer.ulchef_oftakeawayfoodperday
+                                                Text: =_V_SelectedCustomer_1.ulchef_oftakeawayfoodperday
                                                 Visible: =!var_editAccountBehaviour
                                                 ZIndex: =2
 
@@ -5796,7 +5796,7 @@ ContactEditScreen As screen:
                                                 BorderColor: =RGBA(204, 72, 0, 1)
                                                 BorderThickness: =0
                                                 Color: =RGBA(255, 255, 255, 1)
-                                                Default: =If(_V_Customer_New,"",_V_SelectedCustomer.ulchef_oftakeawayfoodperday)
+                                                Default: =If(_V_Customer_New,"",_V_SelectedCustomer_1.ulchef_oftakeawayfoodperday)
                                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -6094,10 +6094,10 @@ ContactEditScreen As screen:
                                                 );
                                                 ,
                                                 Set(
-                                                    _V_SelectedCustomer,
+                                                    _V_SelectedCustomer_1,
                                                     Patch(
                                                         Customers,
-                                                        {Customer: _V_SelectedCustomer.Customer},
+                                                        {Customer: _V_SelectedCustomer_1.Customer},
                                                         {
                                                             'Profile Image': UploadedImage1_2.Image,
                                                             Name: 'Customer Name Input'.Text,
@@ -6133,8 +6133,8 @@ ContactEditScreen As screen:
                                                 );
                                                 Patch(
                                                     _C_Customers,
-                                                    {Customer:_V_SelectedCustomer.Customer},
-                                                    _V_SelectedCustomer
+                                                    {Customer:_V_SelectedCustomer_1.Customer},
+                                                    _V_SelectedCustomer_1
                                                 )
                                             );
                                             Refresh(Customers);
@@ -6206,10 +6206,10 @@ ContactEditScreen As screen:
                                                 ;
                                                 ,
                                                 Set(
-                                                    _V_SelectedCustomer,
+                                                    _V_SelectedCustomer_1,
                                                     Patch(
                                                         _C_Customers,
-                                                        {Customer: _V_SelectedCustomer.Customer},
+                                                        {Customer: _V_SelectedCustomer_1.Customer},
                                                         {
                                                             'Profile Image': UploadedImage1_2.Image,
                                                             Name: 'Customer Name Input'.Text,

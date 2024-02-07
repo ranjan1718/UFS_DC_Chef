@@ -65,7 +65,7 @@
 
     RectQuickActionBar2_2 As rectangle:
         BorderColor: =RGBA(131, 24, 75, 1)
-        Fill: =RGBA(211, 66, 9, 1)
+        Fill: =RGBA(255, 90, 0, 1)
         Height: =86
         Width: =Parent.Width
         ZIndex: =2
@@ -80,6 +80,7 @@
         ZIndex: =3
 
     TitleLabel As label:
+        Align: =Align.Center
         BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -87,7 +88,7 @@
         Height: =62
         Size: =18
         Text: ="UFS Demand Creation Chef Homepage"
-        Width: =1142
+        Width: =950
         X: =201
         Y: =12
         ZIndex: =4
@@ -300,7 +301,7 @@
             DisabledFill: =RGBA(244, 244, 244, 1)
             Height: =136
             Image: =menumatrix
-            OnSelect: =Navigate(Screen2);
+            OnSelect: =Navigate('Menu Matrix offline screen');
             Width: =136
             X: =459
             Y: =178

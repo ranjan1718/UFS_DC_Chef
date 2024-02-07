@@ -149,13 +149,13 @@
                 ZIndex: =1
 
                 "'Main Header_Route_6' As 'Main Header_Route_2'":
+                    Height: =Parent.Height/11
                     LayoutMinHeight: =640
                     LayoutMinWidth: =640
                     Width: =Parent.Width
 
                 Body_Container_Route_2 As groupContainer.verticalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
-                    FillPortions: =0
                     Height: |-
                         =//Parent.Height*10/11
                         Parent.Height/1.18

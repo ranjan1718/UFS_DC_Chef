@@ -20452,7 +20452,9 @@
           "InvariantPropertyName": "BorderThickness",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        }
+        },
+        "PaddingTop",
+        "PaddingBottom"
       ],
       "DynamicProperties": [
         {
@@ -20534,6 +20536,16 @@
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
+        {
+          "Category": "Design",
+          "PropertyName": "PaddingBottom",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PaddingTop",
+          "RuleProviderType": "Unknown"
+        },
         {
           "Category": "Design",
           "PropertyName": "RadiusTopRight",
@@ -27149,7 +27161,7 @@
       "MetaDataIDKey": "",
       "Name": "Container2_20",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -111460,7 +111472,7 @@
       "MetaDataIDKey": "",
       "Name": "Rectangle1_4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -113323,7 +113335,9 @@
         },
         "X",
         "Y",
-        "ZIndex"
+        "ZIndex",
+        "Navigation",
+        "MenuItems"
       ],
       "DynamicProperties": [
         {
@@ -113383,6 +113397,16 @@
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
+          "Category": "Data",
+          "PropertyName": "Navigation",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "MenuItems",
+          "RuleProviderType": "System"
+        },
+        {
           "Category": "Design",
           "PropertyName": "ZIndex",
           "RuleProviderType": "Unknown"
@@ -113390,7 +113414,7 @@
         {
           "Category": "Design",
           "PropertyName": "Y",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",

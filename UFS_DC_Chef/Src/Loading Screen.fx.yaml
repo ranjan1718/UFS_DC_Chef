@@ -112,10 +112,10 @@
                 LoadingSpinner: =LoadingSpinner.Data
                 OnSelect: |-
                     =Set(
-                        _V_SelectedCustomer, ThisItem
+                        _V_SelectedCustomer_1, ThisItem
                     );
                     
-                    //ClearCollect(_V_SelectedCustomer,ThisItem);
+                    //ClearCollect(_V_SelectedCustomer_1,ThisItem);
                 TemplatePadding: =8
                 TemplateSize: =280
                 ZIndex: =1
