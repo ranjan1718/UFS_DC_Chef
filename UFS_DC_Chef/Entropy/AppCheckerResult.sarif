@@ -7747,6 +7747,43 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Cont_DishName.Label3_13.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Cont_DishName.Label3_13.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 42,
+                  "charOffset": 325,
+                  "snippet": {
+                    "text": "Set(\n    _V_SelectedDish_1,\n    ThisItem\n)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Menu Matrix Screen",
+                "type": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Cont_DishName.Label3_13"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Cont_DishName.Label3_14.OnSelect"
                 }
               ],
@@ -7825,6 +7862,43 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Cont_DishName.Label3_14.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Cont_DishName.Label3_14.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 42,
+                  "charOffset": 345,
+                  "snippet": {
+                    "text": "Set(\n    _V_SelectedDish_1,\n    ThisItem\n)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Menu Matrix Screen",
+                "type": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Cont_DishName.Label3_14"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Container38_4.Label3_15.OnSelect"
                 }
               ],
@@ -7897,6 +7971,43 @@
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
           "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Container38_4.Label3_15.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Container38_4.Label3_15.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 42,
+                  "charOffset": 325,
+                  "snippet": {
+                    "text": "Set(\n    _V_SelectedDish_1,\n    ThisItem\n)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Menu Matrix Screen",
+                "type": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Container38_4.Label3_15"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -7981,6 +8092,43 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Container38_4.Label3_16.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Container38_4.Label3_16.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 42,
+                  "charOffset": 325,
+                  "snippet": {
+                    "text": "Set(\n    _V_SelectedDish_1,\n    ThisItem\n)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Menu Matrix Screen",
+                "type": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Container38_4.Label3_16"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Container38_5.Label3_17.OnSelect"
                 }
               ],
@@ -8053,6 +8201,43 @@
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
           "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Container38_5.Label3_17.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Container38_5.Label3_17.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 42,
+                  "charOffset": 325,
+                  "snippet": {
+                    "text": "Set(\n    _V_SelectedDish_1,\n    ThisItem\n)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Menu Matrix Screen",
+                "type": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Container38_5.Label3_17"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -8137,6 +8322,43 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Container38_5.Label3_18.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Container38_5.Label3_18.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 42,
+                  "charOffset": 326,
+                  "snippet": {
+                    "text": "Set(\n    _V_SelectedDish_1,\n    ThisItem\n)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Menu Matrix Screen",
+                "type": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Container38_5.Label3_18"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Container38_6.Label3_19.OnSelect"
                 }
               ],
@@ -8215,6 +8437,43 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Container38_6.Label3_19.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Container38_6.Label3_19.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 42,
+                  "charOffset": 325,
+                  "snippet": {
+                    "text": "Set(\n    _V_SelectedDish_1,\n    ThisItem\n)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Menu Matrix Screen",
+                "type": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Container38_6.Label3_19"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Container38_6.Label3_20.OnSelect"
                 }
               ],
@@ -8287,6 +8546,43 @@
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
           "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Container38_6.Label3_20.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Container38_6.Label3_20.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 42,
+                  "charOffset": 325,
+                  "snippet": {
+                    "text": "Set(\n    _V_SelectedDish_1,\n    ThisItem\n)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Menu Matrix Screen",
+                "type": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Gallery_Container_1.Gal_AllDish.Cont_Template.Container38_6.Label3_20"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -11001,6 +11297,154 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.'Save Button Container_1'.btn_Save.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.'Save Button Container_1'.btn_Save.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 863,
+                  "charOffset": 95,
+                  "snippet": {
+                    "text": "Set(\n        _V_SelectedDish_1,\n        Patch(\n            'Related Dishes',\n            Defaults('Related Dishes'),\n            {\n                'Dish Name': Cb_DishNames.Selected.Name,\n                'Type of Dish': cb_TypeOfDish.Selected.Value,\n                'Transactions per Day': Value(ip_TransactionPerDay.Text),\n                'Main Dish Photo': AddMediaButton.Image,\n                'Dish Photo 1': UploadedImage2_4.Image,\n                'Dish Photo 3': UploadedImage2_8.Image,\n                'Dish Photo 2': UploadedImage2_7.Image,\n                'Launch Date': dp_LaunchDate.SelectedDate,\n                'Dish Remarks': ip_dishRemarks.Text,\n                Details: ip_dishDetails.Text,\n                Customer: _V_SelectedCustomer,\n                'Potential Oppertunity': Value('ip_Potential oppertunity'.Text)\n            }\n        )\n    )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Menu Matrix Screen",
+                "type": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.'Save Button Container_1'.btn_Save"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.'Save Button Container_1'.btn_Save.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.'Save Button Container_1'.btn_Save.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1037,
+                  "charOffset": 1785,
+                  "snippet": {
+                    "text": "Set(\n        _V_SelectedDish_1,\n        Patch(\n            'Related Dishes',\n            {'Related Dish': _V_SelectedDish_1.'Related Dish'},\n            {\n                'Dish Name': If(\n                    IsBlank(Cb_DishNames.Selected.Name),\n                    _V_SelectedDish_1.'Dish Name',\n                    Cb_DishNames.Selected.Name\n                ),\n                'Type of Dish': cb_TypeOfDish.Selected.Value,\n                'Transactions per Day': Value(ip_TransactionPerDay.Text),\n                'Main Dish Photo': AddMediaButton.Image,\n                'Dish Photo 1': UploadedImage2_4.Image,\n                'Dish Photo 3': UploadedImage2_8.Image,\n                'Dish Photo 2': UploadedImage2_7.Image,\n                'Launch Date': dp_LaunchDate.SelectedDate,\n                'Dish Remarks': ip_dishRemarks.Text,\n                Details: ip_dishDetails.Text,\n                Customer: _V_SelectedCustomer,\n                'Potential Oppertunity': Value('ip_Potential oppertunity'.Text)\n            }\n        )\n    )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Menu Matrix Screen",
+                "type": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.'Save Button Container_1'.btn_Save"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.'Save Button Container_1'.btn_Save.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.'Save Button Container_1'.btn_Save.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 535,
+                  "charOffset": 4840,
+                  "snippet": {
+                    "text": "Set(\n        _V_SelectedDish_1,\n        Patch(\n            'Related Dishes',\n            Defaults('Related Dishes'),\n            {\n                'Total Potential Opportunity': Sum(\n                    Filter(\n                        'Related SKUS',\n                        Customer.Customer = _V_SelectedCustomer.Customer,\n                        'Related Dish'.'Related Dish' = _V_SelectedDish_1.'Related Dish'\n                    ),\n                    'Total Potential Opportunity '\n                )\n            }\n        )\n    )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Menu Matrix Screen",
+                "type": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.'Save Button Container_1'.btn_Save"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.'Save Button Container_1'.btn_Save.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.'Save Button Container_1'.btn_Save.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 541,
+                  "charOffset": 5381,
+                  "snippet": {
+                    "text": "Set(\n        _V_SelectedDish_1,\n        Patch(\n            'Related Dishes',\n            {'Related Dish': _V_SelectedDish_1.'Related Dish'},\n            {'Total Potential Opportunity':Sum(\n                    Filter(\n                        'Related SKUS',\n                        Customer.Customer = _V_SelectedCustomer.Customer,\n                        'Related Dish'.'Related Dish' = _V_SelectedDish_1.'Related Dish'\n                    ),\n                    'Total Potential Opportunity '\n                )\n            }\n        )\n    )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Menu Matrix Screen",
+                "type": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.'Save Button Container_1'.btn_Save"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Menu_EditSection_Container_2.Container22.Container20.Gal_DishNames.galleryTemplate13.OnSelect"
                 }
               ],
@@ -11073,6 +11517,43 @@
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
           "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Menu_EditSection_Container_2.Container22.Container20.Gal_DishNames.galleryTemplate13.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Menu_EditSection_Container_2.Container22.Container20.Gal_DishNames.galleryTemplate13.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 42,
+                  "charOffset": 41,
+                  "snippet": {
+                    "text": "Set(\n    _V_SelectedDish_1,\n    ThisItem\n)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Menu Matrix Screen",
+                "type": "'Menu Matrix Screen'.Main_Container_12.Body_Container_12.Body_Container_Without_Sidebar_2.'Container without Sidebar_2'.Menu_EditSection_Container_2.Container22.Container20.Gal_DishNames.galleryTemplate13"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -39559,17 +40040,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.var_ModuleblackColor"
+                  "fullyQualifiedName": "App._C_AllColors"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.var_ModuleblackColor",
+                  "fullyQualifiedName": "App._C_AllColors",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "var_ModuleblackColor",
+                "member": "_C_AllColors",
                 "module": "App",
                 "type": "App"
               }
@@ -39589,17 +40070,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App._C_AllColors"
+                  "fullyQualifiedName": "App.var_ModuleblackColor"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App._C_AllColors",
+                  "fullyQualifiedName": "App.var_ModuleblackColor",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "_C_AllColors",
+                "member": "var_ModuleblackColor",
                 "module": "App",
                 "type": "App"
               }
@@ -41650,7 +42131,7 @@
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"Route_Planning_Screen\" is 1021, which exceeds the maximum threshold recommended (300)."
+                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"Route_Planning_Screen\" is 1023, which exceeds the maximum threshold recommended (300)."
               }
             },
             {
