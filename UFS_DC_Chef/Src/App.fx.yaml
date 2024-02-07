@@ -34,6 +34,9 @@ App As appinfo:
         Set(var_ModuleblackColor,RGBA(50,45,51,255));
         Set(var_save,RGBA(0,176,80,255));
         Set(var_cancel,RGBA(127,127,127,255));
+        Set(var_whitecolor,RGBA(255,255,255,1));
+        
+        
         Set(
             _C_AllColors,
             {

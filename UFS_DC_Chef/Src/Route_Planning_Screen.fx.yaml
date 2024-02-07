@@ -4337,7 +4337,8 @@
                             BorderThickness: =0.5
                             Fill: |-
                                 =//RGBA(211,66,9,.5)
-                                var_ModuleBodyColor
+                                //var_ModuleBodyColor
+                                RGBA(255,255,255,1)
                             FillPortions: =0
                             Height: =Parent.Height-10
                             LayoutDirection: =LayoutDirection.Vertical
@@ -4359,7 +4360,9 @@
                                 AlignInContainer: =AlignInContainer.Start
                                 BorderThickness: =0.5
                                 DropShadow: =DropShadow.Light
-                                Fill: =RGBA(255,255,255,1)
+                                Fill: |-
+                                    =//RGBA(255,255,255,1)
+                                    var_ModuleBodyColor
                                 FillPortions: =0
                                 Height: |-
                                     =//(Parent.Height/4.4)-35
@@ -4367,6 +4370,8 @@
                                 LayoutMinHeight: =0
                                 LayoutMinWidth: =0
                                 LayoutMode: =LayoutMode.Auto
+                                PaddingBottom: =2
+                                PaddingTop: =2
                                 RadiusBottomLeft: =10
                                 RadiusBottomRight: =10
                                 RadiusTopLeft: =10
@@ -4376,7 +4381,9 @@
                                 ZIndex: =1
 
                                 Container11_8 As groupContainer.verticalAutoLayoutContainer:
-                                    DropShadow: =DropShadow.Light
+                                    BorderColor: |-
+                                        =//RGBA(0, 0, 0, 1)
+                                        RGBA(255,255,255,1)
                                     FillPortions: =0
                                     Height: =Parent.Height
                                     LayoutAlignItems: =LayoutAlignItems.Center
@@ -4391,12 +4398,14 @@
                                     RadiusTopLeft: =4
                                     RadiusTopRight: =4
                                     Width: =Parent.Width/3
-                                    ZIndex: =96
+                                    ZIndex: =1
 
                                     Label16_25 As label:
                                         Align: =Align.Center
-                                        BorderColor: =RGBA(131, 24, 75, 1)
-                                        Color: =RGBA(211,66,9,1)
+                                        BorderColor: |-
+                                            =//RGBA(131, 24, 75, 1)
+                                            RGBA(255,255,255,1)
+                                        Color: =RGBA(255, 255, 255, 1)
                                         DisabledColor: =RGBA(166, 166, 166, 1)
                                         FontWeight: =FontWeight.Bold
                                         Height: =Parent.Height/3
@@ -4410,10 +4419,11 @@
 
                                     Label17_10 As label:
                                         Align: =Align.Center
-                                        BorderColor: =RGBA(131, 24, 75, 1)
-                                        Color: =RGBA(0, 0, 0, 1)
+                                        BorderColor: |-
+                                            =//RGBA(131, 24, 75, 1)
+                                            RGBA(255,255,255,1)
+                                        Color: =RGBA(255, 255, 255, 1)
                                         DisabledColor: =RGBA(166, 166, 166, 1)
-                                        FontWeight: =FontWeight.Semibold
                                         Height: =Parent.Height/2
                                         LayoutMinHeight: =0
                                         LayoutMinWidth: =0
@@ -4449,12 +4459,12 @@
                                     RadiusTopLeft: =4
                                     RadiusTopRight: =4
                                     Width: =Parent.Width/3
-                                    ZIndex: =99
+                                    ZIndex: =3
 
                                     Label18_7 As label:
                                         Align: =Align.Center
                                         BorderColor: =RGBA(131, 24, 75, 1)
-                                        Color: =RGBA(211,66,9,1)
+                                        Color: =RGBA(255, 255, 255, 1)
                                         DisabledColor: =RGBA(166, 166, 166, 1)
                                         FontWeight: =FontWeight.Bold
                                         Height: =Parent.Height/3
@@ -4468,9 +4478,8 @@
                                     Label19_2 As label:
                                         Align: =Align.Center
                                         BorderColor: =RGBA(131, 24, 75, 1)
-                                        Color: =RGBA(0, 0, 0, 1)
+                                        Color: =RGBA(255, 255, 255, 1)
                                         DisabledColor: =RGBA(166, 166, 166, 1)
-                                        FontWeight: =FontWeight.Semibold
                                         Height: =Parent.Height/2
                                         LayoutMinHeight: =0
                                         LayoutMinWidth: =0
@@ -4488,6 +4497,13 @@
                                         Width: =Parent.Width
                                         ZIndex: =101
 
+                                Rectangle1_4 As rectangle:
+                                    BorderColor: =RGBA(131, 24, 75, 1)
+                                    Fill: =RGBA(255, 255, 255, 1)
+                                    Height: =Parent.Height
+                                    Width: =2
+                                    ZIndex: =4
+
                                 Container2_20 As groupContainer.verticalAutoLayoutContainer:
                                     DropShadow: =DropShadow.Light
                                     FillPortions: =0
@@ -4504,12 +4520,12 @@
                                     RadiusTopLeft: =4
                                     RadiusTopRight: =4
                                     Width: =Parent.Width/3
-                                    ZIndex: =100
+                                    ZIndex: =5
 
                                     Label2_17 As label:
                                         Align: =Align.Center
                                         BorderColor: =RGBA(131, 24, 75, 1)
-                                        Color: =RGBA(211,66,9,1)
+                                        Color: =RGBA(255, 255, 255, 1)
                                         DisabledColor: =RGBA(166, 166, 166, 1)
                                         FontWeight: =FontWeight.Bold
                                         Height: =Parent.Height/3
@@ -4523,9 +4539,8 @@
                                     Label4_5 As label:
                                         Align: =Align.Center
                                         BorderColor: =RGBA(131, 24, 75, 1)
-                                        Color: =RGBA(0, 0, 0, 1)
+                                        Color: =RGBA(255, 255, 255, 1)
                                         DisabledColor: =RGBA(166, 166, 166, 1)
-                                        FontWeight: =FontWeight.Semibold
                                         Height: =Parent.Height/2
                                         LayoutMinHeight: =0
                                         LayoutMinWidth: =0
@@ -4548,7 +4563,8 @@
                                 BorderThickness: =0.5
                                 Fill: |
                                     =//RGBA(255, 255, 255, 1)
-                                    RGBA(0,0,0,0)
+                                    //RGBA(0,0,0,0)
+                                    var_ModuleBodyColor
                                 FillPortions: =0
                                 Height: =Parent.Height/3.8
                                 LayoutDirection: =LayoutDirection.Vertical
@@ -4570,7 +4586,7 @@
 
                                 Label17_11 As label:
                                     BorderColor: =RGBA(131, 24, 75, 1)
-                                    Color: =RGBA(211,66,9,1)
+                                    Color: =RGBA(255, 255, 255, 1)
                                     DisabledColor: =RGBA(166, 166, 166, 1)
                                     FontWeight: =FontWeight.Bold
                                     Height: =Parent.Height/4
@@ -4599,7 +4615,7 @@
                                         BorderColor: |-
                                             =//RGBA(131, 24, 75, 1)
                                             RGBA(255,255,255,1)
-                                        Color: =RGBA(0, 0, 0, 1)
+                                        Color: =RGBA(255, 255, 255, 1)
                                         DisabledColor: =RGBA(166, 166, 166, 1)
                                         FontWeight: =FontWeight.Bold
                                         LayoutMinWidth: =0
@@ -4616,9 +4632,8 @@
                                         Align: =Align.Right
                                         BorderColor: =RGBA(255,255,255,1)
                                         BorderThickness: =1
-                                        Color: =RGBA(0, 0, 0, 1)
+                                        Color: =RGBA(255, 255, 255, 1)
                                         DisabledColor: =RGBA(166, 166, 166, 1)
-                                        FontWeight: =FontWeight.Semibold
                                         Height: =Parent.Height
                                         LayoutMinHeight: =0
                                         LayoutMinWidth: =0
@@ -4649,7 +4664,7 @@
                                             =//RGBA(131, 24, 75, 1)
                                             RGBA(255,255,255,1)
                                         BorderThickness: =1
-                                        Color: =RGBA(0, 0, 0, 1)
+                                        Color: =RGBA(255, 255, 255, 1)
                                         DisabledColor: =RGBA(166, 166, 166, 1)
                                         FontWeight: =FontWeight.Bold
                                         Height: =Parent.Height
@@ -4668,9 +4683,8 @@
                                         Align: =Align.Right
                                         BorderColor: =RGBA(255,255,255,1)
                                         BorderThickness: =1
-                                        Color: =RGBA(0, 0, 0, 1)
+                                        Color: =RGBA(255, 255, 255, 1)
                                         DisabledColor: =RGBA(166, 166, 166, 1)
-                                        FontWeight: =FontWeight.Semibold
                                         Height: =Parent.Height
                                         LayoutMinHeight: =0
                                         LayoutMinWidth: =0
@@ -4712,7 +4726,7 @@
                                             =//RGBA(131, 24, 75, 1)
                                             RGBA(255,255,255,1)
                                         BorderThickness: =1
-                                        Color: =RGBA(0, 0, 0, 1)
+                                        Color: =RGBA(255, 255, 255, 1)
                                         DisabledColor: =RGBA(166, 166, 166, 1)
                                         FontWeight: =FontWeight.Bold
                                         Height: =Parent.Height
@@ -4731,9 +4745,8 @@
                                         Align: =Align.Right
                                         BorderColor: =RGBA(255,255,255,1)
                                         BorderThickness: =1
-                                        Color: =RGBA(0, 0, 0, 1)
+                                        Color: =RGBA(255, 255, 255, 1)
                                         DisabledColor: =RGBA(166, 166, 166, 1)
-                                        FontWeight: =FontWeight.Semibold
                                         Height: =Parent.Height
                                         LayoutMinHeight: =0
                                         LayoutMinWidth: =0
@@ -4752,7 +4765,8 @@
                                 BorderThickness: =0.5
                                 Fill: |-
                                     =//RGBA(0, 0, 0, 0)
-                                    RGBA(255,255,255,1)
+                                    //RGBA(255,255,255,1)
+                                    var_ModuleBodyColor
                                 FillPortions: =0
                                 Height: |-
                                     =//Parent.Height/4.3
@@ -4774,7 +4788,9 @@
 
                                 Label17_12 As label:
                                     BorderColor: =RGBA(131, 24, 75, 1)
-                                    Color: =RGBA(211,66,9,1)
+                                    Color: |-
+                                        =//RGBA(211,66,9,1)
+                                        var_whitecolor
                                     DisabledColor: =RGBA(166, 166, 166, 1)
                                     FontWeight: =FontWeight.Bold
                                     Height: =Parent.Height/4
@@ -4805,7 +4821,7 @@
                                             =//RGBA(255,255,255,1)
                                             var_cancel
                                         BorderThickness: =1.5
-                                        Color: =RGBA(0, 0, 0, 1)
+                                        Color: =var_whitecolor
                                         DisabledColor: =RGBA(166, 166, 166, 1)
                                         FontWeight: =FontWeight.Bold
                                         Height: =Parent.Height
@@ -4826,9 +4842,8 @@
                                             =//RGBA(255,255,255,1)
                                             var_cancel
                                         BorderThickness: =1
-                                        Color: =RGBA(0, 0, 0, 1)
+                                        Color: =var_whitecolor
                                         DisabledColor: =RGBA(166, 166, 166, 1)
-                                        FontWeight: =FontWeight.Semibold
                                         Height: =Parent.Height
                                         LayoutMinHeight: =0
                                         LayoutMinWidth: =0
@@ -4866,7 +4881,7 @@
                                         Align: =Align.Center
                                         BorderColor: =RGBA(255,255,255,1)
                                         BorderThickness: =1
-                                        Color: =RGBA(0, 0, 0, 1)
+                                        Color: =var_whitecolor
                                         DisabledColor: =RGBA(166, 166, 166, 1)
                                         FontWeight: =FontWeight.Bold
                                         Height: =Parent.Height
@@ -4885,9 +4900,8 @@
                                         Align: =Align.Right
                                         BorderColor: =RGBA(255,255,255,1)
                                         BorderThickness: =1
-                                        Color: =RGBA(0, 0, 0, 1)
+                                        Color: =var_whitecolor
                                         DisabledColor: =RGBA(166, 166, 166, 1)
-                                        FontWeight: =FontWeight.Semibold
                                         Height: =Parent.Height
                                         LayoutMinHeight: =0
                                         LayoutMinWidth: =0
@@ -4922,7 +4936,7 @@
                                         Align: =Align.Center
                                         BorderColor: =RGBA(255,255,255,1)
                                         BorderThickness: =1
-                                        Color: =RGBA(0, 0, 0, 1)
+                                        Color: =var_whitecolor
                                         DisabledColor: =RGBA(166, 166, 166, 1)
                                         FontWeight: =FontWeight.Bold
                                         Height: =Parent.Height
@@ -4941,9 +4955,8 @@
                                         Align: =Align.Right
                                         BorderColor: =RGBA(255,255,255,1)
                                         BorderThickness: =1
-                                        Color: =RGBA(0, 0, 0, 1)
+                                        Color: =var_whitecolor
                                         DisabledColor: =RGBA(166, 166, 166, 1)
-                                        FontWeight: =FontWeight.Semibold
                                         Height: =Parent.Height
                                         LayoutMinHeight: =0
                                         LayoutMinWidth: =0
@@ -4969,6 +4982,9 @@
                                 AlignInContainer: =AlignInContainer.SetByContainer
                                 BorderColor: =RGBA(255,255,255,1)
                                 BorderThickness: =0.5
+                                Fill: |-
+                                    =//RGBA(0, 0, 0, 0)
+                                    var_ModuleBodyColor
                                 FillPortions: =0
                                 Height: =Parent.Height/3.8
                                 LayoutDirection: =LayoutDirection.Vertical
@@ -4990,7 +5006,7 @@
 
                                 Label17_13 As label:
                                     BorderColor: =RGBA(255,255,255,1)
-                                    Color: =RGBA(211,66,9,1)
+                                    Color: =var_whitecolor
                                     DisabledColor: =RGBA(166, 166, 166, 1)
                                     FontWeight: =FontWeight.Bold
                                     Height: =Parent.Height/4
@@ -5019,7 +5035,7 @@
                                         Align: =Align.Center
                                         BorderColor: =RGBA(255,255,255,1)
                                         BorderThickness: =1
-                                        Color: =RGBA(0, 0, 0, 1)
+                                        Color: =var_whitecolor
                                         DisabledColor: =RGBA(166, 166, 166, 1)
                                         FontWeight: =FontWeight.Bold
                                         Height: =Parent.Height
@@ -5038,9 +5054,8 @@
                                         Align: =Align.Right
                                         BorderColor: =RGBA(255,255,255,1)
                                         BorderThickness: =1
-                                        Color: =RGBA(0, 0, 0, 1)
+                                        Color: =var_whitecolor
                                         DisabledColor: =RGBA(166, 166, 166, 1)
-                                        FontWeight: =FontWeight.Semibold
                                         Height: =Parent.Height
                                         LayoutMinHeight: =0
                                         LayoutMinWidth: =0
@@ -5078,7 +5093,7 @@
                                         Align: =Align.Center
                                         BorderColor: =RGBA(255,255,255,1)
                                         BorderThickness: =1
-                                        Color: =RGBA(0, 0, 0, 1)
+                                        Color: =var_whitecolor
                                         DisabledColor: =RGBA(166, 166, 166, 1)
                                         FontWeight: =FontWeight.Bold
                                         Height: =Parent.Height
@@ -5097,9 +5112,8 @@
                                         Align: =Align.Right
                                         BorderColor: =RGBA(255,255,255,1)
                                         BorderThickness: =1
-                                        Color: =RGBA(0, 0, 0, 1)
+                                        Color: =var_whitecolor
                                         DisabledColor: =RGBA(166, 166, 166, 1)
-                                        FontWeight: =FontWeight.Semibold
                                         Height: =Parent.Height
                                         LayoutMinHeight: =0
                                         LayoutMinWidth: =0
@@ -5138,14 +5152,14 @@
                                         AlignInContainer: =AlignInContainer.Center
                                         BorderColor: =RGBA(255,255,255,1)
                                         BorderThickness: =1
-                                        Color: =RGBA(0, 0, 0, 1)
+                                        Color: =var_whitecolor
                                         DisabledColor: =RGBA(166, 166, 166, 1)
                                         FontWeight: =FontWeight.Bold
                                         Height: =Parent.Height
                                         LayoutMinHeight: =0
                                         LayoutMinWidth: =0
                                         PaddingBottom: =
-                                        PaddingLeft: =
+                                        PaddingLeft: =2
                                         PaddingRight: =
                                         PaddingTop: =0
                                         Size: =10
@@ -5157,9 +5171,8 @@
                                         Align: =Align.Right
                                         BorderColor: =RGBA(255,255,255,1)
                                         BorderThickness: =1
-                                        Color: =RGBA(0, 0, 0, 1)
+                                        Color: =var_whitecolor
                                         DisabledColor: =RGBA(166, 166, 166, 1)
-                                        FontWeight: =FontWeight.Semibold
                                         Height: =Parent.Height
                                         LayoutMinHeight: =0
                                         LayoutMinWidth: =0
