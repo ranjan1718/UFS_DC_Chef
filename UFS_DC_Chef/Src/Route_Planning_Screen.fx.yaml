@@ -4443,13 +4443,6 @@
                                         Width: =Parent.Width
                                         ZIndex: =98
 
-                                Rectangle1 As rectangle:
-                                    BorderColor: =RGBA(131, 24, 75, 1)
-                                    Fill: =RGBA(255, 255, 255, 1)
-                                    Height: =Parent.Height
-                                    Width: =2
-                                    ZIndex: =2
-
                                 Container12_6 As groupContainer.verticalAutoLayoutContainer:
                                     DropShadow: =DropShadow.Light
                                     FillPortions: =0
