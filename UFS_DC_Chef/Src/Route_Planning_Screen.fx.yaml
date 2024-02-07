@@ -661,7 +661,9 @@
                                         ShowNavigation: =true
                                         ShowScrollbar: =false
                                         TemplatePadding: =0
-                                        TemplateSize: =If(Route_Planning_Screen.Size=4,60,67)
+                                        TemplateSize: |-
+                                            =If(Route_Planning_Screen.Size=4,60,67)
+                                            //Container25_3.Height+Button14_2.Height
                                         Width: =Parent.Width
                                         WrapCount: =7
                                         ZIndex: =1
