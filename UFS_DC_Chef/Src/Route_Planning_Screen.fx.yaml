@@ -2458,7 +2458,7 @@
                                                         ),Name
                                                     )
                                                     */
-                                                    Filter(_C_All_Incalls, DateValue('Scheduled Call Date')=DateValue(DateAdd(var_firstWeek, ThisItem.Value, TimeUnit.Days))  && 'Created By'.'Full Name'= User().FullName&& 'Call Status'<> 444670001 && !IsBlank('Call Status') &&  'Call Status'<> 444670003)
+                                                    SortByColumns( Filter(_C_All_Incalls, DateValue('Scheduled Call Date')=DateValue(DateAdd(var_firstWeek, ThisItem.Value, TimeUnit.Days))  && 'Created By'.'Full Name'= User().FullName&& 'Call Status'<> 444670001 && !IsBlank('Call Status') &&  'Call Status'<> 444670003),"ulchef_callstatus",SortOrder.Descending)
                                                 Layout: =Layout.Vertical
                                                 LayoutMinHeight: =0
                                                 LayoutMinWidth: =0
@@ -3125,10 +3125,10 @@
                                             FillPortions: =0
                                             Height: =Parent.Height-5
                                             Items: |-
-                                                =Sort(Filter(
+                                                =SortByColumns(Filter(
                                                     _C_All_Incalls,
                                                     DateValue('Scheduled Call Date') = DateValue(var_calenderday) && Text('Call Status') <> "" && Text('Call Status') <> "On Going" && 'Created By'.'Full Name' = User().FullName
-                                                ),"Call_Status_InCall",SortOrder.Ascending)
+                                                ),"ulchef_callstatus",SortOrder.Descending)
                                             Layout: =Layout.Vertical
                                             LayoutMinHeight: =0
                                             LayoutMinWidth: =0
