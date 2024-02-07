@@ -100,7 +100,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 458,
+    "BindingErrorCount": 449,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 2000,
     "DocumentAppType": "DesktopOrTablet",
@@ -152,6 +152,7 @@
     "Menu Matrix Screen",
     "Route Planning Screen",
     "In Call Screen",
-    "Route_Planning_Screen"
+    "Route_Planning_Screen",
+    "Screen2"
   ]
 }
