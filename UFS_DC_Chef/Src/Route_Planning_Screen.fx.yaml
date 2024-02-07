@@ -630,7 +630,9 @@
                                     BorderThickness: =0.5
                                     DropShadow: =DropShadow.Light
                                     FillPortions: =0
-                                    Height: =Parent.Height/1.55
+                                    Height: |-
+                                        =//Parent.Height/1.55
+                                        Parent.Height/1.50
                                     LayoutAlignItems: =LayoutAlignItems.Stretch
                                     LayoutDirection: =LayoutDirection.Vertical
                                     LayoutMinHeight: =0
@@ -648,7 +650,9 @@
                                         BorderColor: =RGBA(131, 24, 75, 1)
                                         DelayItemLoading: =true
                                         FillPortions: =0
-                                        Height: =Parent.Height
+                                        Height: |
+                                            =Parent.Height
+                                            //CountRows(Gallery7_6) * Gallery7_6.TemplateHeight
                                         Items: =ForAll(Sequence(42),varFirstDayOfMonth+Value-Weekday(varFirstDayOfMonth,StartOfWeek.Sunday))
                                         Layout: =Layout.Vertical
                                         LayoutMinHeight: =0
@@ -657,7 +661,9 @@
                                         ShowNavigation: =true
                                         ShowScrollbar: =false
                                         TemplatePadding: =0
-                                        TemplateSize: =68
+                                        TemplateSize: |-
+                                            =If(Route_Planning_Screen.Size=4,60,67)
+                                            //Container25_3.Height+Button14_2.Height
                                         Width: =Parent.Width
                                         WrapCount: =7
                                         ZIndex: =1
@@ -2458,7 +2464,7 @@
                                                         ),Name
                                                     )
                                                     */
-                                                    Filter(_C_All_Incalls, DateValue('Scheduled Call Date')=DateValue(DateAdd(var_firstWeek, ThisItem.Value, TimeUnit.Days))  && 'Created By'.'Full Name'= User().FullName&& 'Call Status'<> 444670001 && !IsBlank('Call Status') &&  'Call Status'<> 444670003)
+                                                    SortByColumns( Filter(_C_All_Incalls, DateValue('Scheduled Call Date')=DateValue(DateAdd(var_firstWeek, ThisItem.Value, TimeUnit.Days))  && 'Created By'.'Full Name'= User().FullName&& 'Call Status'<> 444670001 && !IsBlank('Call Status') &&  'Call Status'<> 444670003),"ulchef_callstatus",SortOrder.Descending)
                                                 Layout: =Layout.Vertical
                                                 LayoutMinHeight: =0
                                                 LayoutMinWidth: =0
@@ -3125,10 +3131,10 @@
                                             FillPortions: =0
                                             Height: =Parent.Height-5
                                             Items: |-
-                                                =Sort(Filter(
+                                                =SortByColumns(Filter(
                                                     _C_All_Incalls,
                                                     DateValue('Scheduled Call Date') = DateValue(var_calenderday) && Text('Call Status') <> "" && Text('Call Status') <> "On Going" && 'Created By'.'Full Name' = User().FullName
-                                                ),"Call_Status_InCall",SortOrder.Ascending)
+                                                ),"ulchef_callstatus",SortOrder.Descending)
                                             Layout: =Layout.Vertical
                                             LayoutMinHeight: =0
                                             LayoutMinWidth: =0
@@ -4443,6 +4449,13 @@
                                         Width: =Parent.Width
                                         ZIndex: =98
 
+                                Rectangle1_5 As rectangle:
+                                    BorderColor: =RGBA(131, 24, 75, 1)
+                                    Fill: =RGBA(255, 255, 255, 1)
+                                    Height: =Parent.Height
+                                    Width: =2
+                                    ZIndex: =2
+
                                 Container12_6 As groupContainer.verticalAutoLayoutContainer:
                                     DropShadow: =DropShadow.Light
                                     FillPortions: =0
@@ -4574,8 +4587,7 @@
                                 LayoutMode: =LayoutMode.Auto
                                 PaddingBottom: |
                                     =0
-                                PaddingRight: |
-                                    =0
+                                PaddingLeft: =2
                                 PaddingTop: =
                                 RadiusBottomLeft: =10
                                 RadiusBottomRight: =10
@@ -4607,7 +4619,7 @@
                                     LayoutMinHeight: =0
                                     LayoutMinWidth: =0
                                     LayoutMode: =LayoutMode.Auto
-                                    Width: =Parent.Width
+                                    Width: =Parent.Width-5
                                     ZIndex: =2
 
                                     Label18_28 As label:
@@ -4655,7 +4667,7 @@
                                     LayoutMinHeight: =0
                                     LayoutMinWidth: =0
                                     LayoutMode: =LayoutMode.Auto
-                                    Width: =Parent.Width
+                                    Width: =Parent.Width-5
                                     ZIndex: =5
 
                                     Label18_29 As label:
@@ -4716,7 +4728,7 @@
                                     LayoutMinHeight: =0
                                     LayoutMinWidth: =0
                                     LayoutMode: =LayoutMode.Auto
-                                    Width: =Parent.Width
+                                    Width: =Parent.Width-5
                                     ZIndex: =6
 
                                     Label18_30 As label:
@@ -4776,8 +4788,8 @@
                                 LayoutMinWidth: |
                                     =0
                                 LayoutMode: =LayoutMode.Auto
-                                PaddingLeft: =
-                                PaddingRight: =
+                                PaddingLeft: =2
+                                PaddingRight: =2
                                 PaddingTop: =
                                 RadiusBottomLeft: =10
                                 RadiusBottomRight: =10
@@ -4812,7 +4824,7 @@
                                     LayoutMinHeight: =0
                                     LayoutMinWidth: =0
                                     LayoutMode: =LayoutMode.Auto
-                                    Width: =Parent.Width
+                                    Width: =Parent.Width-5
                                     ZIndex: =75
 
                                     Label18_31 As label:
@@ -4874,7 +4886,7 @@
                                     LayoutMinHeight: =0
                                     LayoutMinWidth: =0
                                     LayoutMode: =LayoutMode.Auto
-                                    Width: =Parent.Width
+                                    Width: =Parent.Width-5
                                     ZIndex: =78
 
                                     Label18_32 As label:
@@ -4929,7 +4941,7 @@
                                     LayoutMinHeight: =0
                                     LayoutMinWidth: =0
                                     LayoutMode: =LayoutMode.Auto
-                                    Width: =Parent.Width
+                                    Width: =Parent.Width-5
                                     ZIndex: =81
 
                                     Label18_33 As label:
@@ -4993,7 +5005,7 @@
                                 LayoutMinWidth: =0
                                 LayoutMode: =LayoutMode.Auto
                                 PaddingBottom: =
-                                PaddingLeft: =
+                                PaddingLeft: =2
                                 PaddingRight: =
                                 PaddingTop: =
                                 RadiusBottomLeft: =10
@@ -5028,7 +5040,7 @@
                                     LayoutMinHeight: =0
                                     LayoutMinWidth: =0
                                     LayoutMode: =LayoutMode.Auto
-                                    Width: =Parent.Width
+                                    Width: =Parent.Width-5
                                     ZIndex: =86
 
                                     Label18_34 As label:
@@ -5086,7 +5098,7 @@
                                     LayoutMinHeight: =0
                                     LayoutMinWidth: =0
                                     LayoutMode: =LayoutMode.Auto
-                                    Width: =Parent.Width
+                                    Width: =Parent.Width-5
                                     ZIndex: =89
 
                                     Label18_35 As label:
@@ -5144,7 +5156,7 @@
                                     LayoutMinHeight: =0
                                     LayoutMinWidth: =0
                                     LayoutMode: =LayoutMode.Auto
-                                    Width: =Parent.Width
+                                    Width: =Parent.Width-5
                                     ZIndex: =92
 
                                     Label18_36 As label:
